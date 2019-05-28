@@ -2,13 +2,14 @@ import { Global as EGlobal, css } from '@emotion/core';
 import React from 'react';
 import { buttonReset, inputReset, linkReset } from '../../utils/css.utils';
 import { reset } from '../../utils/emotion.utils';
+import { theme } from '../../theme';
 
 export const Global = () => (
 	<EGlobal
 		styles={css`
 			${reset}
 			html {
-				font-family: Stolzl, Helvetica, Arial, sans-serif;
+				${theme}
 			}
 			html,
 			body,
