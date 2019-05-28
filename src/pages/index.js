@@ -1,4 +1,10 @@
-import React from 'react';
-import { Landing } from '../components/landing/landing.component';
+import React, { Fragment } from 'react';
+import { Landing } from '../ui/landing/landing.component';
+import { Global } from '../ui/global/global.component';
 
-export default () => <Landing />;
+export default () => (
+	<Fragment>
+		<Global />
+		<Landing />
+	</Fragment>
+);

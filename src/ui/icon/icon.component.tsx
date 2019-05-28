@@ -21,8 +21,8 @@ interface IconProps {
 	svg: ComponentType<SVGProps<SVGSVGElement>>;
 	className?: string;
 }
-export const Icon: FC<IconProps> = memo(({ svg: Svg }) => (
-	<IconStyled>
+export const Icon: FC<IconProps> = memo(({ svg: Svg, className }) => (
+	<IconStyled className={className}>
 		<Svg />
 	</IconStyled>
 ));
