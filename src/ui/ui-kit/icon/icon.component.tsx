@@ -1,4 +1,4 @@
-import { ComponentType, FC, memo, ReactElement, SVGProps } from 'react';
+import {ComponentType, FC, memo, SVGProps} from 'react';
 import * as React from 'react';
 import styled from '@emotion/styled';
 
@@ -21,7 +21,7 @@ interface IconProps {
 	svg: ComponentType<SVGProps<SVGSVGElement>>;
 	className?: string;
 }
-export const Icon: FC<IconProps> = memo(({ svg: Svg, className }) => (
+export const Icon: FC<IconProps> = memo(({svg: Svg, className}) => (
 	<IconStyled className={className}>
 		<Svg />
 	</IconStyled>

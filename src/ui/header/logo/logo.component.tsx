@@ -1,7 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import {Icon} from '../../icon/icon.component';
+import {Icon} from '../../ui-kit/icon/icon.component';
 import {LogoIcon} from '../../../assets';
 import {mediaMdX} from '../../../utils/css.utils';
 

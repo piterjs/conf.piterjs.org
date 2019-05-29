@@ -4,7 +4,7 @@ import * as React from 'react';
 import {Burger} from '../burger/burger.component';
 import {lazy} from '../../../utils/function.utils';
 import {Menu} from '../menu/menu.component';
-import {Container} from '../../container/container.component';
+import {Container} from '../../ui-kit/container/container.component';
 import {MenuItem} from '../menu-item/menu-item.component';
 import {mediaMd, mediaMdX} from '../../../utils/css.utils';
 import {Logo} from '../logo/logo.component';

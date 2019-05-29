@@ -1,7 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import {mediaLg, mediaMd} from '../../utils/css.utils';
+import {mediaLg, mediaMd} from '../../../utils/css.utils';
 
 //#region styled
 const ContainerStyled = styled.div`
