@@ -4,14 +4,17 @@ import * as React from 'react';
 
 //#region styled
 const ItemStyled = styled.li`
-	height: 38px;
 	border-bottom: 1px solid var(--menu-item-border);
-	padding: 0 20px;
+	padding: 10px 20px;
 	font-size: 16px;
 	color: var(--yellow);
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+
+	@media (min-width: 640px) {
+		border-bottom: none;
+	}
 `;
 const LinkStyled = styled.a`
 	text-transform: inherit;

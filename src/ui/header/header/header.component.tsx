@@ -21,23 +21,20 @@ const LogoStyled = styled(Icon)`
 	width: 50px;
 	height: 50px;
 	background-color: var(--white);
+	flex-shrink: 0;
 `;
 const BurgerMenuStyled = styled(Burger)<{isOpened: boolean}>`
 	margin-left: auto;
-	${({isOpened}) => isOpened && 'display: none'};
+
+	@media (min-width: 640px) {
+		display: none;
+	}
 `;
 const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 	${({isOpened}) => !isOpened && 'display: none'};
 	position: absolute;
 	width: 100%;
 	top: 100%;
-
-	@media (min-width: 640px) {
-		background-color: #fff;
-		position: relative;
-		display: flex;
-		justify-content: flex-end;
-	}
 `;
 const MenuItemStyled = styled(MenuItem)``;
 //#endregion
