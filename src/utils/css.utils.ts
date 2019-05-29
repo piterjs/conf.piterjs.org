@@ -35,3 +35,7 @@ export const linkColor = (color: string) => css`
 		color: ${color};
 	}
 `;
+
+export const mediaMd = '@media (min-width: 640px)';
+export const mediaMdX = '@media (min-width: 820px)';
+export const mediaLg = '@media (min-width: 1280px)';

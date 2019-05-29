@@ -1,6 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
+import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
 const ItemStyled = styled.li`
@@ -12,7 +13,7 @@ const ItemStyled = styled.li`
 	align-items: center;
 	justify-content: flex-end;
 
-	@media (min-width: 640px) {
+	${mediaMd} {
 		border-bottom: none;
 	}
 `;
