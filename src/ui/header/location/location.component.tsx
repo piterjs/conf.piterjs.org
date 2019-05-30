@@ -1,6 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
+import {LocationIO} from '../../../view-models/data.view-model';
 
 //#region styled
 const LocationStyled = styled.div`
@@ -47,15 +48,16 @@ const LinkStyled = styled.a`
 
 interface LocationProps {
 	className?: string;
+	location: LocationIO;
 }
 
-export const Location: FC<LocationProps> = memo(({className}) => (
+export const Location: FC<LocationProps> = memo(({className, location}) => (
 	<LocationStyled className={className}>
 		<PointStyled />
-		<LinkStyled href={'https://goo.gl/maps/ssfxoWUpFyWhXH8s8'} target={'_blank'}>
-			наб. Обводного канала, 60,
+		<LinkStyled href={location.link} target={'_blank'}>
+			{location.address}
 			<br />
-			Санкт-Петербург
+			{location.city}
 		</LinkStyled>
 	</LocationStyled>
 ));
