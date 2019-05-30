@@ -15,6 +15,8 @@
     "lint": "tslint --project ."
   },
   "dependencies": {
+    "@devexperts/react-kit": "^0.29.0",
+    "@devexperts/remote-data-ts": "^0.6.0",
     "@emotion/core": "^10.0.10",
     "@emotion/css": "^10.0.9",
     "@emotion/styled": "^10.0.11",
@@ -31,10 +33,12 @@
     "gatsby-plugin-typescript": "^2.0.15",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-sharp": "^2.1.19",
+    "io-ts": "^1.8.6",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "rxjs": "^6.5.2",
     "tslint": "^5.16.0",
     "typelevel-ts": "^0.3.5"
   },
