@@ -19,6 +19,9 @@ export const Global = () => (
 				height: 100%;
 				max-height: 100%;
 			}
+			body {
+				min-width: 320px;
+			}
 			button {
 				font-family: inherit;
 			}
