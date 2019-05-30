@@ -9,7 +9,7 @@ import {MenuItem} from '../menu-item/menu-item.component';
 import {mediaMd, mediaMdX} from '../../../utils/css.utils';
 import {Logo} from '../logo/logo.component';
 import {Location} from '../location/location.component';
-import {HeaderIO} from '../../../view-models/data.view-model';
+import {DataTO} from '../../../view-models/data.view-model';
 
 //#region styled
 const HeaderStyled = styled.header<{isOpened: boolean}>`
@@ -82,11 +82,7 @@ const MenuItemStyled = styled(MenuItem)`
 `;
 //#endregion
 
-interface HeaderProps {
-	header: HeaderIO;
-}
-
-export const Header: FC<HeaderProps> = ({header}) => {
+export const Header: FC<{data: DataTO}> = ({data}) => {
 	const [isOpened, onOpenedChange] = useState(false);
 
 	return (
@@ -94,7 +90,7 @@ export const Header: FC<HeaderProps> = ({header}) => {
 			<ContainerStyled>
 				<WrapperStyled>
 					<LogoStyled />
-					<LocationStyled location={header.location} />
+					<LocationStyled location={data.event.location} />
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
 						<MenuItemStyled href={'#tickets'}>Tickets</MenuItemStyled>

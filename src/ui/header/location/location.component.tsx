@@ -1,7 +1,6 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import {LocationIO} from '../../../view-models/data.view-model';
 
 //#region styled
 const LocationStyled = styled.div`
@@ -48,7 +47,11 @@ const LinkStyled = styled.a`
 
 interface LocationProps {
 	className?: string;
-	location: LocationIO;
+	location: {
+		link: string;
+		city: string;
+		address: string;
+	};
 }
 
 export const Location: FC<LocationProps> = memo(({className, location}) => (

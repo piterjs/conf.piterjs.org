@@ -1,33 +1,40 @@
 import {string, type} from 'io-ts';
 import {Either, left} from 'fp-ts/lib/Either';
-import {constant} from 'fp-ts/lib/function';
 
-export interface LocationIO {
-	address: string;
-	city: string;
-	link: string;
+export interface DataTO {
+	event: {
+		date: string;
+		location: {
+			address: string;
+			city: string;
+			link: string;
+		};
+	};
 }
-const LocationIO = type(
-	{
-		address: string,
-		city: string,
-		link: string,
-	},
-	'LocationIO',
-);
+const DataTOIO = type({
+	event: type({
+		date: string,
+		location: type({
+			address: string,
+			city: string,
+			link: string,
+		}),
+	}),
+});
 
-export interface HeaderIO {
-	location: LocationIO;
-}
-const HeaderIO = type({location: LocationIO}, 'HeaderIO');
-
-export interface DataIO {
-	header: HeaderIO;
-}
-const DataIO = type({header: HeaderIO}, 'DataIO');
-
-export let data: Either<Error, DataIO> = left(new Error('No data yet'));
+export let data: Either<Error, DataTO> = left(new Error('No data yet'));
 fetch('/data.json')
 	.then(response => response.json())
-	.then(value => (data = DataIO.decode(value).mapLeft(constant(new Error('Validation error')))))
-	.catch(() => (data = left(new Error('Data fetch error'))));
+	.then(
+		value =>
+			(data = DataTOIO.decode(value).mapLeft(errors => {
+				// tslint:disable-next-line
+				console.log('##################################\n', errors);
+				return new Error('Validation error');
+			})),
+	)
+	.catch(() => {
+		// tslint:disable-next-line
+		console.log('##################################\n', 'Data fetch error');
+		data = left(new Error('Data fetch error'));
+	});
