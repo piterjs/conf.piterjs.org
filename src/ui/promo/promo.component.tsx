@@ -10,7 +10,7 @@ import {mediaMd} from '../../utils/css.utils';
 const PromoStyled = styled.section`
 	line-height: 1.08;
 	background-color: var(--purpur);
-	padding: 30px 40px 70px 50px;
+	padding: 30px 20px 70px;
 
 	${mediaMd} {
 		padding: 150px 0 120px;
@@ -31,6 +31,7 @@ const DateStyled = styled.div`
 const TitleStyled = styled.h1`
 	font-size: 36px;
 	padding-bottom: 40px;
+	font-weight: bold;
 
 	${mediaMd} {
 		font-size: 96px;

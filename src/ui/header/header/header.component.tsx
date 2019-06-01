@@ -22,6 +22,8 @@ const HeaderStyled = styled.header<{isOpened: boolean}>`
 `;
 const ContainerStyled = styled(Container)`
 	background-color: var(--purpur);
+	padding-left: 0;
+	padding-right: 0;
 
 	${mediaMd} {
 		background-color: var(--white);
@@ -37,7 +39,8 @@ const WrapperStyled = styled.div`
 	}
 `;
 const LogoStyled = styled(Logo)`
-	${mediaMdX} {
+	margin-right: auto;
+	@media (min-width: 1036px) {
 		margin-right: 100px;
 	}
 `;
@@ -45,7 +48,7 @@ const LocationStyled = styled(Location)`
 	display: none;
 	flex-shrink: 0;
 
-	${mediaMd} {
+	${mediaMdX} {
 		display: flex;
 	}
 `;

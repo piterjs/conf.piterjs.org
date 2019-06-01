@@ -8,6 +8,8 @@ const ContainerStyled = styled.div`
 	display: flex;
 	align-items: stretch;
 	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
 
 	${mediaMd} {
 		padding-left: 20px;

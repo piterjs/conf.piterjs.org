@@ -10,6 +10,7 @@ const BigButtonStyled = styled.button`
 	text-transform: uppercase;
 	font-size: 30px;
 	line-height: 1.1;
+	font-weight: 500;
 `;
 const BigButtonLinkStyled = BigButtonStyled.withComponent('a');
 //#endregion
@@ -19,8 +20,15 @@ interface BigButtonProps {
 		href: string;
 		target: string;
 	};
+	className?: string;
 }
 
-export const BigButton: FC<BigButtonProps> = memo(({link, children}) =>
-	link ? <BigButtonLinkStyled {...link}>{children}</BigButtonLinkStyled> : <BigButtonStyled>{children}</BigButtonStyled>,
+export const BigButton: FC<BigButtonProps> = memo(({link, children, className}) =>
+	link ? (
+		<BigButtonLinkStyled className={className} {...link}>
+			{children}
+		</BigButtonLinkStyled>
+	) : (
+		<BigButtonStyled className={className}>{children}</BigButtonStyled>
+	),
 );
