@@ -10,7 +10,8 @@ export const Global = () => (
 			${reset}
 			html {
 				${theme};
-				font-family: 'Oswald', sans-serif;
+				font-family: 'Montserrat', sans-serif;
+				color: var(--text-main);
 			}
 			html,
 			body,
@@ -41,6 +42,7 @@ export const Global = () => (
 			}
 			* {
 				font-size: 14px;
+				line-height: 1.08;
 			}
 			textarea {
 				padding: 0;

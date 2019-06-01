@@ -9,10 +9,12 @@ export interface DataTO {
 			city: string;
 			link: string;
 		};
+		about: string;
 	};
 }
 const DataTOIO = type({
 	event: type({
+		about: string,
 		date: string,
 		location: type({
 			address: string,

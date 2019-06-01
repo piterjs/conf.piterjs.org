@@ -40,7 +40,16 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-google-fonts`,
 			options: {
-				fonts: [`Oswald\:400,500,700&subset=cyrillic`],
+				fonts: [`Montserrat\:400,500,600,700&display=swap&subset=cyrillic`],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-emotion`,
+			options: {
+				sourceMap: false,
+				autoLabel: "process.env.NODE_ENV !== 'production'",
+				labelFormat: '[local]',
+				cssPropOptimization: true,
 			},
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
