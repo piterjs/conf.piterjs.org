@@ -13,6 +13,7 @@ const BlockHeadingStyled = styled.h2`
 
 	${mediaMd} {
 		font-size: 80px;
+		margin-left: 90px;
 	}
 `;
 //#endregion
