@@ -7,7 +7,7 @@ import {Speakers} from '../speakers/speakers.comonent';
 import {Sponsors} from '../sponsors/sponsors.component';
 import {Footer} from '../footer/footer.component';
 import {data} from '../../view-models/data.view-model';
-import {Tickets} from '../tickets/tickets.component';
+import {About} from '../about/about.component';
 
 export const Landing: FC = memo(() =>
 	data
@@ -15,7 +15,7 @@ export const Landing: FC = memo(() =>
 			<Fragment>
 				<Header data={data} />
 				<Promo data={data} />
-				<Tickets data={data} />
+				<About data={data} />
 				<Schedule data={data} />
 				<Speakers />
 				<Sponsors />
