@@ -4,112 +4,136 @@ import {Option} from 'fp-ts/lib/Option';
 import {createOptionFromNullable} from 'io-ts-types';
 import {PathReporter} from 'io-ts/lib/PathReporter';
 
-export interface DataTO {
-	articles: {
-		description: Option<string>;
-		id: string;
-		name: string;
-	}[];
-	event: {
-		articles: {
-			articleId: string;
-			speakerId: Option<string>;
-			time: string;
-		}[];
-		about: string;
-		date: string;
-		location: {
-			address: string;
-			city: string;
-			link: string;
-		};
-	};
-	speakers: {
-		about: string;
-		firstName: string;
-		id: string;
-		lastName: string;
-		photo: Option<{
-			alt: string;
-			src: string;
-		}>;
-		socials: {
-			link: string;
-			name: 'TWITTER' | 'GITHUB' | 'VK' | 'FACEBOOK';
-		}[];
-	}[];
+//#region Photo
+export interface PhotoTO {
+	alt: string;
+	src: string;
 }
-const DataTOIO = type({
-	articles: array(
-		type(
-			{
-				description: createOptionFromNullable(string, 'Description'),
-				id: string,
-				name: string,
-			},
-			'Article',
-		),
-		'Articles',
-	),
-	event: type(
-		{
-			about: string,
-			articles: array(
-				type(
-					{
-						articleId: string,
-						speakerId: createOptionFromNullable(string, 'OptionSpeakerId'),
-						time: string,
-					},
-					'Article',
-				),
-				'Articles',
-			),
-			date: string,
-			location: type(
-				{
-					address: string,
-					city: string,
-					link: string,
-				},
-				'Location',
-			),
-		},
-		'Event',
-	),
-	speakers: array(
-		type(
-			{
-				about: string,
-				firstName: string,
-				id: string,
-				lastName: string,
-				photo: createOptionFromNullable(
-					type(
-						{
-							alt: string,
-							src: string,
-						},
-						'OptionPhoto',
-					),
-					'Photo',
-				),
-				socials: array(
-					type(
-						{
-							link: string,
-							name: union([literal('TWITTER'), literal('GITHUB'), literal('VK'), literal('FACEBOOK')], 'Name'),
-						},
-						'Social',
-					),
-					'Socials',
-				),
-			},
-			'Speaker',
-		),
-		'Speakers',
-	),
-});
+const PhotoTOIO = type(
+	{
+		alt: string,
+		src: string,
+	},
+	'PhotoTOIO',
+);
+//#endregion
+//#region Article
+export interface ArticleTO {
+	description: Option<string>;
+	id: string;
+	name: string;
+}
+const ArticleTOIO = type(
+	{
+		description: createOptionFromNullable(string),
+		id: string,
+		name: string,
+	},
+	'ArticleTOIO',
+);
+//#endregion
+//#region EventArticle
+export interface EventArticleTO {
+	articleId: string;
+	speakerId: Option<string>;
+	time: string;
+}
+const EventArticleTOIO = type(
+	{
+		articleId: string,
+		speakerId: createOptionFromNullable(string, 'OptionSpeakerId'),
+		time: string,
+	},
+	'ArticleTOIO',
+);
+//#endregion
+//#region EventLocation
+export interface EventLocationTO {
+	address: string;
+	city: string;
+	link: string;
+}
+const EventLocationTOIO = type(
+	{
+		address: string,
+		city: string,
+		link: string,
+	},
+	'LocationTOIO',
+);
+//#endregion
+//#region Event
+export interface EventTO {
+	articles: EventArticleTO[];
+	about: string[];
+	date: string;
+	location: EventLocationTO;
+	photos: Option<PhotoTO[]>;
+}
+const EventTOIO = type(
+	{
+		about: array(string, 'about'),
+		articles: array(EventArticleTOIO, 'Articles'),
+		date: string,
+		location: EventLocationTOIO,
+		photos: createOptionFromNullable(array(PhotoTOIO, 'Photos'), 'Photos'),
+	},
+	'EventTOIO',
+);
+//#endregion
+//#region SpeakerSocialType
+export type SpeakerSocialTypeTO = 'TWITTER' | 'GITHUB' | 'VK' | 'FACEBOOK';
+const SpeakerSocialTypeTOIO = union([literal('TWITTER'), literal('GITHUB'), literal('VK'), literal('FACEBOOK')], 'SpeakerSocialTypeTOIO');
+//#endregion
+//#region SpeakerSocial
+export interface SpeakerSocialTO {
+	link: string;
+	name: SpeakerSocialTypeTO;
+}
+const SpeakerSocialTOIO = type(
+	{
+		link: string,
+		name: SpeakerSocialTypeTOIO,
+	},
+	'SocialTOIO',
+);
+//#endregion
+//#region Speaker
+export interface SpeakerTO {
+	about: string;
+	firstName: string;
+	id: string;
+	lastName: string;
+	photo: Option<PhotoTO>;
+	socials: SpeakerSocialTO[];
+}
+const SpeakerTOIO = type(
+	{
+		about: string,
+		firstName: string,
+		id: string,
+		lastName: string,
+		photo: createOptionFromNullable(PhotoTOIO, 'Photo'),
+		socials: array(SpeakerSocialTOIO, 'Socials'),
+	},
+	'SpeakerTOIO',
+);
+//#endregion
+//#region Date
+export interface DataTO {
+	articles: ArticleTO[];
+	event: EventTO;
+	speakers: SpeakerTO[];
+}
+const DataTOIO = type(
+	{
+		articles: array(ArticleTOIO, 'Articles'),
+		event: EventTOIO,
+		speakers: array(SpeakerTOIO, 'Speakers'),
+	},
+	'DataTOIO',
+);
+//#endregion
 
 export let data: Either<Error, DataTO> = left(new Error('No data yet'));
 fetch('/data.json')
