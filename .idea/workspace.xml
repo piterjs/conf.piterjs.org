@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="schedule base">
-      <change afterPath="$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" afterDir="false" />
+    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="about">
+      <change afterPath="$PROJECT_DIR$/src/ui/become/become.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/map/map.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/sponsors/sponsor/sponsor.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view-models/map.view-model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/speakers/speakers.comonent.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/sponsors/sponsors.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view-models/data.view-model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/view-models/data.view-model.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,31 +28,30 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="5" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="15" />
+          <entry key="JSON" value="18" />
           <entry key="JavaScript" value="17" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SVG" value="6" />
-          <entry key="TypeScript" value="36" />
-          <entry key="TypeScript JSX" value="67" />
+          <entry key="SVG" value="3" />
+          <entry key="TypeScript" value="43" />
+          <entry key="TypeScript JSX" value="65" />
           <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="742" />
+          <entry key="JSON" value="440" />
           <entry key="JavaScript" value="130" />
-          <entry key="Less" value="812" />
-          <entry key="PLAIN_TEXT" value="71" />
-          <entry key="TypeScript" value="2395" />
-          <entry key="TypeScript JSX" value="10131" />
+          <entry key="Less" value="680" />
+          <entry key="PLAIN_TEXT" value="68" />
+          <entry key="TypeScript" value="3529" />
+          <entry key="TypeScript JSX" value="8916" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -59,8 +64,7 @@
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
           <entry key="git.branch.create.new" value="4" />
-          <entry key="git.branch.delete.local" value="5" />
-          <entry key="git.branch.delete.remote" value="5" />
+          <entry key="git.branch.delete.local" value="2" />
           <entry key="git.branch.merge" value="1" />
         </counts>
       </usages-collector>
@@ -71,15 +75,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/map/map.component.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <element signature="e#341#357#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view-models/map.view-model.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -87,17 +99,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/landing/landing.component.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/promo/promo.component.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state relative-caret-position="180">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,7 +114,10 @@
     <findStrings>
       <find>mediaMid</find>
       <find>@media (min-width: 640px)</find>
-      <find>button</find>
+      <find>querystringify</find>
+      <find>repe</find>
+      <find>find</find>
+      <find>Sort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,12 +131,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/landing/landing.component.tsx" />
         <option value="$PROJECT_DIR$/src/components/logo/logo.component.tsx" />
         <option value="$PROJECT_DIR$/src/images/logo.svg" />
         <option value="$PROJECT_DIR$/typings/resources.d.ts" />
         <option value="$PROJECT_DIR$/src/images/index.ts" />
+        <option value="$PROJECT_DIR$/src/assets/index.ts" />
         <option value="$PROJECT_DIR$/src/components/icon/icon.component.tsx" />
         <option value="$PROJECT_DIR$/src/components/header/header.component.tsx" />
         <option value="$PROJECT_DIR$/src/pages/404.js" />
@@ -141,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/assets/logo.svg" />
         <option value="$PROJECT_DIR$/src/ui/header/header.component.tsx" />
         <option value="$PROJECT_DIR$/src/utils/function.utils.ts" />
+        <option value="$PROJECT_DIR$/src/theme.ts" />
         <option value="$PROJECT_DIR$/src/ui/header/menu-item/menu-item.component.tsx" />
         <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/ui/global/global.component.tsx" />
@@ -149,7 +159,7 @@
         <option value="$PROJECT_DIR$/src/ui/header/logo/logo.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/header/menu/menu.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/icon/icon.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/schedule/schedule.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/footer/footer.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/speakers/speakers.comonent.tsx" />
         <option value="$PROJECT_DIR$/src/ui/header/location/location.container.ts" />
@@ -159,20 +169,19 @@
         <option value="$PROJECT_DIR$/src/ui/header/location/location.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/global/global.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/promo/promo.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/schedule/schedule.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/schedule/tab/tab.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/ui-kit/block-heading/block-heading.component.tsx" />
+        <option value="$PROJECT_DIR$/src/utils/number.utils.ts" />
+        <option value="$PROJECT_DIR$/src/ui/ui-kit/gallery/gallery.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/about/about.component.tsx" />
         <option value="$PROJECT_DIR$/src/view-models/data.view-model.ts" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors.model.ts" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors.component.tsx" />
         <option value="$PROJECT_DIR$/public/data.json" />
-        <option value="$PROJECT_DIR$/src/assets/gh.svg" />
-        <option value="$PROJECT_DIR$/src/assets/twitter.svg" />
-        <option value="$PROJECT_DIR$/src/theme.ts" />
-        <option value="$PROJECT_DIR$/src/assets/index.ts" />
-        <option value="$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsor/sponsor.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/become/become.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/map/map.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" />
+        <option value="$PROJECT_DIR$/src/view-models/map.view-model.ts" />
       </list>
     </option>
   </component>
@@ -193,8 +202,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="1920" />
+    <option name="y" value="-792" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -217,6 +228,11 @@
             <path>
               <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
               <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -224,13 +240,6 @@
               <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
@@ -244,29 +253,13 @@
               <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="promo" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
               <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="schedule" type="462c0819:PsiDirectoryNode" />
-              <item name="article" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-kit" type="462c0819:PsiDirectoryNode" />
+              <item name="view-models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -276,7 +269,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="theme&#9;FILE&#9;file:///Users/akoshkin/projects/piter-js-conf/src/theme.ts&#10;app.js&#9;FILE&#9;file:///Users/akoshkin/projects/piter-js-conf/.cache/app.js" />
+    <property name="SearchEverywhereHistoryKey" value="app.js&#9;FILE&#9;file:///Users/akoshkin/projects/piter-js-conf/.cache/app.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -296,7 +289,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/ui/schedule/schedule" />
+      <recent name="$PROJECT_DIR$/src/ui/sponsors/sponsors" />
       <recent name="$PROJECT_DIR$/src/ui/ui-kit" />
       <recent name="$PROJECT_DIR$/src/ui/header/header" />
       <recent name="$PROJECT_DIR$/src/ui/header" />
@@ -324,7 +317,7 @@
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/landing/landing.component.tsx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/view-models/data.view-model.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -332,8 +325,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/about/about.component.tsx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/utils/number.utils.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -341,7 +333,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/tickets/tickets.component.tsx</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/ui/speakers/speakers.comonent.tsx</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -466,7 +458,7 @@
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="npm.develop" />
       </list>
     </recent_temporary>
   </component>
@@ -484,7 +476,7 @@
       <workItem from="1559060604116" duration="16315000" />
       <workItem from="1559150228720" duration="8191000" />
       <workItem from="1559237376305" duration="8734000" />
-      <workItem from="1560081671531" duration="6013000" />
+      <workItem from="1560684273583" duration="1941000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1559067610006</created>
@@ -546,7 +538,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52203000" />
+    <option name="totallyTimeSpent" value="48981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,25 +553,25 @@
     <frame x="1920" y="-792" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7300945" visible="true" weight="0.20379147" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7300945" visible="true" weight="0.20379147" />
       <window_info id="Structure" order="1" sideWeight="0.50057405" side_tool="true" weight="0.20379147" />
       <window_info id="npm" order="2" sideWeight="0.26990554" side_tool="true" visible="true" weight="0.20379147" />
       <window_info id="Favorites" order="3" sideWeight="0.5013477" side_tool="true" weight="0.20379147" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997367" weight="0.32971996" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49289098" weight="0.19150858" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49289098" visible="true" weight="0.24924012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4997367" weight="0.32971996" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32971996" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921012" weight="0.19783197" />
       <window_info anchor="bottom" id="GraphQL" order="9" sideWeight="0.4997367" weight="0.19963866" />
       <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.4997367" weight="0.2366757" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.507109" side_tool="true" visible="true" weight="0.24924012" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.507109" side_tool="true" visible="true" weight="0.24924012" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50394946" side_tool="true" weight="0.22312556" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49921012" weight="0.24390244" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49710375" visible="true" weight="0.21138212" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49710375" weight="0.21138212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -601,24 +593,9 @@
     <MESSAGE value="decompose" />
     <MESSAGE value="json data" />
     <MESSAGE value="promo base" />
-    <MESSAGE value="schedule base" />
-    <option name="LAST_COMMIT_MESSAGE" value="schedule base" />
+    <option name="LAST_COMMIT_MESSAGE" value="promo base" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/layout.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/image.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typings/resources.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -655,9 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,6 +653,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
           <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -706,13 +687,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/container/container.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,14 +722,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsors.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <caret line="3" column="86" selection-start-line="3" selection-start-column="86" selection-end-line="3" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule.component.tsx" />
     <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/icon/icon.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -778,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/big-button/big-button.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/global/global.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -813,121 +784,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/schedule/tab/tab.component.tsx" />
-    <entry file="file://$PROJECT_DIR$/node_modules/io-ts/lib/Reporter.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/github.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/twitter.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-models/data.view-model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/css.utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/block-heading/block-heading.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/promo/promo.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/landing/landing.component.tsx">
+    <entry file="file://$PROJECT_DIR$/src/utils/number.utils.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+        <state>
+          <caret column="98" selection-start-column="98" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/gallery/gallery.component.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/utils/css.utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/about/about.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
+        <state relative-caret-position="240">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx">
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
+        <state relative-caret-position="238">
+          <caret line="1331" column="4" selection-start-line="1331" selection-start-column="4" selection-end-line="1331" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Array.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="644" column="25" selection-start-line="644" selection-start-column="21" selection-end-line="644" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="137" column="21" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="21" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#16#681#0" />
+            <element signature="e#697#1311#0" />
+            <element signature="n#!!block;n#event#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Ordering.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fp-ts/lib/Ord.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="87" column="69" selection-start-line="87" selection-start-column="69" selection-end-line="87" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsor/sponsor.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="44" column="1" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="76" column="3" lean-forward="true" selection-start-line="76" selection-start-column="3" selection-end-line="76" selection-end-column="3" />
+        <state relative-caret-position="445">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#341#357#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/big-button/big-button.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/become/become.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="15" />
+          <folding>
+            <element signature="e#17#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-models/data.view-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
+          <folding>
+            <element signature="e#255#270#0" />
+            <element signature="e#353#387#0" />
+            <element signature="e#419#436#0" />
+            <element signature="e#670#692#0" />
+            <element signature="e#965#988#0" />
+            <element signature="e#1197#1212#0" />
+            <element signature="e#1385#1592#0" />
+            <element signature="e#1624#1651#0" />
+            <element signature="e#1880#1903#0" />
+            <element signature="e#2101#2118#0" />
+            <element signature="e#2512#2534#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/map/map.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/landing/landing.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-models/map.view-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

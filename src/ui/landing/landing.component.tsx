@@ -3,11 +3,15 @@ import * as React from 'react';
 import {Header} from '../header/header/header.component';
 import {Promo} from '../promo/promo.component';
 import {Schedule} from '../schedule/schedule/schedule.component';
-import {Sponsors} from '../sponsors/sponsors.component';
+import {Sponsors} from '../sponsors/sponsors/sponsors.component';
 import {Footer} from '../footer/footer.component';
 import {data} from '../../view-models/data.view-model';
 import {About} from '../about/about.component';
-import {BecomeASpeaker} from '../become-a-speaker/become-a-speaker.component';
+import {Become} from '../become/become.component';
+import {run} from '../../view-models/map.view-model';
+
+// run map
+run();
 
 export const Landing: FC = memo(() =>
 	data
@@ -17,8 +21,9 @@ export const Landing: FC = memo(() =>
 				<Promo data={data} />
 				<About data={data} />
 				<Schedule data={data} />
-				<BecomeASpeaker />
-				<Sponsors />
+				<Become who={'Speaker'} buttonText={'Submit a Talk'} />
+				<Sponsors data={data} />
+				<Become who={'Sponsor'} buttonText={'Contact Us for Details'} />
 				<Footer />
 			</Fragment>
 		))

@@ -119,17 +119,41 @@ const SpeakerTOIO = type(
 	'SpeakerTOIO',
 );
 //#endregion
-//#region Date
+//#region SponsorLevel
+export type SponsorLevelTO = 'BRONZE' | 'SILVER' | 'GOLD' | 'PLATINUM';
+const SponsorLevelTOIO = union([literal('BRONZE'), literal('SILVER'), literal('GOLD'), literal('PLATINUM')], 'SponsorLevelTOIO');
+//#endregion
+//#region Sponsor
+export interface SponsorTO {
+	image: string;
+	level: SponsorLevelTO;
+	link: string;
+	name: string;
+}
+const SponsorTOIO = type(
+	{
+		image: string,
+		level: SponsorLevelTOIO,
+		link: string,
+		name: string,
+	},
+	'SponsorTO',
+);
+//#endregion
+
+//#region Data
 export interface DataTO {
 	articles: ArticleTO[];
 	event: EventTO;
 	speakers: SpeakerTO[];
+	sponsors: SponsorTO[];
 }
 const DataTOIO = type(
 	{
 		articles: array(ArticleTOIO, 'Articles'),
 		event: EventTOIO,
 		speakers: array(SpeakerTOIO, 'Speakers'),
+		sponsors: array(SponsorTOIO, 'sponsors'),
 	},
 	'DataTOIO',
 );
