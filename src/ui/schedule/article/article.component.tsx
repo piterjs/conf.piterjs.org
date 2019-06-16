@@ -49,7 +49,7 @@ const TitleStyled = styled.h3`
 		font-size: 30px;
 	}
 `;
-const TogglerStyled = styled.button`
+const TogglerStyled = styled.button<{isOn: boolean}>`
 	border: 3px solid var(--yellow);
 	margin-left: auto;
 	width: 50px;
@@ -67,9 +67,9 @@ const TogglerStyled = styled.button`
 		transform-origin: center center;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%) rotate(45deg);
+		transform: translate(-50%, -50%) rotate(${({isOn}) => (isOn ? -135 : 45)}deg);
 		position: absolute;
-		margin-top: -3px;
+		margin-top: ${({isOn}) => (isOn ? 4 : -3)}px;
 	}
 `;
 const NameStyled = styled.div`
@@ -181,7 +181,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 				{speaker
 					.map(speaker => (
 						<Fragment>
-							<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} />
+							<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} />
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
 							</NameStyled>
