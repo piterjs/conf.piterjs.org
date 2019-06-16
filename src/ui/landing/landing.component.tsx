@@ -8,10 +8,6 @@ import {Footer} from '../footer/footer.component';
 import {data} from '../../view-models/data.view-model';
 import {About} from '../about/about.component';
 import {Become} from '../become/become.component';
-import {run} from '../../view-models/map.view-model';
-
-// run map
-run();
 
 export const Landing: FC = memo(() =>
 	data
