@@ -1,14 +1,12 @@
-import {memo} from 'react';
-import styled from '@emotion/styled';
-import * as React from 'react';
-import {Container} from '../ui-kit/container/container.component';
-import {BigButton} from '../ui-kit/big-button/big-button.component';
-import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
-
-const mainPhrase = 'Become a Speaker';
-
 //#region styled
-const BecomeASpeakerStyled = styled.section`
+import styled from '@emotion/styled';
+import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
+import {BigButton} from '../ui-kit/big-button/big-button.component';
+import {memo} from 'react';
+import {Container} from '../ui-kit/container/container.component';
+import * as React from 'react';
+
+const BecomeStyled = styled.section`
 	padding: 35px 0;
 	background-color: var(--purpur);
 
@@ -54,24 +52,36 @@ const TitleStyled = styled.h2`
 		font-size: 80px;
 	}
 `;
-const BigButtonStyled = styled(BigButton)`
+const BigButtonStyled = styled(BigButton)<{who: string}>`
+	font-size: 0;
+
+	${mediaMd} {
+		font-size: 30px;
+	}
+
 	&:before {
-		content: '${mainPhrase}';
+		content: 'Become a ${({who}) => who}';
+		font-size: 30px;
 
 		${mediaMd} {
-			content: 'Submit a Talk';
+			content: none;
 		}
 	}
 `;
 //#endregion
 
-export const BecomeASpeaker = memo(({}) => (
-	<BecomeASpeakerStyled>
+interface BecomeProps {
+	who: string;
+	buttonText: string;
+}
+
+export const Become = memo<BecomeProps>(({who, buttonText}) => (
+	<BecomeStyled>
 		<Container>
 			<ContentStyled>
-				<TitleStyled>{mainPhrase}</TitleStyled>
-				<BigButtonStyled />
+				<TitleStyled>Become a {who}</TitleStyled>
+				<BigButtonStyled who={who}>{buttonText}</BigButtonStyled>
 			</ContentStyled>
 		</Container>
-	</BecomeASpeakerStyled>
+	</BecomeStyled>
 ));
