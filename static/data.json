@@ -1,0 +1,144 @@
+{
+  "speakers": [
+    {
+      "id": "speaker0",
+      "firstName": "Cynthia",
+      "lastName": "Rothrock",
+      "photo": {
+        "src": "https://placekitten.com/500/500",
+        "alt": "kitty"
+      },
+      "about": "The main topic of this talk is a short introduction to Storybook.js, JavaScript library that allows us to create independent and interactive UX components from already existing ones, developed in frameworks such as Angular, React or Vue. Reusing the components, we create an isolated environment that can be shared within the organization.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "google.com"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "schedule0",
+      "name": "doors open"
+    },
+    {
+      "id": "schedule1",
+      "name": "opening ceremony"
+    },
+    {
+      "id": "schedule2",
+      "name": "Pause"
+    },
+    {
+      "id": "schedule3",
+      "name": "opening ceremony"
+    },
+    {
+      "id": "article0",
+      "name": "Bridging the gap between UX",
+      "description": "The main topic of this talk is a short introduction to Storybook.js, JavaScript library that allows us to create independent and interactive UX components from already existing ones, developed in frameworks such as Angular, React or Vue."
+    }
+  ],
+  "event": {
+    "date": "7 september 2019",
+    "location": {
+      "address": "Obvodniy Kanal quya, 60,",
+      "city": "Saint-Petersburg",
+      "link": "https://goo.gl/maps/ssfxoWUpFyWhXH8s8"
+    },
+    "about": [
+      "The main topic of this talk is a short introduction to Storybook.js, JavaScript library that allows us to create independent and interactive UX components from already existing ones, developed in frameworks such as Angular,",
+      "The main topic of this talk is a short introduction to Storybook.js, JavaScript library that allows us to create independent and interactive UX components from already existing ones, developed in frameworks such as Angular,"
+    ],
+    "photos": [
+      {
+        "src": "http://thiscatdoesnotexist.com",
+        "alt": "photo"
+      },
+      {
+        "src": "http://thiscatdoesnotexist.com",
+        "alt": "photo"
+      },
+      {
+        "src": "http://thiscatdoesnotexist.com",
+        "alt": "photo"
+      },
+      {
+        "src": "http://thiscatdoesnotexist.com",
+        "alt": "photo"
+      },
+      {
+        "src": "http://thiscatdoesnotexist.com",
+        "alt": "photo"
+      }
+    ],
+    "articles": [
+      {
+        "articleId": "schedule0",
+        "time": "10:00"
+      },
+      {
+        "articleId": "schedule1",
+        "time": "11:00"
+      },
+      {
+        "articleId": "article0",
+        "speakerId": "speaker0",
+        "time": "12:00"
+      },
+      {
+        "articleId": "schedule2",
+        "time": "13:00"
+      },
+      {
+        "articleId": "schedule3",
+        "time": "14:00"
+      }
+    ]
+  },
+  "sponsors": [
+    {
+      "name": "Гугол1",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "PLATINUM"
+    },
+    {
+      "name": "Гугол2",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "BRONZE"
+    },
+    {
+      "name": "Гугол3",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "PLATINUM"
+    },
+    {
+      "name": "Гугол4",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "BRONZE"
+    },
+    {
+      "name": "Гугол5",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "PLATINUM"
+    },
+    {
+      "name": "Гугол6",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "BRONZE"
+    },
+    {
+      "name": "Гугол7",
+      "link": "https://google.com",
+      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "level": "SILVER"
+    }
+  ]
+}
