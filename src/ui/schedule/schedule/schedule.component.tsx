@@ -6,6 +6,7 @@ import {Container} from '../../ui-kit/container/container.component';
 import {BlockHeading} from '../../ui-kit/block-heading/block-heading.component';
 import {Article} from '../article/article.component';
 import {findFirst} from 'fp-ts/lib/Array';
+import {ComingOut} from '../../coming-out/coming-out.component';
 
 //#region styled
 const ScheduleStyled = styled.section``;
@@ -19,25 +20,22 @@ interface ScheduleProps {
 	data: DataTO;
 }
 
-export const Schedule: FC<ScheduleProps> = memo(({className, data}) => (
-	<ScheduleStyled>
-		<Container>
-			<BlockHeadingStyled>Schedule</BlockHeadingStyled>
-			{data.event.articles.map(article => {
-				const speech = findFirst(data.articles, item => item.id === article.articleId);
-				const speaker = article.speakerId.chain(speakerId => findFirst(data.speakers, speaker => speaker.id === speakerId));
-				return speech
-					.map(speech => (
-						<Article
-							key={speech.id}
-							time={article.time}
-							title={speech.name}
-							description={speech.description}
-							speaker={speaker}
-						/>
-					))
-					.toNullable();
-			})}
-		</Container>
-	</ScheduleStyled>
-));
+export const Schedule: FC<ScheduleProps> = memo(({className, data}) => {
+	const futureData = data.event.articles.map(article => {
+		const speech = findFirst(data.articles, item => item.id === article.articleId);
+		const speaker = article.speakerId.chain(speakerId => findFirst(data.speakers, speaker => speaker.id === speakerId));
+		return speech
+			.map(speech => (
+				<Article key={speech.id} time={article.time} title={speech.name} description={speech.description} speaker={speaker} />
+			))
+			.toNullable();
+	});
+	return (
+		<ScheduleStyled>
+			<Container>
+				<BlockHeadingStyled>Schedule</BlockHeadingStyled>
+				<ComingOut />
+			</Container>
+		</ScheduleStyled>
+	);
+});
