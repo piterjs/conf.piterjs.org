@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="schedule base">
-      <change afterPath="$PROJECT_DIR$/static/data.json" afterDir="false" />
+    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="coming coon">
+      <change afterPath="$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +19,11 @@
     <session id="1927326834">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -31,8 +32,8 @@
           <entry key="JavaScript" value="17" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SVG" value="6" />
-          <entry key="TypeScript" value="36" />
-          <entry key="TypeScript JSX" value="67" />
+          <entry key="TypeScript" value="37" />
+          <entry key="TypeScript JSX" value="70" />
           <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
@@ -40,22 +41,22 @@
         <counts>
           <entry key="JSON" value="742" />
           <entry key="JavaScript" value="130" />
-          <entry key="Less" value="812" />
-          <entry key="PLAIN_TEXT" value="71" />
+          <entry key="Less" value="844" />
+          <entry key="PLAIN_TEXT" value="95" />
           <entry key="TypeScript" value="2395" />
-          <entry key="TypeScript JSX" value="10131" />
+          <entry key="TypeScript JSX" value="10469" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
           <entry key="ESLintLanguageService" value="2" />
-          <entry key="TsLintLanguageService" value="4" />
-          <entry key="TypeScriptServerServiceImpl" value="5" />
+          <entry key="TsLintLanguageService" value="5" />
+          <entry key="TypeScriptServerServiceImpl" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.create.new" value="4" />
+          <entry key="git.branch.create.new" value="5" />
           <entry key="git.branch.delete.local" value="6" />
           <entry key="git.branch.delete.remote" value="5" />
           <entry key="git.branch.merge" value="2" />
@@ -67,12 +68,36 @@
     <favorites_list name="piter-js-conf" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="278">
               <caret line="58" column="5" selection-start-line="58" selection-end-line="58" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,14 +115,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="sponsors" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/landing/landing.component.tsx" />
         <option value="$PROJECT_DIR$/src/components/logo/logo.component.tsx" />
         <option value="$PROJECT_DIR$/src/images/logo.svg" />
@@ -144,10 +168,11 @@
         <option value="$PROJECT_DIR$/src/theme.ts" />
         <option value="$PROJECT_DIR$/src/assets/index.ts" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" />
       </list>
     </option>
   </component>
@@ -179,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,13 +215,18 @@
             <path>
               <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
               <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,17 +249,17 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/ui" />
-      <recent name="$PROJECT_DIR$/src/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/src/ui/schedule/schedule" />
       <recent name="$PROJECT_DIR$/src/ui/ui-kit" />
       <recent name="$PROJECT_DIR$/src/ui/header/header" />
       <recent name="$PROJECT_DIR$/src/ui/header" />
-      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/ui" />
+      <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -270,8 +301,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.develop" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.develop" />
@@ -293,7 +324,8 @@
       <workItem from="1559150228720" duration="8191000" />
       <workItem from="1559237376305" duration="8734000" />
       <workItem from="1560081671531" duration="6013000" />
-      <workItem from="1560803602018" duration="264000" />
+      <workItem from="1560803602018" duration="351000" />
+      <workItem from="1561046719771" duration="1093000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1559067610006</created>
@@ -351,11 +383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559247047418</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="data.json fix">
+      <created>1560803885880</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560803885880</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53139000" />
+    <option name="totallyTimeSpent" value="54319000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,13 +409,13 @@
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72875816" visible="true" weight="0.20379147" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7273769" visible="true" weight="0.20379147" />
       <window_info id="Structure" order="1" sideWeight="0.50057405" side_tool="true" weight="0.20379147" />
-      <window_info active="true" id="npm" order="2" sideWeight="0.27124184" side_tool="true" visible="true" weight="0.20379147" />
+      <window_info id="npm" order="2" sideWeight="0.27262315" side_tool="true" visible="true" weight="0.20379147" />
       <window_info id="Favorites" order="3" sideWeight="0.5013477" side_tool="true" weight="0.20379147" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997367" weight="0.32971996" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4918378" visible="true" weight="0.17073171" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49131122" weight="0.17073171" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -385,10 +424,10 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921012" weight="0.19783197" />
       <window_info anchor="bottom" id="GraphQL" order="9" sideWeight="0.4997367" weight="0.19963866" />
       <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.4997367" weight="0.2366757" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.5081622" side_tool="true" visible="true" weight="0.17073171" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.50342286" side_tool="true" visible="true" weight="0.21138212" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50394946" side_tool="true" weight="0.22312556" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49921012" weight="0.24390244" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49710375" visible="true" weight="0.21138212" />
+      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49657714" visible="true" weight="0.21138212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -437,10 +476,11 @@
     <MESSAGE value="json data" />
     <MESSAGE value="promo base" />
     <MESSAGE value="schedule base" />
-    <option name="LAST_COMMIT_MESSAGE" value="schedule base" />
+    <MESSAGE value="data.json fix" />
+    <MESSAGE value="coming coon" />
+    <option name="LAST_COMMIT_MESSAGE" value="coming coon" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/layout.js" />
     <entry file="file://$PROJECT_DIR$/src/components/image.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -637,13 +677,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/twitter.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/theme.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view-models/data.view-model.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -686,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/promo/promo.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -726,6 +752,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="58" column="5" selection-start-line="58" selection-end-line="58" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
