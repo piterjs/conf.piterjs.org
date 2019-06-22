@@ -41,7 +41,7 @@ const TitleStyled = styled.h1`
 //#endregion
 
 export const Promo: FC<{data: DataTO}> = memo(({data}) => (
-	<PromoStyled>
+	<PromoStyled id={'promo'}>
 		<Container>
 			<ContentStyled>
 				<DateStyled>{data.event.date}</DateStyled>

@@ -81,19 +81,31 @@ const EventTOIO = type(
 	'EventTOIO',
 );
 //#endregion
-//#region SpeakerSocialType
-export type SpeakerSocialTypeTO = 'TWITTER' | 'GITHUB' | 'VK' | 'FACEBOOK';
-const SpeakerSocialTypeTOIO = union([literal('TWITTER'), literal('GITHUB'), literal('VK'), literal('FACEBOOK')], 'SpeakerSocialTypeTOIO');
+//#region SocialType
+export type SocialTypeTO = 'FACEBOOK' | 'GOOGLE' | 'GITHUB' | 'LINKED_IN' | 'TELEGRAM' | 'TWITTER' | 'VK' | 'OK';
+const SocialTypeTOIO = union(
+	[
+		literal('FACEBOOK'),
+		literal('GOOGLE'),
+		literal('GITHUB'),
+		literal('LINKED_IN'),
+		literal('TELEGRAM'),
+		literal('TWITTER'),
+		literal('VK'),
+		literal('OK'),
+	],
+	'SocialTypeTOIO',
+);
 //#endregion
-//#region SpeakerSocial
-export interface SpeakerSocialTO {
+//#region Social
+export interface SocialTO {
 	link: string;
-	name: SpeakerSocialTypeTO;
+	name: SocialTypeTO;
 }
-const SpeakerSocialTOIO = type(
+const SocialTOIO = type(
 	{
 		link: string,
-		name: SpeakerSocialTypeTOIO,
+		name: SocialTypeTOIO,
 	},
 	'SocialTOIO',
 );
@@ -105,7 +117,7 @@ export interface SpeakerTO {
 	id: string;
 	lastName: string;
 	photo: Option<PhotoTO>;
-	socials: SpeakerSocialTO[];
+	socials: SocialTO[];
 }
 const SpeakerTOIO = type(
 	{
@@ -114,7 +126,7 @@ const SpeakerTOIO = type(
 		id: string,
 		lastName: string,
 		photo: createOptionFromNullable(PhotoTOIO, 'Photo'),
-		socials: array(SpeakerSocialTOIO, 'Socials'),
+		socials: array(SocialTOIO, 'Socials'),
 	},
 	'SpeakerTOIO',
 );
@@ -140,11 +152,23 @@ const SponsorTOIO = type(
 	'SponsorTO',
 );
 //#endregion
+//#region PiterJS
+export interface PiterJSTO {
+	socials: SocialTO[];
+}
+const PiterJSTOIO = type(
+	{
+		socials: array(SocialTOIO),
+	},
+	'PiterJSTOIO',
+);
+//#endregion
 
 //#region Data
 export interface DataTO {
 	articles: ArticleTO[];
 	event: EventTO;
+	piterjs: PiterJSTO;
 	speakers: SpeakerTO[];
 	sponsors: SponsorTO[];
 }
@@ -152,6 +176,7 @@ const DataTOIO = type(
 	{
 		articles: array(ArticleTOIO, 'Articles'),
 		event: EventTOIO,
+		piterjs: PiterJSTOIO,
 		speakers: array(SpeakerTOIO, 'Speakers'),
 		sponsors: array(SponsorTOIO, 'sponsors'),
 	},
