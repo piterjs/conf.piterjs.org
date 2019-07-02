@@ -76,7 +76,7 @@ interface BecomeProps {
 }
 
 export const Become = memo<BecomeProps>(({who, buttonText}) => (
-	<BecomeStyled>
+	<BecomeStyled id={`become_a_${who.toLowerCase()}`}>
 		<Container>
 			<ContentStyled>
 				<TitleStyled>Become a {who}</TitleStyled>

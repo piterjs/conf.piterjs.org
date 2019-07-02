@@ -31,7 +31,7 @@ export const Schedule: FC<ScheduleProps> = memo(({className, data}) => {
 			.toNullable();
 	});
 	return (
-		<ScheduleStyled>
+		<ScheduleStyled id={'schedule'}>
 			<Container>
 				<BlockHeadingStyled>Schedule</BlockHeadingStyled>
 				<ComingOut />

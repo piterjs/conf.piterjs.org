@@ -73,7 +73,7 @@ interface SponsorsProps {
 }
 
 export const Sponsors = memo<SponsorsProps>(({className, data}) => (
-	<SponsorsStyled>
+	<SponsorsStyled id={'sponsors'}>
 		<Container>
 			<ContentStyled>
 				<BlockHeadingStyled>Sponsors</BlockHeadingStyled>

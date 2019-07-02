@@ -1,4 +1,182 @@
 import {FC, memo} from 'react';
 import * as React from 'react';
+import styled from '@emotion/styled';
+import {Container} from '../ui-kit/container/container.component';
+import {BigButton} from '../ui-kit/big-button/big-button.component';
+import {Menu} from '../menu/menu/menu.component';
+import {MenuItem} from '../menu/menu-item/menu-item.component';
+import {Social} from '../ui-kit/social/social.component';
+import {DataTO} from '../../view-models/data.view-model';
+import {mediaMd} from '../../utils/css.utils';
 
-export const Footer: FC<{className?: string}> = memo(({className}) => <footer>Footer</footer>);
+const breakpoint = '@media (min-width: 940px)';
+
+//#region styled
+const FooterStyled = styled.footer`
+	background-color: var(--purpur);
+	padding-top: 50px;
+	padding-bottom: 30px;
+`;
+const ContentStyled = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	@media (min-width: 940px) {
+		display: grid;
+		grid-template-columns: auto 154px 1fr auto;
+		grid-template-rows: 30px repeat(2, auto);
+		grid-column-gap: 15px;
+	}
+`;
+const TitleStyled = styled.h4`
+	display: none;
+	font-size: 24px;
+	color: var(--white);
+
+	${breakpoint} {
+		display: block;
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+	}
+`;
+const EmailStyled = styled.input`
+	border-bottom: 1px solid var(--gray);
+	padding: 8px 0;
+	color: var(--white);
+	margin-bottom: 20px;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	${breakpoint} {
+		margin-bottom: 0;
+	}
+`;
+const NotifyMeStyled = styled(BigButton)`
+	color: var(--gray);
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+
+	${breakpoint} {
+		padding-left: 0;
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+`;
+const MenuStyled = styled(Menu)`
+	margin-bottom: 70px;
+
+	${mediaMd} {
+		background: none;
+	}
+
+	${breakpoint} {
+		display: flex;
+		justify-content: flex-end;
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		margin-bottom: 0;
+		align-items: flex-start;
+	}
+`;
+const MenuItemStyled = styled(MenuItem)`
+	border: none;
+	color: var(--gray);
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 500;
+
+	${breakpoint} {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+`;
+const SocialsStyled = styled.div`
+	margin-bottom: 70px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 40px;
+
+	${breakpoint} {
+		display: flex;
+		justify-content: flex-end;
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		margin-bottom: 0;
+		grid-row-gap: 0;
+	}
+`;
+const SocialStyled = styled(Social)`
+	& > i > svg {
+		width: 25px;
+		height: 25px;
+
+		${breakpoint} {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	& + & {
+		${breakpoint} {
+			margin-left: 35px;
+		}
+	}
+`;
+const CopyStyled = styled.div`
+	color: var(--gray);
+	text-align: center;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+
+	${breakpoint} {
+		margin-top: 35px;
+		text-align: left;
+	}
+`;
+//#endregion
+
+interface FooterProps {
+	className?: string;
+	data: DataTO;
+}
+
+export const Footer: FC<FooterProps> = memo(({className, data}) => (
+	<FooterStyled className={className}>
+		<Container>
+			<ContentStyled>
+				<TitleStyled>Be the first to know</TitleStyled>
+				<EmailStyled type={'email'} placeholder={'example@gmail.com'} />
+				<NotifyMeStyled>Notify Me</NotifyMeStyled>
+				<MenuStyled>
+					<MenuItemStyled href={'#tickets'}>Tickets</MenuItemStyled>
+					<MenuItemStyled href={'#schedule'}>Schedule</MenuItemStyled>
+					<MenuItemStyled href={'#sponsors'}>Sponsors</MenuItemStyled>
+					<MenuItemStyled href={'#about'}>About</MenuItemStyled>
+				</MenuStyled>
+				<SocialsStyled>
+					{data.piterjs.socials.map(social => (
+						<SocialStyled type={social.name} link={social.link} key={`${social.name}=${social.link}`} isFooter />
+					))}
+				</SocialsStyled>
+				<CopyStyled>Ⓒ 2019 PiterJS Conf</CopyStyled>
+			</ContentStyled>
+		</Container>
+	</FooterStyled>
+));

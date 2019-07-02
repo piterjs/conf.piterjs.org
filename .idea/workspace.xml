@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="coming coon">
-      <change afterPath="$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx" afterDir="false" />
+    <list default="true" id="98cc5179-e005-4e3c-ae06-1aef8157af71" name="Default Changelist" comment="footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/footer/footer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/footer/footer.component.tsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +18,7 @@
     <session id="1927326834">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -28,23 +27,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="15" />
+          <entry key="JSON" value="16" />
           <entry key="JavaScript" value="17" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SVG" value="6" />
-          <entry key="TypeScript" value="37" />
-          <entry key="TypeScript JSX" value="70" />
+          <entry key="SVG" value="13" />
+          <entry key="TypeScript" value="42" />
+          <entry key="TypeScript JSX" value="92" />
           <entry key="tsconfig" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="742" />
+          <entry key="JSON" value="848" />
           <entry key="JavaScript" value="130" />
-          <entry key="Less" value="844" />
-          <entry key="PLAIN_TEXT" value="95" />
-          <entry key="TypeScript" value="2395" />
-          <entry key="TypeScript JSX" value="10469" />
+          <entry key="Less" value="1034" />
+          <entry key="PLAIN_TEXT" value="101" />
+          <entry key="TypeScript" value="2769" />
+          <entry key="TypeScript JSX" value="12341" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -56,7 +55,7 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.create.new" value="5" />
+          <entry key="git.branch.create.new" value="6" />
           <entry key="git.branch.delete.local" value="6" />
           <entry key="git.branch.delete.remote" value="5" />
           <entry key="git.branch.merge" value="2" />
@@ -68,35 +67,23 @@
     <favorites_list name="piter-js-conf" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="58" column="5" selection-start-line="58" selection-end-line="58" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
+        <entry file="file://$PROJECT_DIR$/src/ui/footer/footer.component.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+            <state relative-caret-position="126">
+              <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#4#84#0" />
+                <element signature="e#4#236#0" />
+                <element signature="e#4#192#0" />
+                <element signature="e#4#234#0" />
+                <element signature="e#4#277#0" />
+                <element signature="e#4#278#0" />
+                <element signature="e#4#170#0" />
+                <element signature="e#4#302#0" />
+                <element signature="e#4#196#0" />
               </folding>
             </state>
           </provider>
@@ -122,20 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/landing/landing.component.tsx" />
-        <option value="$PROJECT_DIR$/src/components/logo/logo.component.tsx" />
-        <option value="$PROJECT_DIR$/src/images/logo.svg" />
-        <option value="$PROJECT_DIR$/typings/resources.d.ts" />
-        <option value="$PROJECT_DIR$/src/images/index.ts" />
-        <option value="$PROJECT_DIR$/src/components/icon/icon.component.tsx" />
-        <option value="$PROJECT_DIR$/src/components/header/header.component.tsx" />
-        <option value="$PROJECT_DIR$/src/pages/404.js" />
-        <option value="$PROJECT_DIR$/src/pages/page-2.js" />
-        <option value="$PROJECT_DIR$/src/pages/index.js" />
-        <option value="$PROJECT_DIR$/src/utils/types.utils.ts" />
-        <option value="$PROJECT_DIR$/src/ui/burger-menu/burger-menu.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/burger/burger.component.tsx" />
-        <option value="$PROJECT_DIR$/.prettierrc" />
         <option value="$PROJECT_DIR$/src/ui/menu/menu.component.tsx" />
         <option value="$PROJECT_DIR$/src/assets/logo.svg" />
         <option value="$PROJECT_DIR$/src/ui/header/header.component.tsx" />
@@ -149,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/ui/header/menu/menu.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/icon/icon.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/footer/footer.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/speakers/speakers.comonent.tsx" />
         <option value="$PROJECT_DIR$/src/ui/header/location/location.container.ts" />
         <option value="$PROJECT_DIR$/src/utils/either.utils.ts" />
@@ -157,22 +129,37 @@
         <option value="$PROJECT_DIR$/src/ui/header/header/header.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/header/location/location.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/global/global.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/promo/promo.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/schedule/schedule.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/schedule/tab/tab.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/ui-kit/block-heading/block-heading.component.tsx" />
-        <option value="$PROJECT_DIR$/src/view-models/data.view-model.ts" />
         <option value="$PROJECT_DIR$/public/data.json" />
         <option value="$PROJECT_DIR$/src/assets/gh.svg" />
         <option value="$PROJECT_DIR$/src/assets/twitter.svg" />
         <option value="$PROJECT_DIR$/src/theme.ts" />
-        <option value="$PROJECT_DIR$/src/assets/index.ts" />
-        <option value="$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/about/about.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/become/become.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/promo/promo.component.tsx" />
         <option value="$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsor/sponsor.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/footer/footer/footer.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/footer/social/social.component.tsx" />
+        <option value="$PROJECT_DIR$/src/assets/twitter-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/facebook-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/telegram-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/vk-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/google-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/linkedin-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/ok-footer.svg" />
+        <option value="$PROJECT_DIR$/src/assets/index.ts" />
+        <option value="$PROJECT_DIR$/static/data.json" />
+        <option value="$PROJECT_DIR$/src/view-models/data.view-model.ts" />
+        <option value="$PROJECT_DIR$/src/ui/landing/landing.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/footer/footer.component.tsx" />
       </list>
     </option>
   </component>
@@ -192,7 +179,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
@@ -204,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,10 +209,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="piter-js-conf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="piter-js-conf" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,17 +248,17 @@
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/src/ui/schedule/schedule" />
-      <recent name="$PROJECT_DIR$/src/ui/ui-kit" />
-      <recent name="$PROJECT_DIR$/src/ui/header/header" />
-      <recent name="$PROJECT_DIR$/src/ui/header" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/ui" />
       <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui/footer" />
+      <recent name="$PROJECT_DIR$/src/ui/footer/footer" />
+      <recent name="$PROJECT_DIR$/src/ui/menu" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/ui/schedule/schedule" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,9 +302,9 @@
       <list>
         <item itemvalue="npm.develop" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.develop" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.develop" />
-        <item itemvalue="npm.develop" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -394,7 +393,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54319000" />
+    <option name="totallyTimeSpent" value="61320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -409,13 +408,13 @@
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7273769" visible="true" weight="0.20379147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7200436" visible="true" weight="0.11795682" />
       <window_info id="Structure" order="1" sideWeight="0.50057405" side_tool="true" weight="0.20379147" />
-      <window_info id="npm" order="2" sideWeight="0.27262315" side_tool="true" visible="true" weight="0.20379147" />
+      <window_info id="npm" order="2" sideWeight="0.27995643" side_tool="true" visible="true" weight="0.11795682" />
       <window_info id="Favorites" order="3" sideWeight="0.5013477" side_tool="true" weight="0.20379147" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4997367" weight="0.32971996" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49131122" weight="0.17073171" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49078462" visible="true" weight="0.17073171" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,10 +423,10 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49921012" weight="0.19783197" />
       <window_info anchor="bottom" id="GraphQL" order="9" sideWeight="0.4997367" weight="0.19963866" />
       <window_info anchor="bottom" id="TypeScript" order="10" sideWeight="0.4997367" weight="0.2366757" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.50342286" side_tool="true" visible="true" weight="0.21138212" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.50921535" side_tool="true" visible="true" weight="0.17073171" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50394946" side_tool="true" weight="0.22312556" />
       <window_info anchor="bottom" id="SVN Repositories" order="13" sideWeight="0.49921012" weight="0.24390244" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49657714" visible="true" weight="0.21138212" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49657714" weight="0.21138212" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -478,70 +477,10 @@
     <MESSAGE value="schedule base" />
     <MESSAGE value="data.json fix" />
     <MESSAGE value="coming coon" />
-    <option name="LAST_COMMIT_MESSAGE" value="coming coon" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/image.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/typings/resources.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/seo.js" />
-    <entry file="file://$PROJECT_DIR$/src/pages/page-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/404.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/emotion.utils.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/types.utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="47" selection-start-column="47" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.prettierrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/header/burger/burger.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="86">
@@ -556,13 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="97" selection-start-column="97" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/header/menu-item/menu-item.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -584,20 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/header/menu/menu.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/footer/footer.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -642,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/header/header/header.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/header/location/location.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -677,27 +588,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/twitter.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view-models/data.view-model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/css.utils.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="40" column="50" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/block-heading/block-heading.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -705,53 +595,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/promo/promo.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="43" column="12" lean-forward="true" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/landing/landing.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/about/about.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="63" column="11" lean-forward="true" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/become-a-speaker/become-a-speaker.component.tsx" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="58" column="5" selection-start-line="58" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -762,22 +617,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/coming-out/coming-out.component.tsx">
+    <entry file="file://$PROJECT_DIR$/src/ui/menu/menu/menu.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/menu/menu-item/menu-item.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/header/header/header.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="101" column="78" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="101" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/become/become.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/about/about.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/promo/promo.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsor/sponsor.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/sponsors/sponsors/sponsors.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/schedule/schedule/schedule.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+        <state relative-caret-position="495">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/footer/social/social.component.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/assets/ok-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/linkedin-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/google-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/vk-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/telegram-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/facebook-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/twitter-footer.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/schedule/article/article.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="191" column="50" lean-forward="true" selection-start-line="191" selection-start-column="50" selection-end-line="191" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/landing/landing.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="176" column="7" lean-forward="true" selection-start-line="176" selection-start-column="7" selection-end-line="176" selection-end-column="7" />
+          <folding>
+            <element signature="e#16#681#0" />
+            <element signature="e#697#1311#0" />
+            <element signature="n#!!block;n#event#0;n#!!top" />
+            <element signature="e#2919#4091#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view-models/data.view-model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+          <folding>
+            <element signature="e#255#270#0" />
+            <element signature="e#419#436#0" />
+            <element signature="e#670#692#0" />
+            <element signature="e#965#988#0" />
+            <element signature="e#1197#1212#0" />
+            <element signature="e#1975#1991#0" />
+            <element signature="e#2168#2185#0" />
+            <element signature="e#2572#2594#0" />
+            <element signature="e#2810#2827#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/css.utils.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ui-kit/social/social.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/footer/footer.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="123" column="12" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#4#84#0" />
+            <element signature="e#4#236#0" />
+            <element signature="e#4#192#0" />
+            <element signature="e#4#234#0" />
+            <element signature="e#4#277#0" />
+            <element signature="e#4#278#0" />
+            <element signature="e#4#170#0" />
+            <element signature="e#4#302#0" />
+            <element signature="e#4#196#0" />
           </folding>
         </state>
       </provider>

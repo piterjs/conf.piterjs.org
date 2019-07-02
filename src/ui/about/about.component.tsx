@@ -61,7 +61,7 @@ interface AboutProps {
 }
 
 export const About: FC<AboutProps> = memo(({className, data}) => (
-	<AboutStyled className={className}>
+	<AboutStyled className={className} id={'about'}>
 		<Container>
 			<BlockHeadingStyled>About</BlockHeadingStyled>
 			<TextStyled>

@@ -20,7 +20,7 @@ export const Landing: FC = memo(() =>
 				<Become who={'Speaker'} buttonText={'Submit a Talk'} />
 				<Sponsors data={data} />
 				<Become who={'Sponsor'} buttonText={'Contact Us for Details'} />
-				<Footer />
+				<Footer data={data} />
 			</Fragment>
 		))
 		.getOrElse(<Fragment>Loading...</Fragment>),

@@ -140,5 +140,41 @@
       "image": "https://pngicon.ru/file/uploads/google-256x256.png",
       "level": "SILVER"
     }
-  ]
+  ],
+  "piterjs": {
+    "socials": [
+      {
+        "name": "TWITTER",
+        "link": "qwe"
+      },
+      {
+        "name": "FACEBOOK",
+        "link": "qwe"
+      },
+      {
+        "name": "TELEGRAM",
+        "link": "qwe"
+      },
+      {
+        "name": "VK",
+        "link": "qwe"
+      },
+      {
+        "name": "GOOGLE",
+        "link": "qwe"
+      },
+      {
+        "name": "LINKED_IN",
+        "link": "qwe"
+      },
+      {
+        "name": "OK",
+        "link": "qwe"
+      },
+      {
+        "name": "GITHUB",
+        "link": "qwe"
+      }
+    ]
+  }
 }
