@@ -13,26 +13,24 @@ import {DataTO} from '../../../view-models/data.view-model';
 
 //#region styled
 const HeaderStyled = styled.header<{isOpened: boolean}>`
-	${({isOpened}) => isOpened && `background-color: var(--purpur)`};
-
 	${mediaMd} {
 		background-color: transparent;
 		padding: 30px 0;
 	}
 `;
 const ContainerStyled = styled(Container)`
-	background-color: var(--purpur);
 	padding-left: 0;
 	padding-right: 0;
-
-	${mediaMd} {
-		background-color: var(--white);
-	}
 `;
 const WrapperStyled = styled.div`
 	display: flex;
 	position: relative;
 	justify-content: space-between;
+	padding: 8px;
+
+	${mediaMd} {
+		padding: 0;
+	}
 
 	${mediaMdX} {
 		justify-content: flex-start;
@@ -64,6 +62,8 @@ const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 	position: absolute;
 	width: 100%;
 	top: 100%;
+	left: 0;
+	z-index: 2;
 
 	${mediaMd} {
 		display: flex;
@@ -96,7 +96,6 @@ export const Header: FC<{data: DataTO}> = ({data}) => {
 					<LocationStyled location={data.event.location} />
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
-						<MenuItemStyled href={'#tickets'}>Tickets</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Schedule</MenuItemStyled>
 						<MenuItemStyled href={'#sponsors'}>Sponsors</MenuItemStyled>
 						<MenuItemStyled href={'#about'}>About</MenuItemStyled>
