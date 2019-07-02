@@ -121,7 +121,7 @@ const SocialsStyled = styled.div`
 	}
 `;
 const SocialStyled = styled(Social)`
-	& svg {
+	& > i > svg {
 		width: 25px;
 		height: 25px;
 
