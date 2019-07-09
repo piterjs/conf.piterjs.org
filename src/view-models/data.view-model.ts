@@ -3,6 +3,7 @@ import {Either, left} from 'fp-ts/lib/Either';
 import {Option} from 'fp-ts/lib/Option';
 import {createOptionFromNullable} from 'io-ts-types';
 import {PathReporter} from 'io-ts/lib/PathReporter';
+import fetch from 'isomorphic-fetch';
 
 //#region Photo
 export interface PhotoTO {
