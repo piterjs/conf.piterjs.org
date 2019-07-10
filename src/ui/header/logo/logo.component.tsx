@@ -36,6 +36,6 @@ interface LogoProps {
 export const Logo: FC<LogoProps> = memo(({className}) => (
 	<LogoStyled className={className}>
 		<IconStyled svg={LogoIcon} />
-		<TextStyled>PiterjsConf</TextStyled>
+		<TextStyled>PiterJS conf</TextStyled>
 	</LogoStyled>
 ));
