@@ -1,0 +1,87 @@
+kind: pipeline
+name: run-tests
+steps:
+- name: build
+  image: node:10
+  commands:
+  - npm install
+  - npm run lint
+  - npm run test
+trigger:
+  branch:
+    exclude:
+    - master
+
+---
+kind: pipeline
+name: build-deploy
+steps:
+- name: build
+  image: node:10
+  commands:
+  - npm install
+  - npm run lint
+  - npm run test
+  - npm run build
+
+- name: docker
+  image: plugins/docker
+  settings:
+    repo: piterjs/conf
+    dockerfile: Dockerfile
+    tags:
+    - ${DRONE_COMMIT:0:8}
+    - latest
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+
+- name: deploy
+  image: vallard/drone-kube
+  environment:
+    KUBE_SERVER:
+      from_secret: KUBE_SERVER
+    KUBE_TOKEN:
+      from_secret: KUBE_TOKEN
+    KUBE_CA:
+      from_secret: KUBE_CA
+  settings:
+    template: deployment.yml
+    namespace: default
+
+trigger:
+  branch:
+  - master
+
+---
+kind: pipeline
+name: after
+
+steps:
+- name: notify
+  image: mike1pol/drone-rocket
+  settings:
+    url:
+      from_secret: rocket_url
+    user_id:
+      from_secret: rocket_id
+    token:
+      from_secret: rocket_token
+    channel:
+      from_secret: rocket_channel
+    message: >
+      {{#success build.status}}✅{{else}}❌{{/success}} Build {{build.status}}: *{{repo.namespace}}/{{repo.name}}*
+      build: {{build.number}}
+      commit: {{build.branch}}:{{build.commit}}
+      By: {{build.author}}
+      {{build.message}}
+      {{build.link}}
+depends_on:
+- run-tests
+- build-deploy
+
+trigger:
+  status:
+  - success
+  - failure

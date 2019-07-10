@@ -1,0 +1,29 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: conf
+  namespace: default
+  labels:
+    app: conf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: conf
+  template:
+    metadata:
+      labels:
+        app: conf
+    spec:
+      containers:
+      - name: conf
+        image: piterjs/conf:{{truncate build.commit 8}}
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 10m
+            memory: 20Mi
+          requests:
+            cpu: 10m
+            memory: 20Mi
