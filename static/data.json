@@ -12,7 +12,7 @@
       "socials": [
         {
           "name": "TWITTER",
-          "link": "google.com"
+          "link": "https://twitter.com/gopiterjs"
         }
       ]
     }
@@ -99,81 +99,39 @@
   },
   "sponsors": [
     {
-      "name": "Гугол1",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "name": "Sprintbox",
+      "link": "https://sprintbox.ru",
+      "image": "/partner/sprintbox.svg",
       "level": "PLATINUM"
     },
     {
-      "name": "Гугол2",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
-      "level": "BRONZE"
-    },
-    {
-      "name": "Гугол3",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
+      "name": "SEMRush",
+      "link": "https://semrush.com",
+      "image": "/partner/semrush.svg",
       "level": "PLATINUM"
-    },
-    {
-      "name": "Гугол4",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
-      "level": "BRONZE"
-    },
-    {
-      "name": "Гугол5",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
-      "level": "PLATINUM"
-    },
-    {
-      "name": "Гугол6",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
-      "level": "BRONZE"
-    },
-    {
-      "name": "Гугол7",
-      "link": "https://google.com",
-      "image": "https://pngicon.ru/file/uploads/google-256x256.png",
-      "level": "SILVER"
     }
   ],
   "piterjs": {
     "socials": [
       {
         "name": "TWITTER",
-        "link": "qwe"
+        "link": "https://twitter.com/gopiterjs"
       },
       {
         "name": "FACEBOOK",
-        "link": "qwe"
+        "link": "https://fb.com/gopiterjs"
       },
       {
         "name": "TELEGRAM",
-        "link": "qwe"
+        "link": "https://t.me/piterjs"
       },
       {
         "name": "VK",
-        "link": "qwe"
-      },
-      {
-        "name": "GOOGLE",
-        "link": "qwe"
-      },
-      {
-        "name": "LINKED_IN",
-        "link": "qwe"
-      },
-      {
-        "name": "OK",
-        "link": "qwe"
+        "link": "https://vk.com/piterjs"
       },
       {
         "name": "GITHUB",
-        "link": "qwe"
+        "link": "https://github.com/piterjs"
       }
     ]
   }

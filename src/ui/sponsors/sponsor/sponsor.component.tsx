@@ -9,6 +9,8 @@ const SponsorStyled = styled.li`
 	display: flex;
 	font-size: 24px;
 	padding: 10px 0;
+	width: 250px;
+	max-width: 250px;
 
 	${mediaMd} {
 		font-size: 0;
@@ -29,8 +31,14 @@ const SponsorStyled = styled.li`
 		}
 	}
 `;
-const LinkStyled = styled.a``;
+const LinkStyled = styled.a`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+`;
 const LogoStyled = styled.img`
+	width: 250px;
 	display: none;
 
 	${mediaMd} {

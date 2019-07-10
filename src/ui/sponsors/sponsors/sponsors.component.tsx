@@ -49,6 +49,7 @@ const TitleStyled = styled.h3`
 	}
 `;
 const SponsorStyled = styled(Sponsor)`
+	margin: 20px 15px;
 	${mediaMd} {
 		padding: 0;
 	}
@@ -60,8 +61,10 @@ const SponsorStyled = styled(Sponsor)`
 	}
 `;
 const GroupSponsorsStyled = styled.ul`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	${mediaMd} {
-		display: flex;
 		flex-wrap: wrap;
 	}
 `;
@@ -76,22 +79,12 @@ export const Sponsors = memo<SponsorsProps>(({className, data}) => (
 	<SponsorsStyled id={'sponsors'}>
 		<Container>
 			<ContentStyled>
-				<BlockHeadingStyled>Sponsors</BlockHeadingStyled>
-				{compose(
-					sortSponsorGroups,
-					groupByLevel,
-				)(data.sponsors)
-					.reverse()
-					.map(group => (
-						<GroupStyled key={group.title}>
-							<TitleStyled>{group.title}</TitleStyled>
-							<GroupSponsorsStyled>
-								{group.sponsors.map(sponsor => (
-									<SponsorStyled sponsor={sponsor} key={sponsor.name} />
-								))}
-							</GroupSponsorsStyled>
-						</GroupStyled>
+				<BlockHeadingStyled>Partners</BlockHeadingStyled>
+				<GroupSponsorsStyled>
+					{data.sponsors.map(sponsor => (
+						<SponsorStyled sponsor={sponsor} key={sponsor.name} />
 					))}
+				</GroupSponsorsStyled>
 			</ContentStyled>
 		</Container>
 	</SponsorsStyled>

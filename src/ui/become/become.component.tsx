@@ -73,14 +73,20 @@ const BigButtonStyled = styled(BigButton)<{who: string}>`
 interface BecomeProps {
 	who: string;
 	buttonText: string;
+	link?: {
+		href: string;
+		target: string;
+	};
 }
 
-export const Become = memo<BecomeProps>(({who, buttonText}) => (
+export const Become = memo<BecomeProps>(({who, buttonText, link}) => (
 	<BecomeStyled id={`become_a_${who.toLowerCase()}`}>
 		<Container>
 			<ContentStyled>
 				<TitleStyled>Become a {who}</TitleStyled>
-				<BigButtonStyled who={who}>{buttonText}</BigButtonStyled>
+				<BigButtonStyled link={link} who={who}>
+					{buttonText}
+				</BigButtonStyled>
 			</ContentStyled>
 		</Container>
 	</BecomeStyled>

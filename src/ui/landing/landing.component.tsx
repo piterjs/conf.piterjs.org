@@ -17,9 +17,17 @@ export const Landing: FC = memo(() =>
 				<Promo data={data} />
 				<About data={data} />
 				<Schedule data={data} />
-				<Become who={'Speaker'} buttonText={'Submit a Talk'} />
+				<Become
+					link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}
+					who={'Speaker'}
+					buttonText={'Submit a Talk'}
+				/>
 				<Sponsors data={data} />
-				<Become who={'Sponsor'} buttonText={'Contact Us for Details'} />
+				<Become
+					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
+					who={'Sponsor'}
+					buttonText={'Contact Us for Details'}
+				/>
 				<Footer data={data} />
 			</Fragment>
 		))
