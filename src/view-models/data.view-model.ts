@@ -132,21 +132,15 @@ const SpeakerTOIO = type(
 	'SpeakerTOIO',
 );
 //#endregion
-//#region SponsorLevel
-export type SponsorLevelTO = 'BRONZE' | 'SILVER' | 'GOLD' | 'PLATINUM';
-const SponsorLevelTOIO = union([literal('BRONZE'), literal('SILVER'), literal('GOLD'), literal('PLATINUM')], 'SponsorLevelTOIO');
-//#endregion
 //#region Sponsor
 export interface SponsorTO {
 	image: string;
-	level: SponsorLevelTO;
 	link: string;
 	name: string;
 }
 const SponsorTOIO = type(
 	{
 		image: string,
-		level: SponsorLevelTOIO,
 		link: string,
 		name: string,
 	},

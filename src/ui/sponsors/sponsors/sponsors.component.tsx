@@ -4,8 +4,6 @@ import {DataTO} from '../../../view-models/data.view-model';
 import styled from '@emotion/styled';
 import {Container} from '../../ui-kit/container/container.component';
 import {BlockHeading} from '../../ui-kit/block-heading/block-heading.component';
-import {groupByLevel, sortSponsorGroups} from './sponsors.model';
-import {compose} from 'fp-ts/lib/function';
 import {Sponsor} from '../sponsor/sponsor.component';
 import {mediaMd} from '../../../utils/css.utils';
 

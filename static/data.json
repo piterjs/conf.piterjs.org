@@ -101,14 +101,12 @@
     {
       "name": "Sprintbox",
       "link": "https://sprintbox.ru",
-      "image": "/partner/sprintbox.svg",
-      "level": "PLATINUM"
+      "image": "/partner/sprintbox.svg"
     },
     {
       "name": "SEMRush",
       "link": "https://semrush.com",
-      "image": "/partner/semrush.svg",
-      "level": "PLATINUM"
+      "image": "/partner/semrush.svg"
     }
   ],
   "piterjs": {
