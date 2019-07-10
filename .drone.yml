@@ -4,9 +4,9 @@ steps:
 - name: build
   image: node:10
   commands:
-  - npm install
-  - npm run lint
-  - npm run test
+  - yarn install
+  - yarn lint
+  - yarn test
 trigger:
   branch:
     exclude:
@@ -19,10 +19,10 @@ steps:
 - name: build
   image: node:10
   commands:
-  - npm install
-  - npm run lint
-  - npm run test
-  - npm run build
+  - yarn install
+  - yarn lint
+  - yarn test
+  - yarn build
 
 - name: docker
   image: plugins/docker
