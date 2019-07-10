@@ -175,7 +175,7 @@ export const Footer: FC<FooterProps> = memo(({className, data}) => (
 						<SocialStyled type={social.name} link={social.link} key={`${social.name}=${social.link}`} isFooter />
 					))}
 				</SocialsStyled>
-				<CopyStyled>Ⓒ 2019 PiterJS Conf</CopyStyled>
+				<CopyStyled>Ⓒ 2019 PiterJS conf</CopyStyled>
 			</ContentStyled>
 		</Container>
 	</FooterStyled>
