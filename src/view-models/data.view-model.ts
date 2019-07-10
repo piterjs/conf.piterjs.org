@@ -1,9 +1,11 @@
 import {array, literal, string, type, union} from 'io-ts';
-import {Either, left} from 'fp-ts/lib/Either';
 import {Option} from 'fp-ts/lib/Option';
 import {createOptionFromNullable} from 'io-ts-types';
 import {PathReporter} from 'io-ts/lib/PathReporter';
-import fetch from 'isomorphic-fetch';
+import {of} from 'rxjs';
+import {failure, fromEither} from '@devexperts/remote-data-ts';
+import {ajax} from 'rxjs/ajax';
+import {catchError, map} from 'rxjs/operators';
 
 //#region Photo
 export interface PhotoTO {
@@ -179,19 +181,22 @@ const DataTOIO = type(
 );
 //#endregion
 
-export let data: Either<Error, DataTO> = left(new Error('No data yet'));
-fetch('/data.json')
-	.then(response => response.json())
-	.then(
-		value =>
-			(data = DataTOIO.decode(value).mapLeft(() => {
+export const data$ = ajax('/data.json').pipe(
+	map(value => {
+		if (value.status >= 400) {
+			return failure<Error, DataTO>(new Error('Request Error'));
+		}
+		return fromEither(
+			DataTOIO.decode(value.response).mapLeft(() => {
 				// tslint:disable-next-line
 				console.log('##################################\n', PathReporter.report(DataTOIO.decode(value)));
 				return new Error('Validation error');
-			})),
-	)
-	.catch(() => {
+			}),
+		);
+	}),
+	catchError(error => {
 		// tslint:disable-next-line
 		console.log('##################################\n', 'Data fetch error');
-		data = left(new Error('Data fetch error'));
-	});
+		return of(failure<Error, DataTO>(error));
+	}),
+);
