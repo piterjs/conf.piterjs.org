@@ -12,7 +12,7 @@ const BlockHeadingStyled = styled.h2`
 	font-weight: 600;
 
 	${mediaMd} {
-		font-size: 80px;
+		font-size: 45px;
 	}
 `;
 const LinesStyled = styled(Lines)`
