@@ -106,10 +106,10 @@ const SpeakerStyled = styled.div`
 		grid-row-gap: 20px;
 	}
 `;
-const PhotoStyled = styled.div<{img: Option<string>}>`
+const PhotoStyled = styled.div<{img: string}>`
 	width: 150px;
 	height: 150px;
-	background: url('${({img}) => img.getOrElse('https://placekitten.com/300/300')}');
+	background: url('${({img}) => img}');
 	background-size: cover;
 
 	${mediaMd} {
@@ -153,10 +153,10 @@ export interface Speaker {
 	about: string;
 	firstName: string;
 	lastName: string;
-	photo: Option<{
+	photo: {
 		src: string;
 		alt: string;
-	}>;
+	};
 	socials: {
 		name: SocialType;
 		link: string;
@@ -193,7 +193,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 										))}
 									</SocialStyled>
 									<SpeakerStyled>
-										<PhotoStyled img={speaker.photo.map(photo => photo.src)} />
+										<PhotoStyled img={speaker.photo.src} />
 										<AboutSpeakerTitleStyled />
 										<AboutStyled>{speaker.about}</AboutStyled>
 									</SpeakerStyled>

@@ -69,16 +69,11 @@ export const About: FC<AboutProps> = memo(({className, data}) => (
 					<ParagraphStyled key={i}>{about}</ParagraphStyled>
 				))}
 			</TextStyled>
-			{data.event.photos
-				.filter(not(isEmpty))
-				.map(photos => (
-					<PhotosStyled count={photos.length}>
-						{photos.map((photo, i) => (
-							<PhotoStyled {...photo} key={i} />
-						))}
-					</PhotosStyled>
-				))
-				.toNullable()}
+			<PhotosStyled count={data.event.photos.length}>
+				{data.event.photos.map((photo, i) => (
+					<PhotoStyled {...photo} key={i} />
+				))}
+			</PhotosStyled>
 		</Container>
 	</AboutStyled>
 ));
