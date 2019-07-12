@@ -1,7 +1,5 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 
-const NotFoundPage = () => (
-  <Fragment>404</Fragment>
-)
+const NotFoundPage = () => <Fragment>404</Fragment>;
 
-export default NotFoundPage
+export default NotFoundPage;

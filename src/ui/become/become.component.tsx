@@ -4,18 +4,49 @@ import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {BigButton} from '../ui-kit/big-button/big-button.component';
 import {memo} from 'react';
 import {Container} from '../ui-kit/container/container.component';
+import {Lines} from '../ui-kit/lines/lines.component';
+
 import * as React from 'react';
+
+const LinesBaseStyled = styled(Lines)`
+	position: absolute;
+	color: var(--white);
+
+	${mediaMd} {
+		width: 300px;
+	}
+`;
+const Lines1Styled = styled(LinesBaseStyled)`
+	top: 0;
+	left: 0;
+	display: none;
+
+	${mediaMd} {
+		display: block;
+	}
+`;
+const Lines2Styled = styled(LinesBaseStyled)`
+	bottom: 0;
+	right: 0;
+	transform: rotate(180deg);
+	display: none;
+
+	${mediaMd} {
+		display: block;
+	}
+`;
 
 const BecomeStyled = styled.section`
 	padding: 35px 0;
 	background-color: var(--purpur);
+	position: relative;
 
 	${mediaMd} {
-		padding: 55px 0;
+		padding: 160px 0;
 	}
 
 	${mediaMdX} {
-		padding: 80px 0;
+		padding: 140px 0;
 	}
 
 	${mediaLg} {
@@ -81,6 +112,7 @@ interface BecomeProps {
 
 export const Become = memo<BecomeProps>(({who, buttonText, link}) => (
 	<BecomeStyled id={`become_a_${who.toLowerCase()}`}>
+		<Lines1Styled />
 		<Container>
 			<ContentStyled>
 				<TitleStyled>Become a {who}</TitleStyled>
@@ -89,5 +121,6 @@ export const Become = memo<BecomeProps>(({who, buttonText, link}) => (
 				</BigButtonStyled>
 			</ContentStyled>
 		</Container>
+		<Lines2Styled />
 	</BecomeStyled>
 ));
