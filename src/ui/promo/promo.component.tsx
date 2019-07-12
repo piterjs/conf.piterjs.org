@@ -79,7 +79,7 @@ export const Promo: FC<{data: DataTO}> = memo(({data}) => (
 				<ContentStyled>
 					<DateStyled>{data.event.date}</DateStyled>
 					<TitleStyled>The first international javascript conference in Russia</TitleStyled>
-					<BigButton>Get Your Ticket Now</BigButton>
+					<BigButton link={{ href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank' }}>Become a Speaker</BigButton>
 				</ContentStyled>
 			</Container>
 		</FilterStyled>
