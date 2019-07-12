@@ -186,14 +186,13 @@ export const data$ = ajax('/data.json').pipe(
 		if (value.status >= 400) {
 			return failure<Error, DataTO>(new Error('Request Error'));
 		}
-		const result = fromEither(
+		return fromEither(
 			DataTOIO.decode(value.response).mapLeft(() => {
 				// tslint:disable-next-line
 				console.log('##################################\n', PathReporter.report(DataTOIO.decode(value)));
 				return new Error('Validation error');
 			}),
 		);
-		return result;
 	}),
 	catchError(error => {
 		// tslint:disable-next-line
