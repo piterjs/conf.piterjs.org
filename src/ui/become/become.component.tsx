@@ -16,7 +16,6 @@ const LinesBaseStyled = styled(Lines)`
 		width: 300px;
 	}
 `;
-
 const Lines1Styled = styled(LinesBaseStyled)`
 	top: 0;
 	left: 0;
@@ -31,7 +30,7 @@ const Lines2Styled = styled(LinesBaseStyled)`
 	right: 0;
 	transform: rotate(180deg);
 	display: none;
-	
+
 	${mediaMd} {
 		display: block;
 	}
@@ -113,15 +112,15 @@ interface BecomeProps {
 
 export const Become = memo<BecomeProps>(({who, buttonText, link}) => (
 	<BecomeStyled id={`become_a_${who.toLowerCase()}`}>
-		<Lines1Styled/>
-			<Container>
-				<ContentStyled>
-					<TitleStyled>Become a {who}</TitleStyled>
-					<BigButtonStyled link={link} who={who}>
-						{buttonText}
-					</BigButtonStyled>
-				</ContentStyled>
-			</Container>
-		<Lines2Styled/>
+		<Lines1Styled />
+		<Container>
+			<ContentStyled>
+				<TitleStyled>Become a {who}</TitleStyled>
+				<BigButtonStyled link={link} who={who}>
+					{buttonText}
+				</BigButtonStyled>
+			</ContentStyled>
+		</Container>
+		<Lines2Styled />
 	</BecomeStyled>
 ));
