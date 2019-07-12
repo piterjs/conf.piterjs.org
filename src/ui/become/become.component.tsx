@@ -4,7 +4,7 @@ import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {BigButton} from '../ui-kit/big-button/big-button.component';
 import {memo} from 'react';
 import {Container} from '../ui-kit/container/container.component';
-import {Lines} from '..//ui-kit/lines/lines.component';
+import {Lines} from '../ui-kit/lines/lines.component';
 
 import * as React from 'react';
 

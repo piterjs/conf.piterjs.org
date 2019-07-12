@@ -3,8 +3,21 @@
   <component name="FavoritesManager">
     <favorites_list name="piter-js-conf" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="323" />
+    <option name="y" value="140" />
+    <option name="width" value="1291" />
+    <option name="height" value="999" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
+    <property name="node.js.selected.package.eslint" value="C:\Users\ksolonina\WebstormProjects\piterjs\conf.piterjs.org\node_modules\eslint" />
+    <property name="node.js.selected.package.tslint" value="C:\Users\ksolonina\WebstormProjects\piterjs\conf.piterjs.org\node_modules\tslint" />
+    <property name="ts.external.directory.path" value="C:\Users\ksolonina\WebstormProjects\piterjs\conf.piterjs.org\node_modules\typescript\lib" />
   </component>
 </project>
