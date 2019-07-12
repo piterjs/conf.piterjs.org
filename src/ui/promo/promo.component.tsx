@@ -43,7 +43,7 @@ const TitleStyled = styled.h1`
 	font-weight: bold;
 
 	${mediaMd} {
-		font-size: 96px;
+		font-size: 70px;
 		margin-bottom: 50px;
 	}
 `;
@@ -78,8 +78,8 @@ export const Promo: FC<{data: DataTO}> = memo(({data}) => (
 			<Container>
 				<ContentStyled>
 					<DateStyled>{data.event.date}</DateStyled>
-					<TitleStyled>The first international javascript conference in Russia</TitleStyled>
-					<BigButton link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}>Become a Speaker</BigButton>
+					<TitleStyled>PiterJS Conf - конференция JavaScript-сообщества с берегов Невы</TitleStyled>
+					<BigButton link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}>Подать заявку на доклад</BigButton>
 				</ContentStyled>
 			</Container>
 		</FilterStyled>
