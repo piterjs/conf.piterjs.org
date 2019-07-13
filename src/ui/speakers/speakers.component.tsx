@@ -4,14 +4,12 @@ import {BlockHeading} from '../ui-kit/block-heading/block-heading.component';
 import styled from '@emotion/styled';
 import {Container} from '../ui-kit/container/container.component';
 import {DataTO} from '../../view-models/data.view-model';
-import {Paragraph} from '../ui-kit/paragraph/paragraph.component';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
+import {Speaker} from './speaker/speaker.component';
 import {clamp} from '../../utils/number.utils';
-import {isEmpty} from 'fp-ts/lib/Array';
-import {not} from 'fp-ts/lib/function';
 
 //#region styled
-const AboutStyled = styled.section`
+const SpeakersStyled = styled.section`
 	padding-bottom: 40px;
 	padding-top: 80px;
 `;
@@ -22,18 +20,7 @@ const BlockHeadingStyled = styled(BlockHeading)`
 		margin-bottom: 18px;
 	}
 `;
-const TextStyled = styled.div`
-	margin-bottom: 50px;
-
-	${mediaMd} {
-		margin-bottom: 35px;
-	}
-`;
-const ParagraphStyled = styled(Paragraph)`
-	margin-bottom: 20px;
-`;
-const PhotosStyled = styled.div<{count: number}>`
-	display: none;
+const SpeakersListStyled = styled.div<{count: number}>`
 	grid-gap: 10px;
 	margin-bottom: 35px;
 
@@ -50,30 +37,22 @@ const PhotosStyled = styled.div<{count: number}>`
 		grid-template-columns: repeat(${({count}) => clamp(count, 1, 5)}, 1fr);
 	}
 `;
-const PhotoStyled = styled.img`
-	width: 100%;
-`;
 //#endregion
 
-interface AboutProps {
+interface SpeakersProps {
 	className?: string;
 	data: DataTO;
 }
 
-export const About: FC<AboutProps> = memo(({className, data}) => (
-	<AboutStyled className={className} id={'about'}>
+export const Speakers: FC<SpeakersProps> = memo(({className, data}) => (
+	<SpeakersStyled className={className} id={'speakers'}>
 		<Container>
-			<BlockHeadingStyled>О нас</BlockHeadingStyled>
-			<TextStyled>
-				{data.event.about.map((about, i) => (
-					<ParagraphStyled key={i}>{about}</ParagraphStyled>
+			<BlockHeadingStyled>Спикеры</BlockHeadingStyled>
+			<SpeakersListStyled count={data.speakers.length}>
+				{data.speakers.map(speaker => (
+					<Speaker speaker={speaker} />
 				))}
-			</TextStyled>
-			<PhotosStyled count={data.event.photos.length}>
-				{data.event.photos.map((photo, i) => (
-					<PhotoStyled {...photo} key={i} />
-				))}
-			</PhotosStyled>
+			</SpeakersListStyled>
 		</Container>
-	</AboutStyled>
+	</SpeakersStyled>
 ));

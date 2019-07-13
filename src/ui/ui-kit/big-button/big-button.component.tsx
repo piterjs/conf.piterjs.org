@@ -1,6 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
+import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
 const BigButtonStyled = styled.button`
@@ -9,9 +10,12 @@ const BigButtonStyled = styled.button`
 	transition: all 0.3s;
 	color: var(--yellow);
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 500;
+	${mediaMd} {
+		font-size: 30px;
+	}
 `;
 const BigButtonLinkStyled = BigButtonStyled.withComponent('a');
 //#endregion

@@ -71,7 +71,7 @@ export interface EventTO {
 	about: string[];
 	date: string;
 	location: EventLocationTO;
-	photos: Option<PhotoTO[]>;
+	photos: PhotoTO[];
 }
 const EventTOIO = type(
 	{
@@ -79,7 +79,7 @@ const EventTOIO = type(
 		articles: array(EventArticleTOIO, 'Articles'),
 		date: string,
 		location: EventLocationTOIO,
-		photos: createOptionFromNullable(array(PhotoTOIO, 'Photos'), 'Photos'),
+		photos: array(PhotoTOIO, 'Photos'),
 	},
 	'EventTOIO',
 );
@@ -119,7 +119,7 @@ export interface SpeakerTO {
 	firstName: string;
 	id: string;
 	lastName: string;
-	photo: Option<PhotoTO>;
+	photo: PhotoTO;
 	socials: SocialTO[];
 }
 const SpeakerTOIO = type(
@@ -128,7 +128,7 @@ const SpeakerTOIO = type(
 		firstName: string,
 		id: string,
 		lastName: string,
-		photo: createOptionFromNullable(PhotoTOIO, 'Photo'),
+		photo: PhotoTOIO,
 		socials: array(SocialTOIO, 'Socials'),
 	},
 	'SpeakerTOIO',

@@ -9,12 +9,13 @@ const ComingOutStyled = styled.div`
 	display: flex;
 	align-items: center;
 	margin-bottom: 100px;
+	margin-top: 100px;
 	font-size: 30px;
 
 	&:before,
 	&:after {
 		content: '';
-		height: 4px;
+		height: 2px;
 		background-color: currentColor;
 		flex-grow: 1;
 	}

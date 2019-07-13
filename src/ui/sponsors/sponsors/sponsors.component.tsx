@@ -12,7 +12,7 @@ const SponsorsStyled = styled.section`
 	padding: 40px 0 60px;
 
 	${mediaMd} {
-		padding: 220px 0;
+		padding: 100px 0;
 	}
 `;
 const ContentStyled = styled.div``;
