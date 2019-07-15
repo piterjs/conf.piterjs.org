@@ -22,7 +22,6 @@ const BlockHeadingStyled = styled(BlockHeading)`
 	}
 `;
 const TextStyled = styled.div`
-
 	${mediaMd} {
 		margin-bottom: 35px;
 	}

@@ -21,52 +21,51 @@ const ContentStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-
 `;
-const TitleStyled = styled.h4`
-	display: none;
-	font-size: 24px;
-	color: var(--white);
-
-	${breakpoint} {
-		display: block;
-		grid-column-start: 1;
-		grid-column-end: 2;
-		grid-row-start: 1;
-		grid-row-end: 2;
-	}
-`;
-const EmailStyled = styled.input`
-	border-bottom: 1px solid var(--gray);
-	padding: 8px 0;
-	color: var(--white);
-	margin-bottom: 20px;
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 2;
-	grid-row-end: 3;
-
-	${breakpoint} {
-		margin-bottom: 0;
-	}
-`;
-const NotifyMeStyled = styled(BigButton)`
-	color: var(--gray);
-	font-size: 20px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
-	grid-column-start: 2;
-	grid-column-end: 3;
-	grid-row-start: 1;
-	grid-row-end: 3;
-
-	${breakpoint} {
-		padding-left: 0;
-		padding-right: 0;
-		margin-bottom: 0;
-	}
-`;
+// const TitleStyled = styled.h4`
+// 	display: none;
+// 	font-size: 24px;
+// 	color: var(--white);
+//
+// 	${breakpoint} {
+// 		display: block;
+// 		grid-column-start: 1;
+// 		grid-column-end: 2;
+// 		grid-row-start: 1;
+// 		grid-row-end: 2;
+// 	}
+// `;
+// const EmailStyled = styled.input`
+// 	border-bottom: 1px solid var(--gray);
+// 	padding: 8px 0;
+// 	color: var(--white);
+// 	margin-bottom: 20px;
+// 	grid-column-start: 1;
+// 	grid-column-end: 2;
+// 	grid-row-start: 2;
+// 	grid-row-end: 3;
+//
+// 	${breakpoint} {
+// 		margin-bottom: 0;
+// 	}
+// `;
+// const NotifyMeStyled = styled(BigButton)`
+// 	color: var(--gray);
+// 	font-size: 20px;
+// 	padding-top: 15px;
+// 	padding-bottom: 15px;
+// 	margin-bottom: 30px;
+// 	grid-column-start: 2;
+// 	grid-column-end: 3;
+// 	grid-row-start: 1;
+// 	grid-row-end: 3;
+//
+// 	${breakpoint} {
+// 		padding-left: 0;
+// 		padding-right: 0;
+// 		margin-bottom: 0;
+// 	}
+// `;
 const MenuStyled = styled(Menu)`
 	margin-bottom: 70px;
 
