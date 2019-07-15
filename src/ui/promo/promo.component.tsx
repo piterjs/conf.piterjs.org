@@ -78,7 +78,7 @@ export const Promo: FC<{data: DataTO}> = memo(({data}) => (
 			<Container>
 				<ContentStyled>
 					<DateStyled>{data.event.date}</DateStyled>
-					<TitleStyled>PiterJS Conf - конференция JavaScript-сообщества с берегов Невы</TitleStyled>
+					<TitleStyled>PiterJS conf - конференция JavaScript-сообщества с берегов Невы</TitleStyled>
 					<BigButton link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}>Подать заявку на доклад</BigButton>
 				</ContentStyled>
 			</Container>
