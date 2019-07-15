@@ -22,12 +22,6 @@ const ContentStyled = styled.div`
 	flex-direction: column;
 	align-items: stretch;
 
-	@media (min-width: 940px) {
-		display: grid;
-		grid-template-columns: auto 154px 1fr auto;
-		grid-template-rows: 30px repeat(2, auto);
-		grid-column-gap: 15px;
-	}
 `;
 const TitleStyled = styled.h4`
 	display: none;
@@ -82,7 +76,8 @@ const MenuStyled = styled(Menu)`
 
 	${breakpoint} {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
+		margin-bottom: 30px;
 		grid-column-start: 4;
 		grid-column-end: 5;
 		grid-row-start: 1;
@@ -111,7 +106,7 @@ const SocialsStyled = styled.div`
 
 	${breakpoint} {
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		grid-column-start: 4;
 		grid-column-end: 5;
 		grid-row-start: 2;
@@ -128,6 +123,7 @@ const SocialStyled = styled(Social)`
 		${breakpoint} {
 			width: 30px;
 			height: 30px;
+			margin-top: 30px;
 		}
 	}
 
@@ -147,7 +143,6 @@ const CopyStyled = styled.div`
 
 	${breakpoint} {
 		margin-top: 35px;
-		text-align: left;
 	}
 `;
 //#endregion
@@ -161,9 +156,9 @@ export const Footer: FC<FooterProps> = memo(({className, data}) => (
 	<FooterStyled className={className}>
 		<Container>
 			<ContentStyled>
-				<TitleStyled>Be the first to know</TitleStyled>
-				<EmailStyled type={'email'} placeholder={'example@gmail.com'} />
-				<NotifyMeStyled>Notify Me</NotifyMeStyled>
+				{/*<TitleStyled>Be the first to know</TitleStyled>*/}
+				{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
+				{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
 				<MenuStyled>
 					<MenuItemStyled href={'#tickets'}>Tickets</MenuItemStyled>
 					<MenuItemStyled href={'#schedule'}>Schedule</MenuItemStyled>
