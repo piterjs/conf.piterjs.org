@@ -6,8 +6,8 @@ import {mediaMd} from '../../../utils/css.utils';
 //#region styled
 const ItemStyled = styled.li`
 	border-bottom: 1px solid var(--menu-item-border);
-	padding: 10px 20px;
-	font-size: 16px;
+	padding: 20px 20px;
+	font-size: 24px;
 	color: var(--yellow);
 	display: flex;
 	align-items: center;
@@ -15,6 +15,8 @@ const ItemStyled = styled.li`
 
 	${mediaMd} {
 		border-bottom: none;
+		font-size: 16px;
+		padding: 10px 20px;
 	}
 `;
 const LinkStyled = styled.a`

@@ -12,7 +12,6 @@ import {not} from 'fp-ts/lib/function';
 
 //#region styled
 const AboutStyled = styled.section`
-	padding-bottom: 40px;
 	padding-top: 80px;
 `;
 const BlockHeadingStyled = styled(BlockHeading)`
@@ -23,8 +22,6 @@ const BlockHeadingStyled = styled(BlockHeading)`
 	}
 `;
 const TextStyled = styled.div`
-	margin-bottom: 50px;
-
 	${mediaMd} {
 		margin-bottom: 35px;
 	}
