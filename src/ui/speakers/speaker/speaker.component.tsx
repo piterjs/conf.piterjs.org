@@ -39,8 +39,14 @@ const SocialStyled = styled.div`
 	border-radius: 50%;
 	background: white;
 	width: 48px;
+	height: 48px;
 	${mediaMd} {
 		grid-row-start: 4;
+	}
+
+	a {
+		width: 100%;
+		height: 100%;
 	}
 `;
 
