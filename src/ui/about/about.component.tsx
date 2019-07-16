@@ -28,6 +28,7 @@ const TextStyled = styled.div`
 `;
 const ParagraphStyled = styled(Paragraph)`
 	margin-bottom: 20px;
+	line-height: 1.5;
 `;
 const PhotosStyled = styled.div<{count: number}>`
 	display: none;

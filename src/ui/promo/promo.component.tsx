@@ -37,6 +37,17 @@ const DateStyled = styled.div`
 		margin-bottom: 20px;
 	}
 `;
+const PlaceStyled = styled.span`
+	font-size: 24px;
+	padding-bottom: 26px;
+	display: block;
+
+	${mediaMd} {
+		display: inline;
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+`;
 const TitleStyled = styled.h1`
 	font-size: 36px;
 	padding-bottom: 40px;
@@ -77,8 +88,11 @@ export const Promo: FC<{data: DataTO}> = memo(({data}) => (
 		<FilterStyled>
 			<Container>
 				<ContentStyled>
-					<DateStyled>{data.event.date}</DateStyled>
-					<TitleStyled>PiterJS conf - конференция JavaScript-сообщества с берегов Невы</TitleStyled>
+					<DateStyled>
+						{data.event.date},{ ' ' }
+						<PlaceStyled>Caнкт-Петербург</PlaceStyled>
+					</DateStyled>
+					<TitleStyled>PiterJS conf &mdash; конференция JavaScript-сообщества с берегов Невы</TitleStyled>
 					<BigButton linkParams={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}>Подать заявку на доклад</BigButton>
 				</ContentStyled>
 			</Container>

@@ -9,8 +9,12 @@ import {clamp} from '../../../utils/number.utils';
 
 //#region styled
 const SpeakerStyled = styled.div`
-	padding-bottom: 40px;
-	padding-top: 80px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	${mediaMd} {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
 `;
 const TextStyled = styled.div`
 	margin: 20px 0;
