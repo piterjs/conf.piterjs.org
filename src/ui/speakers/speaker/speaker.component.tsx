@@ -32,9 +32,6 @@ const SocialStyled = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	grid-row-start: 3;
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
 	border: 4px solid white;
 	border-radius: 50%;
 	background: white;
@@ -50,6 +47,20 @@ const SocialStyled = styled.div`
 	}
 `;
 
+const SocialButtons = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	grid-row-start: 3;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+
+	${SocialStyled} {
+		margin-right: 4px;
+	}
+`;
+
 //#endregion
 
 interface SpeakerProps {
@@ -62,11 +73,13 @@ export const Speaker: FC<SpeakerProps> = memo(({className, speaker}) => (
 		<Container>
 			<PhotoWrapperStyled>
 				<PhotoStyled {...speaker.photo} />
-				<SocialStyled>
+				<SocialButtons>
 					{speaker.socials.map(({name, link}) => (
-						<Social type={name} link={link} key={`${name}-${link}`} />
+						<SocialStyled>
+							<Social type={name} link={link} key={`${name}-${link}`} />
+						</SocialStyled>
 					))}
-				</SocialStyled>
+				</SocialButtons>
 			</PhotoWrapperStyled>
 			<TextStyled>
 				{speaker.firstName} {speaker.lastName}

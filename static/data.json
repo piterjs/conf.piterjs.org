@@ -13,6 +13,10 @@
         {
           "name": "TWITTER",
           "link": "https://twitter.com/mamu_eval"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/lekzd"
         }
       ]
     },
@@ -29,6 +33,10 @@
         {
           "name": "TWITTER",
           "link": "https://twitter.com/ovrweb"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/ovr"
         }
       ]
     },
@@ -45,6 +53,10 @@
         {
           "name": "TWITTER",
           "link": "https://twitter.com/vaier"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/lifeart"
         }
       ]
     }
