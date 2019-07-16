@@ -100,6 +100,15 @@ const BigButtonStyled = styled(BigButton)<{who: string}>`
 		}
 	}
 `;
+
+const ButtonWrapperStyled = styled.h2`
+	display: block;
+	margin: auto;
+
+	${mediaMd} {
+		display: block;
+	}
+`;
 //#endregion
 
 interface BecomeProps {
@@ -115,7 +124,9 @@ export const Become = memo<BecomeProps>(({buttonText, link}) => (
 		<Lines1Styled />
 		<Container>
 			<ContentStyled>
-				<BigButton linkParams={link}>{buttonText}</BigButton>
+				<ButtonWrapperStyled>
+					<BigButton linkParams={link}>{buttonText}</BigButton>
+				</ButtonWrapperStyled>
 				{/*<TitleStyled>Стать {who}</TitleStyled>*/}
 				{/*<BigButtonStyled link={link} who={who}>*/}
 				{/*	{buttonText}*/}
