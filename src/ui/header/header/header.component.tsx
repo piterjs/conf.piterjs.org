@@ -82,6 +82,9 @@ const MenuItemStyled = styled(MenuItem)`
 	${mediaMd} {
 		color: var(--text-main);
 	}
+	:hover {
+		background-color: yellow;
+	}
 `;
 //#endregion
 

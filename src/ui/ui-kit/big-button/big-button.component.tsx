@@ -19,6 +19,9 @@ const BigButtonStyled = styled.button`
 		padding: 24px 48px;
 		border: 3px solid currentColor;
 	}
+	:hover {
+		border-color: yellow;
+	}
 `;
 const BigButtonLinkStyled = BigButtonStyled.withComponent('a');
 //#endregion
