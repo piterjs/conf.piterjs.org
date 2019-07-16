@@ -4,11 +4,11 @@ import {DataTO} from '../../../view-models/data.view-model';
 import styled from '@emotion/styled';
 import {Container} from '../../ui-kit/container/container.component';
 import {BlockHeading} from '../../ui-kit/block-heading/block-heading.component';
-import {Sponsor} from '../sponsor/sponsor.component';
+import {Partner} from '../partner/partner.component';
 import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
-const SponsorsStyled = styled.section`
+const PartnersStyled = styled.section`
 	padding: 40px 0 60px;
 
 	${mediaMd} {
@@ -46,7 +46,7 @@ const TitleStyled = styled.h3`
 		padding-left: 0;
 	}
 `;
-const SponsorStyled = styled(Sponsor)`
+const PartnerStyled = styled(Partner)`
 	margin: 20px 15px;
 	${mediaMd} {
 		padding: 0;
@@ -58,7 +58,7 @@ const SponsorStyled = styled(Sponsor)`
 		}
 	}
 `;
-const GroupSponsorsStyled = styled.ul`
+const GroupPartnersStyled = styled.ul`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -68,22 +68,22 @@ const GroupSponsorsStyled = styled.ul`
 `;
 //#endregion
 
-interface SponsorsProps {
+interface PartnersProps {
 	data: DataTO;
 	className?: string;
 }
 
-export const Sponsors = memo<SponsorsProps>(({className, data}) => (
-	<SponsorsStyled id={'sponsors'}>
+export const Partners = memo<PartnersProps>(({className, data}) => (
+	<PartnersStyled id={'partners'}>
 		<Container>
 			<ContentStyled>
 				<BlockHeadingStyled>Партнеры</BlockHeadingStyled>
-				<GroupSponsorsStyled>
-					{data.sponsors.map(sponsor => (
-						<SponsorStyled sponsor={sponsor} key={sponsor.name} />
+				<GroupPartnersStyled>
+					{data.partners.map(partner => (
+						<PartnerStyled partner={partner} key={partner.name} />
 					))}
-				</GroupSponsorsStyled>
+				</GroupPartnersStyled>
 			</ContentStyled>
 		</Container>
-	</SponsorsStyled>
+	</PartnersStyled>
 ));

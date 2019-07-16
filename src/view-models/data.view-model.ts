@@ -134,19 +134,19 @@ const SpeakerTOIO = type(
 	'SpeakerTOIO',
 );
 //#endregion
-//#region Sponsor
-export interface SponsorTO {
+//#region Partner
+export interface PartnerTO {
 	image: string;
 	link: string;
 	name: string;
 }
-const SponsorTOIO = type(
+const PartnerTOIO = type(
 	{
 		image: string,
 		link: string,
 		name: string,
 	},
-	'SponsorTO',
+	'PartnerTO',
 );
 //#endregion
 //#region PiterJS
@@ -165,17 +165,17 @@ const PiterJSTOIO = type(
 export interface DataTO {
 	articles: ArticleTO[];
 	event: EventTO;
+	partners: PartnerTO[];
 	piterjs: PiterJSTO;
 	speakers: SpeakerTO[];
-	sponsors: SponsorTO[];
 }
 const DataTOIO = type(
 	{
 		articles: array(ArticleTOIO, 'Articles'),
 		event: EventTOIO,
+		partners: array(PartnerTOIO, 'partners'),
 		piterjs: PiterJSTOIO,
 		speakers: array(SpeakerTOIO, 'Speakers'),
-		sponsors: array(SponsorTOIO, 'sponsors'),
 	},
 	'DataTOIO',
 );

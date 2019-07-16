@@ -3,7 +3,7 @@ import * as React from 'react';
 import {Header} from '../header/header/header.component';
 import {Promo} from '../promo/promo.component';
 import {Schedule} from '../schedule/schedule/schedule.component';
-import {Sponsors} from '../sponsors/sponsors/sponsors.component';
+import {Partners} from '../partners/partners/partners.component';
 import {Footer} from '../footer/footer.component';
 import {About} from '../about/about.component';
 import {Become} from '../become/become.component';
@@ -37,7 +37,7 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
 					buttonText={'Стать партнером'}
 				/>
-				<Sponsors data={data} />
+				<Partners data={data} />
 				<Footer data={data} />
 			</Fragment>
 		),

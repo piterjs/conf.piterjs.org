@@ -99,7 +99,7 @@ export const Header: FC<{data: DataTO}> = ({data}) => {
 						<MenuItemStyled href={'#about'}>О нас</MenuItemStyled>
 						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
-						<MenuItemStyled href={'#sponsors'}>Партнеры</MenuItemStyled>
+						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
 					</MenuStyled>
 				</WrapperStyled>
 			</ContainerStyled>

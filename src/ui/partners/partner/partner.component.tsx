@@ -1,11 +1,11 @@
-import {SponsorTO} from '../../../view-models/data.view-model';
+import {PartnerTO} from '../../../view-models/data.view-model';
 import {memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
 import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
-const SponsorStyled = styled.li`
+const PartnerStyled = styled.li`
 	display: flex;
 	font-size: 24px;
 	padding: 10px 0;
@@ -47,16 +47,16 @@ const LogoStyled = styled.img`
 `;
 //#endregion
 
-interface SponsorProps {
-	sponsor: SponsorTO;
+interface PartnerProps {
+	partner: PartnerTO;
 	className?: string;
 }
 
-export const Sponsor = memo<SponsorProps>(({sponsor, className}) => (
-	<SponsorStyled className={className}>
-		<LinkStyled href={sponsor.link} title={sponsor.name} target={'_blank'}>
-			{sponsor.name}
-			<LogoStyled src={sponsor.image} alt={sponsor.name} />
+export const Partner = memo<PartnerProps>(({partner, className}) => (
+	<PartnerStyled className={className}>
+		<LinkStyled href={partner.link} title={partner.name} target={'_blank'}>
+			{partner.name}
+			<LogoStyled src={partner.image} alt={partner.name} />
 		</LinkStyled>
-	</SponsorStyled>
+	</PartnerStyled>
 ));
