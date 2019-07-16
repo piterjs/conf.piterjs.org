@@ -58,6 +58,7 @@ const ContentStyled = styled.div`
 	flex-direction: column;
 	align-items: stretch;
 	color: var(--yellow);
+
 	${mediaMd} {
 		align-items: center;
 	}
