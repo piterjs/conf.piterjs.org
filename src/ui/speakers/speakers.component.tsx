@@ -48,9 +48,9 @@ export const Speakers: FC<SpeakersProps> = memo(({className, data}) => (
 	<SpeakersStyled className={className} id={'speakers'}>
 		<Container>
 			<BlockHeadingStyled>Спикеры</BlockHeadingStyled>
-			<SpeakersListStyled count={data.speakers.length}>
+			<SpeakersListStyled count={data.speakers.length} id={'speaker_lisk'}>
 				{data.speakers.map(speaker => (
-					<Speaker speaker={speaker} />
+					<Speaker speaker={speaker} key={speaker.id} />
 				))}
 			</SpeakersListStyled>
 		</Container>
