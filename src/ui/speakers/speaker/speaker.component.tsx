@@ -39,7 +39,6 @@ const SocialStyled = styled.div`
 	border-radius: 50%;
 	background: white;
 	width: 48px;
-	
 	${mediaMd} {
 		grid-row-start: 4;
 	}
