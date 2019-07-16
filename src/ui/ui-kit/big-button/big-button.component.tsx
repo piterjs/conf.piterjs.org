@@ -23,10 +23,10 @@ const BigButtonStyled = styled.button`
 		border-color: yellow;
 	}
 `;
-// const BigButtonLinkStyled = BigButtonStyled.withComponent('a').extend`
-// 	border-bottom: 2px solid currentColor;
-// 	padding: 0;
-// `;
+const BigButtonLinkStyled = BigButtonStyled.withComponent('a').extend`
+	border-bottom: 2px solid currentColor;
+	padding: 0;
+`;
 
 
 //#endregion
