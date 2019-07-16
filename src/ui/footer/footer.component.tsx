@@ -159,10 +159,10 @@ export const Footer: FC<FooterProps> = memo(({className, data}) => (
 				{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
 				{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
 				<MenuStyled>
-					<MenuItemStyled href={'#tickets'}>Tickets</MenuItemStyled>
-					<MenuItemStyled href={'#schedule'}>Schedule</MenuItemStyled>
-					<MenuItemStyled href={'#sponsors'}>Sponsors</MenuItemStyled>
-					<MenuItemStyled href={'#about'}>About</MenuItemStyled>
+					<MenuItemStyled href={'#about'}>О нас</MenuItemStyled>
+					<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
+					<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
+					<MenuItemStyled href={'#sponsors'}>Партнеры</MenuItemStyled>
 				</MenuStyled>
 				<SocialsStyled>
 					{data.piterjs.socials.map(social => (

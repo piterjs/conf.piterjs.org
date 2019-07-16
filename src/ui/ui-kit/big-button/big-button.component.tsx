@@ -24,16 +24,16 @@ const BigButtonLinkStyled = BigButtonStyled.withComponent('a');
 //#endregion
 
 interface BigButtonProps {
-	link?: {
+	linkParams?: {
 		href: string;
 		target: string;
 	};
 	className?: string;
 }
 
-export const BigButton: FC<BigButtonProps> = memo(({link, children, className}) =>
-	link ? (
-		<BigButtonLinkStyled className={className} {...link}>
+export const BigButton: FC<BigButtonProps> = memo(({linkParams, children, className}) =>
+	linkParams ? (
+		<BigButtonLinkStyled className={className} {...linkParams}>
 			{children}
 		</BigButtonLinkStyled>
 	) : (

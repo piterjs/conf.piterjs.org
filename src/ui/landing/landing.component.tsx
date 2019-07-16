@@ -30,14 +30,12 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 				<Speakers data={data} />
 				<Become
 					link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}
-					who={'Speaker'}
-					buttonText={'Submit a Talk'}
+					buttonText={'Подать доклад'}
 				/>
 				<Schedule data={data} />
 				<Become
 					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
-					who={'Sponsor'}
-					buttonText={'Contact Us for Details'}
+					buttonText={'Стать партнером'}
 				/>
 				<Sponsors data={data} />
 				<Footer data={data} />

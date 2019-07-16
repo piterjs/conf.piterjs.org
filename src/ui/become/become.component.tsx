@@ -57,7 +57,7 @@ const ContentStyled = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-
+	color: var(--yellow);
 	${mediaMd} {
 		align-items: center;
 	}
@@ -102,7 +102,6 @@ const BigButtonStyled = styled(BigButton)<{who: string}>`
 //#endregion
 
 interface BecomeProps {
-	who: string;
 	buttonText: string;
 	link?: {
 		href: string;
@@ -110,15 +109,16 @@ interface BecomeProps {
 	};
 }
 
-export const Become = memo<BecomeProps>(({who, buttonText, link}) => (
-	<BecomeStyled id={`become_a_${who.toLowerCase()}`}>
+export const Become = memo<BecomeProps>(({buttonText, link}) => (
+	<BecomeStyled>
 		<Lines1Styled />
 		<Container>
 			<ContentStyled>
-				<TitleStyled>Become a {who}</TitleStyled>
-				<BigButtonStyled link={link} who={who}>
-					{buttonText}
-				</BigButtonStyled>
+				<BigButton linkParams={link}>{buttonText}</BigButton>
+				{/*<TitleStyled>Стать {who}</TitleStyled>*/}
+				{/*<BigButtonStyled link={link} who={who}>*/}
+				{/*	{buttonText}*/}
+				{/*</BigButtonStyled>*/}
 			</ContentStyled>
 		</Container>
 		<Lines2Styled />

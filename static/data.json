@@ -75,34 +75,14 @@
   "event": {
     "date": "7 / 09 / 2019",
     "location": {
-      "address": "Obvodniy Kanal quya, 60,",
-      "city": "Saint-Petersburg",
+      "address": "набережная Обводного канала, 60",
+      "city": "Санкт-Петербург",
       "link": "https://goo.gl/maps/ssfxoWUpFyWhXH8s8"
     },
     "about": [
-      "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ними связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
+      "PiterJS - cообщество c берегов Невы,\n проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ними связано.\n\n\n\nМы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     ],
     "photos": [
-      {
-        "src": "http://thiscatdoesnotexist.com",
-        "alt": "photo"
-      },
-      {
-        "src": "http://thiscatdoesnotexist.com",
-        "alt": "photo"
-      },
-      {
-        "src": "http://thiscatdoesnotexist.com",
-        "alt": "photo"
-      },
-      {
-        "src": "http://thiscatdoesnotexist.com",
-        "alt": "photo"
-      },
-      {
-        "src": "http://thiscatdoesnotexist.com",
-        "alt": "photo"
-      }
     ],
     "articles": [
       {

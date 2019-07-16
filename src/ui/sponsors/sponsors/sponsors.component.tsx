@@ -77,7 +77,7 @@ export const Sponsors = memo<SponsorsProps>(({className, data}) => (
 	<SponsorsStyled id={'sponsors'}>
 		<Container>
 			<ContentStyled>
-				<BlockHeadingStyled>Partners</BlockHeadingStyled>
+				<BlockHeadingStyled>Партнеры</BlockHeadingStyled>
 				<GroupSponsorsStyled>
 					{data.sponsors.map(sponsor => (
 						<SponsorStyled sponsor={sponsor} key={sponsor.name} />

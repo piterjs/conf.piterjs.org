@@ -35,7 +35,11 @@ const SocialStyled = styled.div`
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
-
+	border: 4px solid white;
+	border-radius: 50%;
+	background: white;
+	width: 48px;
+	
 	${mediaMd} {
 		grid-row-start: 4;
 	}
