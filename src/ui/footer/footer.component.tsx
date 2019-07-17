@@ -159,7 +159,7 @@ export const Footer: FC<FooterProps> = memo(({className, data}) => (
 				{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
 				{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
 				<MenuStyled>
-					<MenuItemStyled href={'#about'}>О нас</MenuItemStyled>
+					<MenuItemStyled href={'#about'}>О&nbsp;нас</MenuItemStyled>
 					<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 					<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 					<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
