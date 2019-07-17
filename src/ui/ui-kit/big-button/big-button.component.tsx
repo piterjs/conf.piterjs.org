@@ -45,7 +45,6 @@ const BigButtonLinkStyled = styled.button`
 		font-size: 30px;
 		padding: 24px 48px;
 		border: 3px solid currentColor;
-		
 		:hover {
 			background-color: var(--yellow);
 			color: var(--purpur);
