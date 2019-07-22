@@ -14,13 +14,12 @@ const BigButtonStyled = styled.button`
 	line-height: 1.7;
 	font-weight: 500;
 	display: inline;
-	cursor: pointer;
 	${mediaMd} {
 		font-size: 30px;
 		padding: 24px 48px;
 		border: 3px solid currentColor;
 	}
-	:hover {
+	&:hover {
 		background-color: var(--yellow);
 		color: var(--purpur);
 		border: 3px solid var(--yellow);
@@ -37,9 +36,8 @@ const BigButtonLinkStyled = styled.button`
 	line-height: 1.7;
 	font-weight: 500;
 	display: inline;
-	cursor: pointer;
-	:hover {
-		color: var(--yellow-dark);
+	&:hover {
+		color: var(--hover-color);
 	}
 	${mediaMd} {
 		font-size: 30px;

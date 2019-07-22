@@ -79,12 +79,12 @@ const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 	}
 `;
 const MenuItemStyled = styled(MenuItem)`
-	:hover {
-		color: var(--yellow-dark);
+	&:hover {
+		color: var(--hover-color);
 	}
 	${mediaMd} {
 		color: var(--text-main);
-		:hover {
+		&:hover {
 			background-color: var(--yellow);
 			color: var(--text-main);
 		}
