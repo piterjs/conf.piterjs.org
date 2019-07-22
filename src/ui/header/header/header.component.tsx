@@ -81,13 +81,13 @@ const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 const MenuItemStyled = styled(MenuItem)`
 	&:hover {
 		color: var(--hover-color);
-	}
-	${mediaMd} {
-		color: var(--text-main);
-		&:hover {
+		${mediaMd} {
 			background-color: var(--yellow);
 			color: var(--text-main);
 		}
+	}
+	${mediaMd} {
+		color: var(--text-main);
 	}
 `;
 //#endregion
