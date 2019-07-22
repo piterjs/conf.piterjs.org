@@ -63,7 +63,7 @@ interface BigButtonProps {
 }
 
 export const BigButton: FC<BigButtonProps> = memo(({linkParams, children, className, linkView}) =>
-linkView ? (
+	linkView ? (
 		<BigButtonLinkStyled className={className} {...linkParams}>
 			{children}
 		</BigButtonLinkStyled>
