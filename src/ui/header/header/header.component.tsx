@@ -79,11 +79,15 @@ const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 	}
 `;
 const MenuItemStyled = styled(MenuItem)`
+	&:hover {
+		color: var(--hover-color);
+		${mediaMd} {
+			background-color: var(--yellow);
+			color: var(--text-main);
+		}
+	}
 	${mediaMd} {
 		color: var(--text-main);
-	}
-	:hover {
-		background-color: yellow;
 	}
 `;
 //#endregion
@@ -99,7 +103,7 @@ export const Header: FC<{data: DataTO}> = ({data}) => {
 					<LocationStyled location={data.event.location} />
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
-						<MenuItemStyled href={'#about'}>О нас</MenuItemStyled>
+						<MenuItemStyled href={'#about'}>О&nbsp;нас</MenuItemStyled>
 						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>

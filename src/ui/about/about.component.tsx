@@ -61,7 +61,7 @@ interface AboutProps {
 export const About: FC<AboutProps> = memo(({className, data}) => (
 	<AboutStyled className={className} id={'about'}>
 		<Container>
-			<BlockHeadingStyled>О нас</BlockHeadingStyled>
+			<BlockHeadingStyled>О&nbsp;нас</BlockHeadingStyled>
 			<TextStyled>
 				{data.event.about.map((about, i) => (
 					<ParagraphStyled key={i}>{about}</ParagraphStyled>

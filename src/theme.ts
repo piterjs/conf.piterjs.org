@@ -6,6 +6,7 @@ export const theme = css`
 	--white: #fff;
 	--gray: #e7e7e7;
 	--black: #000;
+	--hover-color: #c2ad07;
 
 	--text-main: #010203;
 	--text-gray: #b3b3b3;
