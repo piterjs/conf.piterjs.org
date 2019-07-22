@@ -4,7 +4,7 @@ import * as React from 'react';
 import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
-const BigButtonStyled = styled.button`
+const BigButtonStyled = styled.a`
 	padding: 18px 36px;
 	border: 3px solid currentColor;
 	transition: all 0.3s;
@@ -26,7 +26,7 @@ const BigButtonStyled = styled.button`
 	}
 `;
 // const BigButtonLinkStyled = BigButtonStyled.withComponent('a');
-const BigButtonLinkStyled = styled.button`
+const BigButtonLinkStyled = styled.a`
 	border-bottom: 2px solid currentColor;
 	padding: 0;
 	transition: all 0.3s;
@@ -68,6 +68,6 @@ export const BigButton: FC<BigButtonProps> = memo(({linkParams, children, classN
 			{children}
 		</BigButtonLinkStyled>
 	) : (
-		<BigButtonStyled className={className}>{children}</BigButtonStyled>
+		<BigButtonStyled className={className} {...linkParams}>{children}</BigButtonStyled>
 	),
 );

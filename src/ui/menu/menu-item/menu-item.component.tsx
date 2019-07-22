@@ -16,12 +16,15 @@ const ItemStyled = styled.li`
 	${mediaMd} {
 		border-bottom: none;
 		font-size: 16px;
-		padding: 10px 20px;
+		padding: 0;
 	}
 `;
 const LinkStyled = styled.a`
 	text-transform: inherit;
 	color: inherit;
+	${mediaMd} {
+		padding: 10px 20px;
+	}
 `;
 //#endregion
 

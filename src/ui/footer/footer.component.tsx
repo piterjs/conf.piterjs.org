@@ -91,10 +91,15 @@ const MenuItemStyled = styled(MenuItem)`
 	justify-content: center;
 	font-size: 18px;
 	font-weight: 500;
+	transition: all 0.3s;
 
 	${breakpoint} {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	&:hover {
+		color: var(--hover-color);
 	}
 `;
 const SocialsStyled = styled.div`
