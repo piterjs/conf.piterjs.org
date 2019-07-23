@@ -41,7 +41,7 @@ const LinkStyled = styled.a`
 	&:hover {
 		color: var(--hover-color);
 	}
-	
+
 	${mediaMd} {
 		padding: 10px;
 		transition: all .5s;
