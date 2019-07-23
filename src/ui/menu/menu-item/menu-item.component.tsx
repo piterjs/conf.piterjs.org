@@ -12,6 +12,7 @@ const ItemStyled = styled.li`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	transition: all .5s;
 
 	${mediaMd} {
 		border-bottom: none;
