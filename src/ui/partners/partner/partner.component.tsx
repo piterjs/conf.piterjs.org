@@ -9,8 +9,8 @@ const PartnerStyled = styled.li`
 	display: flex;
 	font-size: 24px;
 	padding: 10px 0;
-	width: 250px;
-	max-width: 250px;
+	width: 270px;
+	max-width: 270px;
 
 	${mediaMd} {
 		font-size: 0;
@@ -36,6 +36,20 @@ const LinkStyled = styled.a`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	transition: all .5s;
+
+	&:hover {
+		color: var(--hover-color);
+	}
+	
+	${mediaMd} {
+		padding: 10px;
+		transition: all .5s;
+		border-radius: 8px;
+		&:hover {
+	        box-shadow: -20px 40px 40px rgba(0,0,0,.1);
+		}
+	}
 `;
 const LogoStyled = styled.img`
 	width: 250px;
