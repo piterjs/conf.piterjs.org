@@ -59,33 +59,94 @@
           "link": "https://github.com/lifeart"
         }
       ]
+    },
+    {
+      "id": "speakerX",
+      "firstName": "undefined",
+      "lastName": "",
+      "photo": {
+        "src": "",
+        "alt": ""
+      },
+      "about": "",
+      "socials": [
+      ]
     }
   ],
   "articles": [
     {
       "id": "schedule0",
-      "name": "doors open"
+      "name": "Jкрытие дверей"
     },
     {
       "id": "schedule1",
-      "name": "opening ceremony"
+      "name": "Церемония открытия"
     },
     {
       "id": "schedule2",
-      "name": "Pause"
+      "name": "Перерыв"
     },
     {
       "id": "schedule3",
-      "name": "opening ceremony"
+      "name": "Обед"
+    },
+    {
+      "id": "schedule4",
+      "name": "Перерыв"
+    },
+    {
+      "id": "schedule5",
+      "name": "BeerJS"
     },
     {
       "id": "article0",
-      "name": "Bridging the gap between UX",
-      "description": "The main topic of this talk is a short introduction to Storybook.js, JavaScript library that allows us to create independent and interactive UX components from already existing ones, developed in frameworks such as Angular, React or Vue."
+      "name": ""
+    },
+    {
+      "id": "article1",
+      "name": "Optimize the size of your SPA, битва за байты",
+      "description": ""
+    },
+    {
+      "id": "article2",
+      "name": "",
+      "description": ""
+    },
+    {
+      "id": "article3",
+      "name": ""
+    },
+    {
+      "id": "article4",
+      "name": ""
+    },
+    {
+      "id": "article5",
+      "name": ""
+    },
+    {
+      "id": "article6",
+      "name": ""
+    },
+    {
+      "id": "article7",
+      "name": ""
+    },
+    {
+      "id": "article8",
+      "name": ""
+    },
+    {
+      "id": "article9",
+      "name": ""
+    },
+    {
+      "id": "article10",
+      "name": ""
     }
   ],
   "event": {
-    "date": "7 / 09 / 2019",
+    "date": "7 сентября 2019",
     "location": {
       "address": "набережная Обводного канала, 60",
       "city": "Санкт-Петербург",
@@ -95,6 +156,15 @@
       "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     ],
     "photos": [
+      {"src": "/photo/2.jpg","alt": ""},
+      {"src": "/photo/3.jpg","alt": ""},
+      {"src": "/photo/5.jpg","alt": ""},
+      {"src": "/photo/6.jpg","alt": ""},
+      {"src": "/photo/7.jpg","alt": ""},
+      {"src": "/photo/9.jpg","alt": ""},
+      {"src": "/photo/10.jpg","alt": ""},
+      {"src": "/photo/11.jpg","alt": ""},
+      {"src": "/photo/12.jpg", "alt": ""}
     ],
     "articles": [
       {
@@ -106,17 +176,76 @@
         "time": "11:00"
       },
       {
-        "articleId": "article0",
-        "speakerId": "speaker0",
+        "articleId": "article3",
+        "speakerId": "speakerX",
+        "time": "11:20"
+      },
+      {
+        "articleId": "article4",
+        "speakerId": "speakerX",
         "time": "12:00"
       },
       {
         "articleId": "schedule2",
-        "time": "13:00"
+        "time": "12:40"
+      },
+      {
+        "articleId": "article1",
+        "speakerId": "speaker1",
+        "time": "13:10"
+      },
+      {
+        "articleId": "article2",
+        "speakerId": "speaker2",
+        "time": "13:50"
       },
       {
         "articleId": "schedule3",
-        "time": "14:00"
+        "time": "14:30"
+      },
+      {
+        "articleId": "article0",
+        "speakerId": "speaker0",
+        "time": "15:30"
+      },
+      {
+        "articleId": "article5",
+        "speakerId": "speakerX",
+        "time": "15:45"
+      },
+      {
+        "articleId": "article6",
+        "speakerId": "speakerX",
+        "time": "16:00"
+      },
+      {
+        "articleId": "article7",
+        "speakerId": "speakerX",
+        "time": "16:15"
+      },
+      {
+        "articleId": "article8",
+        "speakerId": "speakerX",
+        "time": "16:30"
+      },
+      {
+        "articleId": "schedule4",
+        "time": "16:45"
+      },
+      {
+        "articleId": "article9",
+        "speakerId": "speakerX",
+        "time": "17:15"
+      },
+      {
+        "articleId": "article10",
+        "speakerId": "speakerX",
+        "time": "17:55"
+      },
+      {
+
+        "articleId": "schedule5",
+        "time": "18:35"
       }
     ]
   },
