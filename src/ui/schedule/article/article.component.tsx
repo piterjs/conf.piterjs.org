@@ -121,7 +121,6 @@ const PhotoStyled = styled.div<{img: string}>`
 const AboutSpeakerTitleStyled = styled.h4`
 	display: none;
 
-
 	${mediaMd} {
 		display: block;
 	}
@@ -167,23 +166,40 @@ interface ArticleProps {
 }
 
 const emoji = [
-	"🐰","🐻","🐼","🦁",
-	"🐮","🐔","🐧","🦊",
-	"🦓","🦒","🦌","🦄",
-	"🦋","🦂","🦎","🦀",
-	"🦑","🦐","🐪","🦖",
-	"🦕","🐿","🦉"
-]
+	'🐰',
+	'🐻',
+	'🐼',
+	'🦁',
+	'🐮',
+	'🐔',
+	'🐧',
+	'🦊',
+	'🦓',
+	'🦒',
+	'🦌',
+	'🦄',
+	'🦋',
+	'🦂',
+	'🦎',
+	'🦀',
+	'🦑',
+	'🦐',
+	'🐪',
+	'🦖',
+	'🦕',
+	'🐿',
+	'🦉',
+];
 
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
 	const [isOpened, onIsOpenedChange] = useState(false); // replace with false
-	if (title === "") {
-		const length = Math.floor(Math.random()*7) + 3;
+	if (title === '') {
+		const length = Math.floor(Math.random() * 7) + 3;
 		for (let i = 0; i < length; i++) {
-			const position = Math.floor(Math.random()*23);
-			title += emoji[position];	
+			const position = Math.floor(Math.random() * 23);
+			title += emoji[position];
 		}
-	};
+	}
 
 	return (
 		<ArticleStyled>

@@ -12,7 +12,7 @@ const ItemStyled = styled.li`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
-	transition: all .5s;
+	transition: all 0.5s;
 
 	& > a {
 		color: var(--yellow);
@@ -22,11 +22,10 @@ const ItemStyled = styled.li`
 		border-bottom: none;
 		font-size: 20px;
 		padding: 0;
-		
+
 		& > a {
 			color: var(--purpur);
 		}
-		
 	}
 `;
 const LinkStyled = styled.a`

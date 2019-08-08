@@ -20,21 +20,27 @@ interface ScheduleProps {
 	data: DataTO;
 }
 
-export const Schedule: FC<ScheduleProps> = memo(({className, data}) => {
-	return (
-		<ScheduleStyled id={'schedule'}>
-			<Container>
-				<BlockHeadingStyled>Расписание</BlockHeadingStyled>
-				{data.event.articles.map((article) => {
-					const speech = findFirst(data.articles, item => item.id === article.articleId);
-					const speaker = article.speakerId.chain(speakerId => findFirst(data.speakers, speaker => speaker.id === speakerId));
-					return speech
-						.map(speech => (
-							<Article key={speech.id} time={article.time} title={speech.name} description={speech.description} speaker={speaker} />
-						))
-						.toNullable();
-				})}
-			</Container>
-		</ScheduleStyled>
-	);
-});
+export const Schedule: FC<ScheduleProps> = memo(({className, data}) => (
+	<ScheduleStyled id={'schedule'}>
+		<Container>
+			<BlockHeadingStyled>Расписание</BlockHeadingStyled>
+			{data.event.articles.map(article => {
+				// tslint:disable
+				const speech = findFirst(data.articles, item => item.id === article.articleId);
+				// tslint:disable
+				const speaker = article.speakerId.chain(speakerId => findFirst(data.speakers, speaker => speaker.id === speakerId));
+				return speech
+					.map(speech => (
+						<Article
+							key={speech.id}
+							time={article.time}
+							title={speech.name}
+							description={speech.description}
+							speaker={speaker}
+						/>
+					))
+					.toNullable();
+			})}
+		</Container>
+	</ScheduleStyled>
+));

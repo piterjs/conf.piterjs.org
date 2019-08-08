@@ -14,15 +14,14 @@ const IconStyled = styled.i`
 		color: inherit;
 		fill: currentColor;
 	}
-	
+
 	path {
-		transition: all .2s;
+		transition: all 0.2s;
 	}
-	
+
 	&:hover > svg > path {
 		fill: var(--yellow);
 	}
-	
 `;
 //#endregion
 
