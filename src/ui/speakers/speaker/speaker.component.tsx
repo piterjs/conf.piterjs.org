@@ -10,10 +10,9 @@ import {clamp} from '../../../utils/number.utils';
 //#region styled
 const SpeakerStyled = styled.div`
 	padding-bottom: 20px;
-	padding-top: 20px;
+	// padding-top: 20px;
 	${mediaMd} {
-		padding-top: 80px;
-		padding-bottom: 40px;
+		// padding-bottom: 40px;
 	}
 `;
 const TextStyled = styled.div`
@@ -21,7 +20,7 @@ const TextStyled = styled.div`
 	font-weight: bold;
 	font-size: 30px;
 	${mediaMd} {
-		font-size: 20px;
+		font-size: 26px;
 	}
 `;
 const PhotoWrapperStyled = styled.div`
@@ -36,9 +35,6 @@ const SocialStyled = styled.div`
 	flex-direction: column;
 	align-items: flex-start;
 	grid-row-start: 3;
-	border: 4px solid white;
-	border-radius: 50%;
-	background: white;
 	width: 48px;
 	height: 48px;
 	${mediaMd} {
@@ -56,9 +52,6 @@ const SocialButtons = styled.div`
 	flex-direction: row;
 	align-items: flex-start;
 	grid-row-start: 3;
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
 
 	${SocialStyled} {
 		margin-right: 4px;
@@ -77,17 +70,17 @@ export const Speaker: FC<SpeakerProps> = memo(({className, speaker}) => (
 		<Container>
 			<PhotoWrapperStyled>
 				<PhotoStyled {...speaker.photo} />
-				<SocialButtons>
-					{speaker.socials.map(({name, link}) => (
-						<SocialStyled>
-							<Social type={name} link={link} key={`${name}-${link}`} />
-						</SocialStyled>
-					))}
-				</SocialButtons>
 			</PhotoWrapperStyled>
 			<TextStyled>
 				{speaker.firstName} {speaker.lastName}
 			</TextStyled>
+			<SocialButtons>
+				{speaker.socials.map(({name, link}) => (
+					<SocialStyled>
+						<Social type={name} link={link} key={`${name}-${link}`} />
+					</SocialStyled>
+				))}
+			</SocialButtons>
 		</Container>
 	</SpeakerStyled>
 ));

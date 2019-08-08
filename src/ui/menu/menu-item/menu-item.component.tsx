@@ -14,15 +14,23 @@ const ItemStyled = styled.li`
 	justify-content: flex-end;
 	transition: all .5s;
 
+	& > a {
+		color: var(--yellow);
+	}
+
 	${mediaMd} {
 		border-bottom: none;
-		font-size: 16px;
+		font-size: 20px;
 		padding: 0;
+		
+		& > a {
+			color: var(--purpur);
+		}
+		
 	}
 `;
 const LinkStyled = styled.a`
 	text-transform: inherit;
-	color: inherit;
 	${mediaMd} {
 		padding: 10px 20px;
 	}

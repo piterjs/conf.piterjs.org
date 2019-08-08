@@ -10,8 +10,8 @@ import {clamp} from '../../utils/number.utils';
 
 //#region styled
 const SpeakersStyled = styled.section`
-	padding-bottom: 40px;
-	padding-top: 80px;
+	// padding-bottom: 40px;
+	// padding-top: 80px;
 `;
 const BlockHeadingStyled = styled(BlockHeading)`
 	margin-bottom: 35px;
@@ -49,7 +49,7 @@ export const Speakers: FC<SpeakersProps> = memo(({className, data}) => (
 		<Container>
 			<BlockHeadingStyled>Спикеры</BlockHeadingStyled>
 			<SpeakersListStyled count={data.speakers.length} id={'speaker_lisk'}>
-				{data.speakers.map(speaker => (
+				{data.speakers.filter(s => s.id !== "speakerX").map(speaker => (
 					<Speaker speaker={speaker} key={speaker.id} />
 				))}
 			</SpeakersListStyled>

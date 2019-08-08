@@ -103,7 +103,7 @@ export const Header: FC<{data: DataTO}> = ({data}) => {
 					<LocationStyled location={data.event.location} />
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
-						<MenuItemStyled href={'#about'}>О&nbsp;нас</MenuItemStyled>
+						<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
 						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>

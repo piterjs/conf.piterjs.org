@@ -15,7 +15,6 @@ export const linkReset = css`
 	&:hover,
 	&:active,
 	&:visited {
-		color: inherit;
 		text-decoration: none;
 	}
 `;

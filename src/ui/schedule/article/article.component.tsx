@@ -19,7 +19,7 @@ const ArticleStyled = styled.article`
 `;
 const ContentStyled = styled.div<{isOpened: boolean}>`
 	display: grid;
-	grid-template-columns: 60px 1fr 50px;
+	grid-template-columns: 65px 1fr 50px;
 	grid-gap: 10px;
 
 	${({isOpened}) => isOpened && `grid-template-rows: repeat(4, auto)`};
@@ -29,7 +29,7 @@ const ContentStyled = styled.div<{isOpened: boolean}>`
 	}
 `;
 const TimeStyled = styled.div`
-	font-size: 20px;
+	font-size: 26px;
 	line-height: 1.1;
 	font-weight: 700;
 
@@ -38,8 +38,7 @@ const TimeStyled = styled.div`
 	}
 `;
 const TitleStyled = styled.h3`
-	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 26px;
 	line-height: 1.1;
 	font-weight: 700;
 	position: relative;
@@ -122,9 +121,6 @@ const PhotoStyled = styled.div<{img: string}>`
 const AboutSpeakerTitleStyled = styled.h4`
 	display: none;
 
-	&:before {
-		content: 'About speaker';
-	}
 
 	${mediaMd} {
 		display: block;
@@ -170,8 +166,24 @@ interface ArticleProps {
 	speaker: Option<Speaker>;
 }
 
+const emoji = [
+	"🐰","🐻","🐼","🦁",
+	"🐮","🐔","🐧","🦊",
+	"🦓","🦒","🦌","🦄",
+	"🦋","🦂","🦎","🦀",
+	"🦑","🦐","🐪","🦖",
+	"🦕","🐿","🦉"
+]
+
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
 	const [isOpened, onIsOpenedChange] = useState(false); // replace with false
+	if (title === "") {
+		const length = Math.floor(Math.random()*7) + 3;
+		for (let i = 0; i < length; i++) {
+			const position = Math.floor(Math.random()*23);
+			title += emoji[position];	
+		}
+	};
 
 	return (
 		<ArticleStyled>
@@ -181,25 +193,25 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 				{speaker
 					.map(speaker => (
 						<Fragment>
-							<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} />
+							{/*<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} />*/}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
 							</NameStyled>
-							{isOpened && (
-								<Fragment>
-									<SocialStyled>
-										{speaker.socials.map(({name, link}) => (
-											<Social type={name} link={link} key={`${name}-${link}`} />
-										))}
-									</SocialStyled>
-									<SpeakerStyled>
-										<PhotoStyled img={speaker.photo.src} />
-										<AboutSpeakerTitleStyled />
-										<AboutStyled>{speaker.about}</AboutStyled>
-									</SpeakerStyled>
-									{description.map(description => <Description>{description}</Description>).toNullable()}
-								</Fragment>
-							)}
+							{/*{isOpened && (*/}
+							{/*	<Fragment>*/}
+							{/*		<SocialStyled>*/}
+							{/*			{speaker.socials.map(({name, link}) => (*/}
+							{/*				<Social type={name} link={link} key={`${name}-${link}`} />*/}
+							{/*			))}*/}
+							{/*		</SocialStyled>*/}
+							{/*		<SpeakerStyled>*/}
+							{/*			<PhotoStyled img={speaker.photo.src} />*/}
+							{/*			<AboutSpeakerTitleStyled />*/}
+							{/*			<AboutStyled>{speaker.about}</AboutStyled>*/}
+							{/*		</SpeakerStyled>*/}
+							{/*		{description.map(description => <Description>{description}</Description>).toNullable()}*/}
+							{/*	</Fragment>*/}
+							{/*)}*/}
 						</Fragment>
 					))
 					.toNullable()}

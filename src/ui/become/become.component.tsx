@@ -8,49 +8,21 @@ import {Lines} from '../ui-kit/lines/lines.component';
 
 import * as React from 'react';
 
-const LinesBaseStyled = styled(Lines)`
-	position: absolute;
-	color: var(--white);
-
-	${mediaMd} {
-		width: 300px;
-	}
-`;
-const Lines1Styled = styled(LinesBaseStyled)`
-	top: 0;
-	left: 0;
-	display: none;
-
-	${mediaMd} {
-		display: block;
-	}
-`;
-const Lines2Styled = styled(LinesBaseStyled)`
-	bottom: 0;
-	right: 0;
-	transform: rotate(180deg);
-	display: none;
-
-	${mediaMd} {
-		display: block;
-	}
-`;
-
 const BecomeStyled = styled.section`
 	padding: 35px 0;
-	background-color: var(--purpur);
+	background-color: var(--white);
 	position: relative;
 
 	${mediaMd} {
-		padding: 160px 0;
+		padding: 50px 0;
 	}
 
 	${mediaMdX} {
-		padding: 140px 0;
+		padding: 50px 0;
 	}
 
 	${mediaLg} {
-		padding: 100px 0;
+		padding: 50px 0;
 	}
 `;
 const ContentStyled = styled.div`
@@ -61,43 +33,6 @@ const ContentStyled = styled.div`
 
 	${mediaMd} {
 		align-items: center;
-	}
-`;
-const TitleStyled = styled.h2`
-	color: var(--white);
-	text-align: center;
-	font-size: 60px;
-	display: none;
-	margin-bottom: 40px;
-	text-transform: uppercase;
-	font-weight: 500;
-
-	${mediaMd} {
-		display: block;
-	}
-
-	${mediaMdX} {
-		font-size: 70px;
-	}
-
-	${mediaLg} {
-		font-size: 80px;
-	}
-`;
-const BigButtonStyled = styled(BigButton)<{who: string}>`
-	font-size: 0;
-
-	${mediaMd} {
-		font-size: 30px;
-	}
-
-	&:before {
-		content: 'Become a ${({who}) => who}';
-		font-size: 30px;
-
-		${mediaMd} {
-			content: none;
-		}
 	}
 `;
 
@@ -121,7 +56,7 @@ interface BecomeProps {
 
 export const Become = memo<BecomeProps>(({buttonText, link}) => (
 	<BecomeStyled>
-		<Lines1Styled />
+		{/* <Lines1Styled /> */}
 		<Container>
 			<ContentStyled>
 				<ButtonWrapperStyled>
@@ -133,6 +68,6 @@ export const Become = memo<BecomeProps>(({buttonText, link}) => (
 				{/*</BigButtonStyled>*/}
 			</ContentStyled>
 		</Container>
-		<Lines2Styled />
+		{/* <Lines2Styled /> */}
 	</BecomeStyled>
 ));

@@ -6,13 +6,15 @@ import {Lines} from '../lines/lines.component';
 
 //#region styled
 const BlockHeadingStyled = styled.h2`
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	color: var(--purpur);
 	font-size: 36px;
 	font-weight: 600;
+	padding-top: 80px;
 
 	${mediaMd} {
 		font-size: 45px;
+		padding: 80px 0 50px 0;
 	}
 `;
 const LinesStyled = styled(Lines)`

@@ -12,7 +12,7 @@ import {not} from 'fp-ts/lib/function';
 
 //#region styled
 const AboutStyled = styled.section`
-	padding-top: 80px;
+	// padding-top: 80px;
 `;
 const BlockHeadingStyled = styled(BlockHeading)`
 	margin-bottom: 35px;
@@ -61,7 +61,7 @@ interface AboutProps {
 export const About: FC<AboutProps> = memo(({className, data}) => (
 	<AboutStyled className={className} id={'about'}>
 		<Container>
-			<BlockHeadingStyled>О&nbsp;нас</BlockHeadingStyled>
+			<BlockHeadingStyled>О&nbsp;конференции</BlockHeadingStyled>
 			<TextStyled>
 				{data.event.about.map((about, i) => (
 					<ParagraphStyled key={i}>{about}</ParagraphStyled>

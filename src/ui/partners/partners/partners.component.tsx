@@ -9,18 +9,18 @@ import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
 const PartnersStyled = styled.section`
-	padding: 40px 0 60px;
+	// padding: 40px 0 60px;
 
 	${mediaMd} {
-		padding: 100px 0;
+		// padding: 100px 0;
 	}
 `;
 const ContentStyled = styled.div``;
 const BlockHeadingStyled = styled(BlockHeading)`
-	margin-bottom: 50px;
+	// margin-bottom: 0;
 
 	${mediaMd} {
-		margin-bottom: 100px;
+		// margin-bottom: 0;
 	}
 `;
 const GroupStyled = styled.div`

@@ -14,7 +14,9 @@ const breakpoint = '@media (min-width: 940px)';
 //#region styled
 const FooterStyled = styled.footer`
 	background-color: var(--purpur);
+	color: var(--white);
 	padding-top: 50px;
+	margin-top: 50px;
 	padding-bottom: 30px;
 `;
 const ContentStyled = styled.div`
@@ -89,9 +91,13 @@ const MenuItemStyled = styled(MenuItem)`
 	border: none;
 	color: var(--gray);
 	justify-content: center;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 500;
 	transition: all 0.3s;
+
+	& > a {
+		color: var(--gray);
+	}
 
 	${breakpoint} {
 		padding-top: 0;
@@ -164,7 +170,7 @@ export const Footer: FC<FooterProps> = memo(({className, data}) => (
 				{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
 				{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
 				<MenuStyled>
-					<MenuItemStyled href={'#about'}>О&nbsp;нас</MenuItemStyled>
+					<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
 					<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 					<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 					<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>

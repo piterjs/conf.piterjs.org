@@ -33,11 +33,11 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 					buttonText={'Подать доклад'}
 				/>
 				<Schedule data={data} />
+				<Partners data={data} />
 				<Become
 					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
 					buttonText={'Стать партнером'}
 				/>
-				<Partners data={data} />
 				<Footer data={data} />
 			</Fragment>
 		),
