@@ -2,7 +2,7 @@
   "name": "piterjs-conf",
   "private": true,
   "description": "PiterJS Conf Landing Page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "PiterJS",
   "scripts": {
     "build": "gatsby build",
