@@ -156,15 +156,15 @@
       "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     ],
     "photos": [
-      {"src": "/photo/2.jpg","alt": ""},
-      {"src": "/photo/3.jpg","alt": ""},
-      {"src": "/photo/5.jpg","alt": ""},
-      {"src": "/photo/6.jpg","alt": ""},
-      {"src": "/photo/7.jpg","alt": ""},
-      {"src": "/photo/9.jpg","alt": ""},
-      {"src": "/photo/10.jpg","alt": ""},
-      {"src": "/photo/11.jpg","alt": ""},
-      {"src": "/photo/12.jpg", "alt": ""}
+      {"src": "/photo/2.min.jpg","alt": ""},
+      {"src": "/photo/3.min.jpg","alt": ""},
+      {"src": "/photo/5.min.jpg","alt": ""},
+      {"src": "/photo/6.min.jpg","alt": ""},
+      {"src": "/photo/7.min.jpg","alt": ""},
+      {"src": "/photo/9.min.jpg","alt": ""},
+      {"src": "/photo/10.min.jpg","alt": ""},
+      {"src": "/photo/11.min.jpg","alt": ""},
+      {"src": "/photo/12.min.jpg", "alt": ""}
     ],
     "articles": [
       {
