@@ -9,6 +9,7 @@ import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {clamp} from '../../utils/number.utils';
 import {isEmpty} from 'fp-ts/lib/Array';
 import {not} from 'fp-ts/lib/function';
+import {isMobile} from 'react-device-detect';
 
 //#region styled
 const AboutStyled = styled.section`
@@ -67,11 +68,13 @@ export const About: FC<AboutProps> = memo(({className, data}) => (
 					<ParagraphStyled key={i}>{about}</ParagraphStyled>
 				))}
 			</TextStyled>
-			<PhotosStyled count={data.event.photos.length}>
+			if (!isMobile) {
+				<PhotosStyled count={data.event.photos.length}>
 				{data.event.photos.map((photo, i) => (
 					<PhotoStyled {...photo} key={i} />
 				))}
-			</PhotosStyled>
+				</PhotosStyled>
+			}
 		</Container>
 	</AboutStyled>
 ));
