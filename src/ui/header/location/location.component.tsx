@@ -42,6 +42,7 @@ const LinkStyled = styled.a`
 	display: inline-block;
 	white-space: nowrap;
 	font-size: inherit;
+	color: var(--text-main);
 `;
 //#endregion
 
