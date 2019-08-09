@@ -8,7 +8,7 @@ import {ajax} from 'rxjs/ajax';
 import {catchError, map} from 'rxjs/operators';
 
 // remove service workers
-if ('serviceWorker' in navigator) {
+if (navigator && 'serviceWorker' in navigator) {
 	navigator.serviceWorker.getRegistrations().then(
 		registrations => {
 			for (const registration of registrations) {
