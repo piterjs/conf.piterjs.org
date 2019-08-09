@@ -39,7 +39,6 @@
     "monocle-ts": "^1.7.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-device-detect": "^1.7.5",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "rxjs": "^6.5.2",
