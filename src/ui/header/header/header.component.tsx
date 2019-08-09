@@ -39,7 +39,7 @@ const WrapperStyled = styled.div`
 const LogoStyled = styled(Logo)`
 	margin-right: auto;
 	@media (min-width: 1036px) {
-		margin-right: 100px;
+		margin-right: 60px;
 	}
 `;
 const LocationStyled = styled(Location)`
