@@ -37,6 +37,7 @@ const LinkStyled = styled.a`
 	justify-content: center;
 	align-items: center;
 	transition: all .5s;
+	color: var(--purpur);
 
 	&:hover {
 		color: var(--hover-color);
