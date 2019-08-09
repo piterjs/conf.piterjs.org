@@ -7,27 +7,6 @@ import {failure, fromEither} from '@devexperts/remote-data-ts';
 import {ajax} from 'rxjs/ajax';
 import {catchError, map} from 'rxjs/operators';
 
-// remove service workers
-if (navigator && 'serviceWorker' in navigator) {
-	navigator.serviceWorker.getRegistrations().then(
-		registrations => {
-			for (const registration of registrations) {
-				registration.unregister().then(
-					() => {
-						// tslint:disable-next-line
-						console.log('serviceWorker unregistered');
-					},
-					error => {
-						console.error(error);
-					},
-				);
-			}
-		},
-		error => {
-			console.error(error);
-		},
-	);
-}
 
 //#region Photo
 export interface PhotoTO {
