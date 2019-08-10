@@ -34,6 +34,7 @@
     "gatsby-plugin-typescript": "^2.0.15",
     "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-sharp": "^2.1.19",
+    "google-map-react": "^1.1.4",
     "io-ts": "^1.8.6",
     "io-ts-types": "^0.4.7",
     "monocle-ts": "^1.7.2",
@@ -46,8 +47,10 @@
     "typelevel-ts": "^0.3.5"
   },
   "devDependencies": {
+    "@types/google-map-react": "^0.23.12",
     "@types/react": "^16.8.18",
     "@types/react-dom": "^16.8.4",
+    "@types/react-helmet": "^5.0.9",
     "prettier": "^1.17.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-loader": "^3.5.4",

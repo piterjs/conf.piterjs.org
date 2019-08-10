@@ -25,10 +25,17 @@ interface SocialProps {
 	link: string;
 	className?: string;
 	isFooter?: boolean;
+	about?: string;
 }
 
-export const Social: FC<SocialProps> = memo(({type, className, link, isFooter = false}) => (
-	<SocialStyled href={link} className={className} target={'_blank'}>
+export const Social: FC<SocialProps> = memo(({type, className, link, isFooter = false, about}) => (
+	<SocialStyled
+		href={link}
+		className={className}
+		target={'_blank'}
+		aria-label={`Learn more on ${String(type).toLowerCase()} about ${about || 'this'}`}
+		rel='noopener noreferrer'
+	>
 		<Icon svg={getIcon(isFooter, type)} />
 	</SocialStyled>
 ));

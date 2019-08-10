@@ -16,7 +16,6 @@ const FooterStyled = styled.footer`
 	background-color: var(--purpur);
 	color: var(--white);
 	padding-top: 50px;
-	margin-top: 50px;
 	padding-bottom: 30px;
 `;
 const ContentStyled = styled.div`

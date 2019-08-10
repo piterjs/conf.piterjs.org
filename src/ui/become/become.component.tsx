@@ -51,6 +51,7 @@ interface BecomeProps {
 	link?: {
 		href: string;
 		target: string;
+		rel?: string;
 	};
 }
 
