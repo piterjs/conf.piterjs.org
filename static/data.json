@@ -277,6 +277,11 @@
   },
   "partners": [
     {
+      "name": "HolyJS",
+      "link": "https://holyjs.ru/",
+      "image": "/partner/holyjs.svg"
+    },
+    {
       "name": "Sprintbox",
       "link": "https://sprintbox.ru",
       "image": "/partner/sprintbox.svg"
