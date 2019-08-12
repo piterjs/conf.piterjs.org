@@ -34,7 +34,7 @@ export const Social: FC<SocialProps> = memo(({type, className, link, isFooter = 
 		className={className}
 		target={'_blank'}
 		aria-label={`Learn more on ${String(type).toLowerCase()} about ${about || 'this'}`}
-		rel='noopener noreferrer'
+		rel={'noopener noreferrer'}
 	>
 		<Icon svg={getIcon(isFooter, type)} />
 	</SocialStyled>

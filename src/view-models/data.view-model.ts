@@ -205,7 +205,7 @@ const MetaTOIO = type(
 //#endregion
 //#region Helmet
 export interface HelmetTO {
-	[name: string]: MetaTO;
+	landing: MetaTO;
 }
 const HelmetTOIO = type(
 	{
@@ -214,11 +214,26 @@ const HelmetTOIO = type(
 	'HelmetTOIO',
 );
 //#endregion
+//#region Helmet
+export interface LinksTO {
+	signUpLink: string;
+	mailTo: string;
+}
+
+const LinksTOIO = type(
+	{
+		mailTo: string,
+		signUpLink: string,
+	},
+	'LinksTOIO',
+);
+//#endregion
 
 //#region Data
 export interface DataTO {
 	articles: ArticleTO[];
 	event: EventTO;
+	links: LinksTO;
 	map: MapTO;
 	partners: PartnerTO[];
 	piterjs: PiterJSTO;
@@ -230,6 +245,7 @@ const DataTOIO = type(
 		articles: array(ArticleTOIO, 'Articles'),
 		event: EventTOIO,
 		helmet: HelmetTOIO,
+		links: LinksTOIO,
 		map: MapTOIO,
 		partners: array(PartnerTOIO, 'partners'),
 		piterjs: PiterJSTOIO,

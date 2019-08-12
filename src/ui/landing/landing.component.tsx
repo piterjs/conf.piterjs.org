@@ -37,13 +37,13 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 				<About data={data} />
 				<Speakers data={data} />
 				<Become
-					link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank', rel: 'noopener noreferrer'}}
+					link={{href: data.links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}}
 					buttonText={'Подать доклад'}
 				/>
 				<Schedule data={data} />
 				<Partners data={data} />
 				<Become
-					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
+					link={{href: `mailto:${data.links.mailTo}`, target: '_self'}}
 					buttonText={'Стать партнером'}
 				/>
 				<Map data={data} />
