@@ -48,7 +48,7 @@ const LinkStyled = styled.a`
 		transition: all .5s;
 		border-radius: 8px;
 		&:hover {
-	        box-shadow: -20px 40px 40px rgba(0,0,0,.1);
+	        box-shadow: -4px 4px 15px 5px rgba(0,0,0,.1);
 		}
 	}
 `;
