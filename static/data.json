@@ -61,6 +61,26 @@
       ]
     },
     {
+      "id": "speaker3",
+      "firstName": "Алексей",
+      "lastName": "Золотых",
+      "photo": {
+        "src": "/speaker/alexey_zolotyh.jpg",
+        "alt": "Алексей Золотых"
+      },
+      "about": "",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/zolotyh"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/zolotyh"
+        }
+      ]
+    },
+    {
       "id": "speakerX",
       "firstName": "undefined",
       "lastName": "",
@@ -115,7 +135,8 @@
     },
     {
       "id": "article3",
-      "name": ""
+      "name": "Автоматизируй это. Гиперавтоматизированный пайплайн",
+      "description": ""
     },
     {
       "id": "article4",
@@ -143,6 +164,10 @@
     },
     {
       "id": "article10",
+      "name": ""
+    },
+    {
+      "id": "articleX",
       "name": ""
     }
   ],
@@ -177,13 +202,13 @@
         "time": "11:00"
       },
       {
-        "articleId": "article3",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "11:20"
       },
       {
-        "articleId": "article4",
-        "speakerId": "speakerX",
+        "articleId": "article1",
+        "speakerId": "speaker1",
         "time": "12:00"
       },
       {
@@ -191,13 +216,13 @@
         "time": "12:40"
       },
       {
-        "articleId": "article1",
-        "speakerId": "speaker1",
+        "articleId": "article2",
+        "speakerId": "speaker2",
         "time": "13:10"
       },
       {
-        "articleId": "article2",
-        "speakerId": "speaker2",
+        "articleId": "article0",
+        "speakerId": "speaker0",
         "time": "13:50"
       },
       {
@@ -205,27 +230,27 @@
         "time": "14:30"
       },
       {
-        "articleId": "article0",
-        "speakerId": "speaker0",
+        "articleId": "article3",
+        "speakerId": "speaker3",
         "time": "15:30"
       },
       {
-        "articleId": "article5",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "15:45"
       },
       {
-        "articleId": "article6",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "16:00"
       },
       {
-        "articleId": "article7",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "16:15"
       },
       {
-        "articleId": "article8",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "16:30"
       },
@@ -234,12 +259,12 @@
         "time": "16:45"
       },
       {
-        "articleId": "article9",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "17:15"
       },
       {
-        "articleId": "article10",
+        "articleId": "articleX",
         "speakerId": "speakerX",
         "time": "17:55"
       },
