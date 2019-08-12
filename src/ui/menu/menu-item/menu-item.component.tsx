@@ -43,6 +43,6 @@ interface MenuItemProps {
 
 export const MenuItem: FC<MenuItemProps> = memo(({children, className, href}) => (
 	<ItemStyled className={className}>
-		<LinkStyled href={href}>{children}</LinkStyled>
+		<LinkStyled rel={'noopener noreferrer'} href={href}>{children}</LinkStyled>
 	</ItemStyled>
 ));

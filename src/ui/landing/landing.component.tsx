@@ -1,5 +1,6 @@
 import {Fragment, memo} from 'react';
 import * as React from 'react';
+import Helmet from 'react-helmet';
 import {Header} from '../header/header/header.component';
 import {Promo} from '../promo/promo.component';
 import {Schedule} from '../schedule/schedule/schedule.component';
@@ -10,6 +11,7 @@ import {Become} from '../become/become.component';
 import {DataTO} from '../../view-models/data.view-model';
 import {RemoteData} from '@devexperts/remote-data-ts';
 import {Speakers} from '../speakers/speakers.component';
+import {Map} from '../map/map.component';
 
 export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 	data.fold(
@@ -24,20 +26,27 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 		),
 		data => (
 			<Fragment>
+				<Helmet
+					title={data.helmet.landing.title}
+				>
+					<meta name='description' content={data.helmet.landing.description} />
+					<html lang='ru' />
+				</Helmet>
 				<Header data={data} />
 				<Promo data={data} />
 				<About data={data} />
 				<Speakers data={data} />
 				<Become
-					link={{href: 'https://forms.gle/Y7TM5VbC7RkNsGkz8', target: '_blank'}}
+					link={{href: data.links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}}
 					buttonText={'Подать доклад'}
 				/>
 				<Schedule data={data} />
 				<Partners data={data} />
 				<Become
-					link={{href: 'mailto:partner@piterjs.dev', target: '_self'}}
+					link={{href: `mailto:${data.links.mailTo}`, target: '_self'}}
 					buttonText={'Стать партнером'}
 				/>
+				<Map data={data} />
 				<Footer data={data} />
 			</Fragment>
 		),

@@ -25,10 +25,17 @@ interface SocialProps {
 	link: string;
 	className?: string;
 	isFooter?: boolean;
+	about?: string;
 }
 
-export const Social: FC<SocialProps> = memo(({type, className, link, isFooter = false}) => (
-	<SocialStyled href={link} className={className} target={'_blank'}>
+export const Social: FC<SocialProps> = memo(({type, className, link, isFooter = false, about}) => (
+	<SocialStyled
+		href={link}
+		className={className}
+		target={'_blank'}
+		aria-label={`Learn more on ${getSocialName(type)} about ${about || 'it'}`}
+		rel={'noopener noreferrer'}
+	>
 		<Icon svg={getIcon(isFooter, type)} />
 	</SocialStyled>
 ));
@@ -72,5 +79,29 @@ function getIcon(isFooter: boolean, type: SocialType) {
 			return Fragment;
 		case 'OK':
 			return Fragment;
+	}
+}
+
+
+function getSocialName(type: SocialType) {
+	switch (type) {
+		case 'FACEBOOK':
+			return 'facebook';
+		case 'GOOGLE':
+			return 'google';
+		case 'GITHUB':
+			return 'github';
+		case 'LINKED_IN':
+			return 'linked in';
+		case 'TELEGRAM':
+			return 'telegram';
+		case 'TWITTER':
+			return 'twitter';
+		case 'VK':
+			return 'vk';
+		case 'OK':
+			return 'ok';
+		default:
+			return '';
 	}
 }

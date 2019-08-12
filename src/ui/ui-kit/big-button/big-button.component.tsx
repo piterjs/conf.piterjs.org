@@ -58,6 +58,7 @@ interface BigButtonProps {
 	linkParams?: {
 		href: string;
 		target: string;
+		rel?: string;
 	};
 	className?: string;
 	linkView?: boolean;

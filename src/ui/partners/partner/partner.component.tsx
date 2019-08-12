@@ -69,7 +69,7 @@ interface PartnerProps {
 
 export const Partner = memo<PartnerProps>(({partner, className}) => (
 	<PartnerStyled className={className}>
-		<LinkStyled href={partner.link} title={partner.name} target={'_blank'}>
+		<LinkStyled href={partner.link} title={partner.name} target={'_blank'} rel={'noopener noreferrer'}>
 			{partner.name}
 			<LogoStyled src={partner.image} alt={partner.name} />
 		</LinkStyled>

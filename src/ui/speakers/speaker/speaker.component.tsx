@@ -76,8 +76,8 @@ export const Speaker: FC<SpeakerProps> = memo(({className, speaker}) => (
 			</TextStyled>
 			<SocialButtons>
 				{speaker.socials.map(({name, link}) => (
-					<SocialStyled>
-						<Social type={name} link={link} key={`${name}-${link}`} />
+					<SocialStyled key={`${name}-${link}`} >
+						<Social type={name} link={link} about={`${speaker.firstName} ${speaker.lastName}`}/>
 					</SocialStyled>
 				))}
 			</SocialButtons>

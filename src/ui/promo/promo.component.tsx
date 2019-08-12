@@ -93,7 +93,14 @@ export const Promo: FC<{data: DataTO}> = memo(({data}) => (
 						<PlaceStyled>Caнкт-Петербург</PlaceStyled>
 					</DateStyled>
 					<TitleStyled>PiterJS conf &mdash; конференция JavaScript-сообщества с берегов Невы</TitleStyled>
-					<BigButton linkView={ true } linkParams={{href: 'https://piterjsconf.timepad.ru/event/1007647/', target: '_blank'}}>
+					<BigButton
+						linkView={ true }
+						linkParams={{
+							href: 'https://piterjsconf.timepad.ru/event/1007647/',
+							rel: 'noopener noreferrer',
+							target: '_blank',
+						}}
+					>
 						Зарегистрироваться
 					</BigButton>
 				</ContentStyled>

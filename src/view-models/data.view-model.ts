@@ -1,4 +1,4 @@
-import {array, literal, string, type, union} from 'io-ts';
+import {array, literal, string, type, union, number} from 'io-ts';
 import {Option} from 'fp-ts/lib/Option';
 import {createOptionFromNullable} from 'io-ts-types';
 import {PathReporter} from 'io-ts/lib/PathReporter';
@@ -161,19 +161,92 @@ const PiterJSTOIO = type(
 	'PiterJSTOIO',
 );
 //#endregion
+//#region MapCoords
+export interface MapCoordsTO {
+	lat: number;
+	lng: number;
+}
+
+const MapCoordsTOIO = type(
+	{
+		lat: number,
+		lng: number,
+	},
+	'MapCoordsTOIO',
+);
+//#endregion
+//#region Map
+export interface MapTO {
+	key: string;
+	coords: MapCoordsTO;
+	zoom: number;
+}
+const MapTOIO = type(
+	{
+		coords: MapCoordsTOIO,
+		key: string,
+		zoom: number,
+	},
+	'MapTOIO',
+);
+//#endregion
+//#region Meta
+export interface MetaTO {
+	title: string;
+	description: string;
+}
+const MetaTOIO = type(
+	{
+		description: string,
+		title: string,
+	},
+	'MetaTOIO',
+);
+//#endregion
+//#region Helmet
+export interface HelmetTO {
+	landing: MetaTO;
+}
+const HelmetTOIO = type(
+	{
+		landing: MetaTOIO,
+	},
+	'HelmetTOIO',
+);
+//#endregion
+//#region Helmet
+export interface LinksTO {
+	signUpLink: string;
+	mailTo: string;
+}
+
+const LinksTOIO = type(
+	{
+		mailTo: string,
+		signUpLink: string,
+	},
+	'LinksTOIO',
+);
+//#endregion
 
 //#region Data
 export interface DataTO {
 	articles: ArticleTO[];
 	event: EventTO;
+	links: LinksTO;
+	map: MapTO;
 	partners: PartnerTO[];
 	piterjs: PiterJSTO;
 	speakers: SpeakerTO[];
+	helmet: HelmetTO;
 }
 const DataTOIO = type(
 	{
 		articles: array(ArticleTOIO, 'Articles'),
 		event: EventTOIO,
+		helmet: HelmetTOIO,
+		links: LinksTOIO,
+		map: MapTOIO,
 		partners: array(PartnerTOIO, 'partners'),
 		piterjs: PiterJSTOIO,
 		speakers: array(SpeakerTOIO, 'Speakers'),

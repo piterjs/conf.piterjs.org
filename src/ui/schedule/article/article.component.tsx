@@ -78,7 +78,7 @@ const NameStyled = styled.div`
 	grid-column-end: 4;
 
 	${mediaMd} {
-		color: var(--text-gray);
+		color: var(--text-dark-gray);
 		font-size: 30px;
 		font-weight: 500;
 		font-style: normal;

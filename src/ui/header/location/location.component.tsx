@@ -58,7 +58,7 @@ interface LocationProps {
 export const Location: FC<LocationProps> = memo(({className, location}) => (
 	<LocationStyled className={className}>
 		<PointStyled />
-		<LinkStyled href={location.link} target={'_blank'}>
+		<LinkStyled href={location.link} target={'_blank'} rel={'noopener noreferrer'}>
 			{location.address}
 			<br />
 			{location.city}
