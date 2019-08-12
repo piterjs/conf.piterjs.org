@@ -3,9 +3,8 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import {Container} from '../../ui-kit/container/container.component';
 import {SpeakerTO} from '../../../view-models/data.view-model';
-import {mediaLg, mediaMd, mediaMdX} from '../../../utils/css.utils';
+import {mediaMd} from '../../../utils/css.utils';
 import {Social} from '../../ui-kit/social/social.component';
-import {clamp} from '../../../utils/number.utils';
 
 //#region styled
 const SpeakerStyled = styled.div`
@@ -72,7 +71,9 @@ export const Speaker: FC<SpeakerProps> = memo(({className, speaker}) => (
 				<PhotoStyled {...speaker.photo} />
 			</PhotoWrapperStyled>
 			<TextStyled>
-				{speaker.firstName} {speaker.lastName}
+				{speaker.firstName}
+				<br />
+				{speaker.lastName}
 			</TextStyled>
 			<SocialButtons>
 				{speaker.socials.map(({name, link}) => (
