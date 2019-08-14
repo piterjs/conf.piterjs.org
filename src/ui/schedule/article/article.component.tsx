@@ -5,6 +5,7 @@ import {mediaMd} from '../../../utils/css.utils';
 import * as React from 'react';
 import {lazy} from '../../../utils/function.utils';
 import {Social, SocialType} from '../../ui-kit/social/social.component';
+import {isMobileS} from '../../../utils/viewport.utils';
 
 //#region styled
 const ArticleStyled = styled.article`
@@ -30,7 +31,7 @@ const ContentStyled = styled.div<{isOpened: boolean}>`
 	}
 `;
 const TimeStyled = styled.div`
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 700;
 
@@ -39,17 +40,21 @@ const TimeStyled = styled.div`
 	}
 `;
 const TitleStyled = styled.h3`
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 700;
 	position: relative;
 	display: flex;
+	grid-column: 2/4;
+    word-break: break-word;
 
 	${mediaMd} {
+		grid-column: 2;
 		font-size: 30px;
 	}
 `;
 const TogglerStyled = styled.button<{isOn: boolean}>`
+	display: none;
 	border: 3px solid var(--yellow);
 	margin-left: auto;
 	width: 50px;
@@ -58,6 +63,9 @@ const TogglerStyled = styled.button<{isOn: boolean}>`
 	position: relative;
 	grid-column: 3;
     grid-row: 1/3;
+    ${mediaMd} {
+    	display: block;
+    }
 
 	&:before {
 		content: '';
@@ -154,8 +162,10 @@ const Description = styled.div`
 	padding-top: 30px;
 	font-size: 20px;
 	line-height: 26px;
+	word-break: break-word;
 
 	${mediaMd} {
+		word-break: unset;
 		grid-row-start: 3;
 	}
 `;
@@ -209,8 +219,10 @@ const emoji = [
 ];
 
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
-	const [isOpened, onIsOpenedChange] = useState(false);
-	// const emptyArticle = !title;
+	const emptyArticle = !title;
+	const openArticleByDefault = isMobileS() && !emptyArticle;
+
+	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
 	if (title === '') {
 		const length = Math.floor(Math.random() * 7) + 3;
 		for (let i = 0; i < length; i++) {

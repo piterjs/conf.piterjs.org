@@ -60,10 +60,12 @@ const PartnerStyled = styled(Partner)`
 `;
 const GroupPartnersStyled = styled.ul`
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	${mediaMd} {
 		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
 	}
 `;
 //#endregion
