@@ -36,7 +36,7 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 				<Speakers />
 				<Become link={{href: data.links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}} buttonText={'Подать доклад'} />
 				<Schedule data={data} />
-				<Partners data={data} />
+				<Partners />
 				<Become link={{href: `mailto:${data.links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
 				<Map data={data} />
 				<Footer data={data} />
