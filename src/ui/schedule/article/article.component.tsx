@@ -54,7 +54,7 @@ const TitleStyled = styled.h3`
 	}
 `;
 const TogglerStyled = styled.button<{isOn: boolean}>`
-	display: none;
+	display: block;
 	border: 3px solid var(--yellow);
 	margin-left: auto;
 	width: 50px;
@@ -62,9 +62,10 @@ const TogglerStyled = styled.button<{isOn: boolean}>`
 	flex-shrink: 0;
 	position: relative;
 	grid-column: 3;
-	grid-row: 1/3;
+	grid-row: 2/3;
 	${mediaMd} {
 		display: block;
+		grid-row: 1/3;
 	}
 
 	&:before {
