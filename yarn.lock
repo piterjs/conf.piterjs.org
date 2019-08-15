@@ -4917,6 +4917,11 @@ gatsby-cli@^2.6.2:
     ink "^2.0.5"
     ink-spinner "^3.0.1"
 
+gatsby-core-utils@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-1.0.4.tgz#098b5b2f444faadd3bc9f7e20bd0a092129882ba"
+  integrity sha512-r9HhRvnaPFliO9IzN6Yz2xTsZ8vtWKvzQHz0GwW3iFe6KkhXC+Y1p8eEaorRz6AnOE6sRbWaeqpe3AA6FbKr2g==
+
 gatsby-graphiql-explorer@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-graphiql-explorer/-/gatsby-graphiql-explorer-0.1.0.tgz#e1b6a8e77f9f5b569204eaa41184e4e834bdcc69"
@@ -5053,10 +5058,10 @@ gatsby-react-router-scroll@^2.0.7:
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
 
-gatsby-source-filesystem@^2.0.37:
-  version "2.0.37"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.37.tgz#f1de0ab81809ce4c1fdd8cdfb573b1fd25731a8e"
-  integrity sha512-PKCpflGXyqOSqoMUNk++sEkBHEjqMGNlN4OZQ7qKH+Jkcp0dg/Ru4anyrz57veQKMO+UdHUV1pOJI6PnZY9YiA==
+gatsby-source-filesystem@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.npmjs.org/gatsby-source-filesystem/-/gatsby-source-filesystem-2.1.9.tgz#92fa2e06565b43d3750da5136b492dae705c9792"
+  integrity sha512-3XTDdDAo7Hhs6Nt4ug7aTAkxCj28hB7IeylHrEh+QjDXAuoijvQSNucOKieoxkfUaAGWnSWbdJwQtPch7nKa8g==
   dependencies:
     "@babel/runtime" "^7.0.0"
     better-queue "^3.8.7"
@@ -5064,13 +5069,13 @@ gatsby-source-filesystem@^2.0.37:
     chokidar "2.1.2"
     file-type "^10.2.0"
     fs-extra "^5.0.0"
+    gatsby-core-utils "^1.0.4"
     got "^7.1.0"
     md5-file "^3.1.1"
     mime "^2.2.0"
     pretty-bytes "^4.0.2"
-    progress "^1.1.8"
+    progress "^2.0.3"
     read-chunk "^3.0.0"
-    slash "^1.0.0"
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
@@ -5094,6 +5099,14 @@ gatsby-telemetry@^1.0.10:
     stack-trace "^0.0.10"
     stack-utils "1.0.2"
     uuid "3.3.2"
+
+gatsby-transformer-json@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.npmjs.org/gatsby-transformer-json/-/gatsby-transformer-json-2.2.2.tgz#115573dd9d028a58124d15536ddb1629121f733e"
+  integrity sha512-wKC8A+/M9gGd9SmF1V8hIgFK2t0VRD6cu2/Xz0snFjt+BOur+cn7lCrsUI5kEHiQio8GXnfLmSLTZ6SRBH0iHA==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
 
 gatsby-transformer-sharp@^2.1.19:
   version "2.1.19"
@@ -9062,7 +9075,7 @@ progress@^1.1.8:
   resolved "https://registry.yarnpkg.com/progress/-/progress-1.1.8.tgz#e260c78f6161cdd9b0e56cc3e0a85de17c7a57be"
   integrity sha1-4mDHj2Fhzdmw5WzD4Khd4Xx6V74=
 
-progress@^2.0.0:
+progress@^2.0.0, progress@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
