@@ -55,7 +55,7 @@ interface BurgerProps {
 }
 
 export const Burger: FC<BurgerProps> = ({className, isOpened, onClick}) => (
-	<BurgerStyled className={className} onClick={onClick} title="menu">
+	<BurgerStyled className={className} onClick={onClick} title='menu'>
 		<ButtonLineStyled isOpened={isOpened} />
 	</BurgerStyled>
 );
