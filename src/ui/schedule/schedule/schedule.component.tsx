@@ -67,7 +67,6 @@ export const Schedule: FC<ScheduleProps> = memo(({className}) => {
 				{event.articles.map(article => {
 					// tslint:disable
 					const speech = findFirst(articles, item => item.id === article.articleId);
-					console.log(speech);
 					// tslint:disable
 					const speaker = fromNullable(article.speakerId).chain(speakerId =>
 						findFirst(speakers, speaker => speaker.id === speakerId.toString()),
