@@ -30,7 +30,7 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 					<meta name='description' content={data.helmet.landing.description} />
 					<html lang='ru' />
 				</Helmet>
-				<Header data={data} />
+				<Header />
 				<Promo data={data} />
 				<About />
 				<Speakers data={data} />
