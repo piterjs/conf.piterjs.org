@@ -1,11 +1,11 @@
 import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 import {FC, memo} from 'react';
 import GoogleMapReact from 'google-map-react';
 import styled from '@emotion/styled';
-import {DataTO} from '../../view-models/data.view-model';
+import {MapTO} from '../../view-models/data.view-model';
 import {mediaMd} from '../../utils/css.utils';
 import {Marker} from './marker.component';
-
 
 const MapContainerStyled = styled.div`
 	margin-top: 3.125rem;
@@ -17,37 +17,46 @@ const MapContainerStyled = styled.div`
 	}
 `;
 
-interface MapProps {
-	data: DataTO;
-}
-
 const mapOptions = {
 	disableDefaultUI: true,
-	styles: [{
-		stylers: [{
-			saturation: -100,
-		}],
-	}],
+	styles: [
+		{
+			stylers: [
+				{
+					saturation: -100,
+				},
+			],
+		},
+	],
 };
 
-export const Map: FC<MapProps> = memo(({data}) => {
+const mapQuery = graphql`
+	query MapQuery {
+		dataJson {
+			map {
+				coords {
+					lat
+					lng
+				}
+				key
+				zoom
+			}
+		}
+	}
+`;
+
+export const Map: FC = memo(() => {
+	const {dataJson: data} = useStaticQuery(mapQuery);
+	const map: MapTO = data.map;
 	const bootstrapURLKeys = {
-		key: data.map.key,
+		key: map.key,
 		v: '3.38',
 	};
 
 	return (
 		<MapContainerStyled>
-			<GoogleMapReact
-				bootstrapURLKeys={bootstrapURLKeys}
-				defaultCenter={data.map.coords}
-				defaultZoom={data.map.zoom}
-				options={mapOptions}
-			>
-				<Marker
-					lat={data.map.coords.lat}
-					lng={data.map.coords.lng}
-				/>
+			<GoogleMapReact bootstrapURLKeys={bootstrapURLKeys} defaultCenter={map.coords} defaultZoom={map.zoom} options={mapOptions}>
+				<Marker lat={map.coords.lat} lng={map.coords.lng} />
 			</GoogleMapReact>
 		</MapContainerStyled>
 	);
