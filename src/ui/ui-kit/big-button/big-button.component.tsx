@@ -5,7 +5,7 @@ import {mediaMd} from '../../../utils/css.utils';
 
 //#region styled
 const BigButtonStyled = styled.a`
-	padding: 18px 36px;
+	padding: 18px 13px;
 	border-top: 2px solid currentColor;
 	border-bottom: 2px solid currentColor;
 	transition: all 0.3s;
