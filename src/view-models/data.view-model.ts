@@ -255,7 +255,7 @@ const DataTOIO = type(
 );
 //#endregion
 
-export const data$ = ajax('/data.json').pipe(
+export const data$ = ajax(`/data.json?t=${Date.now()}`).pipe(
 	map(value => {
 		if (value.status >= 400) {
 			return failure<Error, DataTO>(new Error('Request Error'));
