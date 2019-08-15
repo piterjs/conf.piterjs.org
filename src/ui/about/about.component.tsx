@@ -1,9 +1,10 @@
 import {FC, memo} from 'react';
 import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 import {BlockHeading} from '../ui-kit/block-heading/block-heading.component';
 import styled from '@emotion/styled';
 import {Container} from '../ui-kit/container/container.component';
-import {DataTO} from '../../view-models/data.view-model';
+import {EventTO} from '../../view-models/data.view-model';
 import {Paragraph} from '../ui-kit/paragraph/paragraph.component';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {clamp} from '../../utils/number.utils';
@@ -55,23 +56,41 @@ const PhotoStyled = styled.img`
 
 interface AboutProps {
 	className?: string;
-	data: DataTO;
 }
 
-export const About: FC<AboutProps> = memo(({className, data}) => (
-	<AboutStyled className={className} id={'about'}>
-		<Container>
-			<BlockHeadingStyled>О&nbsp;конференции</BlockHeadingStyled>
-			<TextStyled>
-				{data.event.about.map((about, i) => (
-					<ParagraphStyled key={i}>{about}</ParagraphStyled>
-				))}
-			</TextStyled>
-			<PhotosStyled count={data.event.photos.length}>
-			{data.event.photos.map((photo, i) => (
-				<PhotoStyled {...photo} key={i} />
-			))}
-			</PhotosStyled>
-		</Container>
-	</AboutStyled>
-));
+const aboutQuery = graphql`
+	query AboutQuery {
+		dataJson {
+			event {
+				about
+				photos {
+					alt
+					src
+				}
+			}
+		}
+	}
+`;
+
+export const About: FC<AboutProps> = memo(({className}) => {
+	const {dataJson: data} = useStaticQuery(aboutQuery);
+	const event: EventTO = data.event;
+
+	return (
+		<AboutStyled className={className} id={'about'}>
+			<Container>
+				<BlockHeadingStyled>О&nbsp;конференции</BlockHeadingStyled>
+				<TextStyled>
+					{event.about.map((about, i) => (
+						<ParagraphStyled key={i}>{about}</ParagraphStyled>
+					))}
+				</TextStyled>
+				<PhotosStyled count={data.event.photos.length}>
+					{event.photos.map((photo, i) => (
+						<PhotoStyled {...photo} key={i} />
+					))}
+				</PhotosStyled>
+			</Container>
+		</AboutStyled>
+	);
+});

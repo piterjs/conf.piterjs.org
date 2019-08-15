@@ -26,26 +26,18 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 		),
 		data => (
 			<Fragment>
-				<Helmet
-					title={data.helmet.landing.title}
-				>
+				<Helmet title={data.helmet.landing.title}>
 					<meta name='description' content={data.helmet.landing.description} />
 					<html lang='ru' />
 				</Helmet>
 				<Header data={data} />
 				<Promo data={data} />
-				<About data={data} />
+				<About />
 				<Speakers data={data} />
-				<Become
-					link={{href: data.links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}}
-					buttonText={'Подать доклад'}
-				/>
+				<Become link={{href: data.links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}} buttonText={'Подать доклад'} />
 				<Schedule data={data} />
 				<Partners data={data} />
-				<Become
-					link={{href: `mailto:${data.links.mailTo}`, target: '_self'}}
-					buttonText={'Стать партнером'}
-				/>
+				<Become link={{href: `mailto:${data.links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
 				<Map data={data} />
 				<Footer data={data} />
 			</Fragment>
