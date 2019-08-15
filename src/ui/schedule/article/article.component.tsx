@@ -227,8 +227,7 @@ const emoji = [
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
 	// console.log(description, speaker);
 	const emptyArticle = !title;
-	const openArticleByDefault = !emptyArticle;
-	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
+	const [isOpened, onIsOpenedChange] = useState(false);
 	if (title === '') {
 		const length = Math.floor(Math.random() * 7) + 3;
 		for (let i = 0; i < length; i++) {
@@ -246,7 +245,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 					.map(speaker => (
 						<Fragment>
 							{!emptyArticle && (
-								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label="Подробнее" />
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
 							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
