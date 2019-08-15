@@ -1,6 +1,7 @@
 import {memo} from 'react';
 import * as React from 'react';
-import {DataTO} from '../../../view-models/data.view-model';
+import {useStaticQuery, graphql} from 'gatsby';
+import {PartnerTO} from '../../../view-models/data.view-model';
 import styled from '@emotion/styled';
 import {Container} from '../../ui-kit/container/container.component';
 import {BlockHeading} from '../../ui-kit/block-heading/block-heading.component';
@@ -71,21 +72,37 @@ const GroupPartnersStyled = styled.ul`
 //#endregion
 
 interface PartnersProps {
-	data: DataTO;
 	className?: string;
 }
 
-export const Partners = memo<PartnersProps>(({className, data}) => (
-	<PartnersStyled id={'partners'}>
-		<Container>
-			<ContentStyled>
-				<BlockHeadingStyled>Партнеры</BlockHeadingStyled>
-				<GroupPartnersStyled>
-					{data.partners.map(partner => (
-						<PartnerStyled partner={partner} key={partner.name} />
-					))}
-				</GroupPartnersStyled>
-			</ContentStyled>
-		</Container>
-	</PartnersStyled>
-));
+const partnersQuery = graphql`
+	query PartnersQuery {
+		dataJson {
+			partners {
+				image
+				link
+				name
+			}
+		}
+	}
+`;
+
+export const Partners = memo<PartnersProps>(({className}) => {
+	const {dataJson: data} = useStaticQuery(partnersQuery);
+	const partners: PartnerTO[] = data.partners;
+
+	return (
+		<PartnersStyled id={'partners'}>
+			<Container>
+				<ContentStyled>
+					<BlockHeadingStyled>Партнеры</BlockHeadingStyled>
+					<GroupPartnersStyled>
+						{partners.map(partner => (
+							<PartnerStyled partner={partner} key={partner.name} />
+						))}
+					</GroupPartnersStyled>
+				</ContentStyled>
+			</Container>
+		</PartnersStyled>
+	);
+});

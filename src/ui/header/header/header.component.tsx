@@ -1,6 +1,7 @@
 import {FC, useState} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 import {Burger} from '../burger/burger.component';
 import {lazy} from '../../../utils/function.utils';
 import {Menu} from '../../menu/menu/menu.component';
@@ -9,7 +10,7 @@ import {MenuItem} from '../../menu/menu-item/menu-item.component';
 import {mediaMd, mediaMdX} from '../../../utils/css.utils';
 import {Logo} from '../logo/logo.component';
 import {Location} from '../location/location.component';
-import {DataTO} from '../../../view-models/data.view-model';
+import {EventTO} from '../../../view-models/data.view-model';
 
 //#region styled
 const HeaderStyled = styled.header<{isOpened: boolean}>`
@@ -92,15 +93,31 @@ const MenuItemStyled = styled(MenuItem)`
 `;
 //#endregion
 
-export const Header: FC<{data: DataTO}> = ({data}) => {
+const headerQuery = graphql`
+	query HeaderQuery {
+		dataJson {
+			event {
+				location {
+					address
+					city
+					link
+				}
+			}
+		}
+	}
+`;
+
+export const Header: FC = () => {
 	const [isOpened, onOpenedChange] = useState(false);
+	const {dataJson: data} = useStaticQuery(headerQuery);
+	const event: EventTO = data.event;
 
 	return (
 		<HeaderStyled isOpened={isOpened}>
 			<ContainerStyled>
 				<WrapperStyled>
 					<LogoStyled />
-					<LocationStyled location={data.event.location} />
+					<LocationStyled location={event.location} />
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
 						<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>

@@ -1,9 +1,10 @@
 import {FC, memo} from 'react';
 import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 import styled from '@emotion/styled';
 import {Container} from '../ui-kit/container/container.component';
 import {BigButton} from '../ui-kit/big-button/big-button.component';
-import {DataTO} from '../../view-models/data.view-model';
+import {EventTO} from '../../view-models/data.view-model';
 import {mediaMd} from '../../utils/css.utils';
 import {Lines} from '../ui-kit/lines/lines.component';
 
@@ -82,30 +83,43 @@ const Lines2Styled = styled(LinesBaseStyled)`
 `;
 //#endregion
 
-export const Promo: FC<{data: DataTO}> = memo(({data}) => (
-	<PromoStyled id={'promo'}>
-		<Lines1Styled />
-		<FilterStyled>
-			<Container>
-				<ContentStyled>
-					<DateStyled>
-						{data.event.date},{ ' ' }
-						<PlaceStyled>Caнкт-Петербург</PlaceStyled>
-					</DateStyled>
-					<TitleStyled>PiterJS conf &mdash; конференция JavaScript-сообщества с берегов Невы</TitleStyled>
-					<BigButton
-						linkView={ true }
-						linkParams={{
-							href: 'https://piterjsconf.timepad.ru/event/1007647/',
-							rel: 'noopener noreferrer',
-							target: '_blank',
-						}}
-					>
-						Зарегистрироваться
-					</BigButton>
-				</ContentStyled>
-			</Container>
-		</FilterStyled>
-		<Lines2Styled />
-	</PromoStyled>
-));
+const promoQuery = graphql`
+	query PromoQuery {
+		dataJson {
+			event {
+				date
+			}
+		}
+	}
+`;
+
+export const Promo: FC = memo(() => {
+	const {dataJson: data} = useStaticQuery(promoQuery);
+	const event: EventTO = data.event;
+
+	return (
+		<PromoStyled id={'promo'}>
+			<Lines1Styled />
+			<FilterStyled>
+				<Container>
+					<ContentStyled>
+						<DateStyled>
+							{event.date}, <PlaceStyled>Caнкт-Петербург</PlaceStyled>
+						</DateStyled>
+						<TitleStyled>PiterJS conf &mdash; конференция JavaScript-сообщества с берегов Невы</TitleStyled>
+						<BigButton
+							linkView={true}
+							linkParams={{
+								href: 'https://piterjsconf.timepad.ru/event/1007647/',
+								rel: 'noopener noreferrer',
+								target: '_blank',
+							}}>
+							Зарегистрироваться
+						</BigButton>
+					</ContentStyled>
+				</Container>
+			</FilterStyled>
+			<Lines2Styled />
+		</PromoStyled>
+	);
+});

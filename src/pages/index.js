@@ -1,10 +1,10 @@
 import React, {Fragment} from 'react';
 import {Global} from '../ui/ui-kit/global/global.component';
-import {AppContainer} from '../ui/app/app.container';
+import {Landing} from '../ui/landing/landing.component';
 
 export default () => (
 	<Fragment>
 		<Global />
-		<AppContainer />
+		<Landing />
 	</Fragment>
 );

@@ -6,6 +6,7 @@ import * as React from 'react';
 import {lazy} from '../../../utils/function.utils';
 import {Social, SocialType} from '../../ui-kit/social/social.component';
 import {isMobileS} from '../../../utils/viewport.utils';
+import {fromNullable} from 'fp-ts/lib/Option';
 
 //#region styled
 const ArticleStyled = styled.article`
@@ -225,6 +226,7 @@ const emoji = [
 ];
 
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
+	// console.log(description, speaker);
 	const emptyArticle = !title;
 	const openArticleByDefault = isMobileS() && !emptyArticle;
 	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
@@ -262,7 +264,9 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 										<AboutSpeakerTitleStyled> О спикере</AboutSpeakerTitleStyled>
 										<AboutStyled>{speaker.about}</AboutStyled>
 									</SpeakerStyled>
-									{description.map(description => <Description>{description}</Description>).toNullable()}
+									{fromNullable(description)
+										.map(description => <Description>{description}</Description>)
+										.toNullable()}
 								</Fragment>
 							)}
 						</Fragment>

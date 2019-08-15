@@ -2,14 +2,21 @@ module.exports = {
 	siteMetadata: {
 		title: `PiterJS conf 2019`,
 		description: `PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования.`,
-		image: "/promo.jpg",
-		url: "https://conf.piterjs.org/",
+		image: '/promo.jpg',
+		url: 'https://conf.piterjs.org/',
 		author: `@piterjs`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		`gatsby-transformer-json`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `./static/data/`,
+			},
+		},
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
@@ -53,7 +60,7 @@ module.exports = {
 			resolve: `gatsby-plugin-emotion`,
 			options: {
 				sourceMap: false,
-				autoLabel: 'process.env.NODE_ENV !== \'production\'',
+				autoLabel: "process.env.NODE_ENV !== 'production'",
 				labelFormat: '[local]',
 				cssPropOptimization: true,
 			},
