@@ -16,7 +16,7 @@ const SpeakerStyled = styled.div`
 `;
 const TextStyled = styled.div`
 	margin: 20px 0;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 30px;
 	${mediaMd} {
 		font-size: 26px;

@@ -147,7 +147,7 @@ const AboutSpeakerTitleStyled = styled.h4`
 	${mediaMd} {
 		display: block;
 		font-size: 25px;
-		font-weight: bold;
+		font-weight: 700;
 		line-height: 27px;
 	}
 `;

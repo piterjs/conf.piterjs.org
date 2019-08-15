@@ -33,20 +33,7 @@ const GroupStyled = styled.div`
 		}
 	}
 `;
-const TitleStyled = styled.h3`
-	font-size: 24px;
-	font-weight: 600;
-	padding-left: 30px;
-	border-bottom: 4px solid var(--yellow);
-	margin-bottom: 15px;
 
-	${mediaMd} {
-		font-size: 60px;
-		border: none;
-		margin-bottom: 30px;
-		padding-left: 0;
-	}
-`;
 const PartnerStyled = styled(Partner)`
 	margin: 20px 15px;
 	${mediaMd} {

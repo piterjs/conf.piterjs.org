@@ -52,7 +52,7 @@ const PlaceStyled = styled.span`
 const TitleStyled = styled.h1`
 	font-size: 36px;
 	padding-bottom: 40px;
-	font-weight: bold;
+	font-weight: 700;
 
 	${mediaMd} {
 		font-size: 70px;
