@@ -17,6 +17,7 @@ const AboutStyled = styled.section`
 `;
 const BlockHeadingStyled = styled(BlockHeading)`
 	margin-bottom: 35px;
+	word-break: break-word;
 
 	${mediaMd} {
 		margin-bottom: 18px;

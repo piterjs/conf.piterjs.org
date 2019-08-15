@@ -5,6 +5,7 @@ import {mediaMd} from '../../../utils/css.utils';
 import * as React from 'react';
 import {lazy} from '../../../utils/function.utils';
 import {Social, SocialType} from '../../ui-kit/social/social.component';
+import {isMobileS} from '../../../utils/viewport.utils';
 
 //#region styled
 const ArticleStyled = styled.article`
@@ -19,8 +20,9 @@ const ArticleStyled = styled.article`
 `;
 const ContentStyled = styled.div<{isOpened: boolean}>`
 	display: grid;
+	grid-auto-flow: row;
 	grid-template-columns: 65px 1fr 50px;
-	grid-gap: 10px;
+	grid-gap: 10px 12px;
 
 	${({isOpened}) => isOpened && `grid-template-rows: repeat(4, auto)`};
 
@@ -29,7 +31,7 @@ const ContentStyled = styled.div<{isOpened: boolean}>`
 	}
 `;
 const TimeStyled = styled.div`
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 700;
 
@@ -38,23 +40,33 @@ const TimeStyled = styled.div`
 	}
 `;
 const TitleStyled = styled.h3`
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 1.1;
 	font-weight: 700;
 	position: relative;
 	display: flex;
+	grid-column: 2/4;
+	word-break: break-word;
 
 	${mediaMd} {
+		grid-column: 2;
 		font-size: 30px;
 	}
 `;
 const TogglerStyled = styled.button<{isOn: boolean}>`
+	display: block;
 	border: 3px solid var(--yellow);
 	margin-left: auto;
 	width: 50px;
 	height: 50px;
 	flex-shrink: 0;
 	position: relative;
+	grid-column: 3;
+	grid-row: 2/3;
+	${mediaMd} {
+		display: block;
+		grid-row: 1/3;
+	}
 
 	&:before {
 		content: '';
@@ -75,12 +87,12 @@ const NameStyled = styled.div`
 	font-size: 18px;
 	grid-column-start: 2;
 	font-style: italic;
-	grid-column-end: 4;
+	grid-column-end: 3;
 
 	${mediaMd} {
-		color: var(--text-dark-gray);
+		color: var(--text-gray);
 		font-size: 30px;
-		font-weight: 500;
+		font-weight: 600;
 		font-style: normal;
 	}
 `;
@@ -89,19 +101,30 @@ const SocialStyled = styled.div`
 	flex-direction: column;
 	align-items: flex-end;
 	grid-row-start: 3;
+	padding-top: 30px;
+	& > *:not(:last-child) {
+		margin-bottom: 11px;
+	}
 
 	${mediaMd} {
 		grid-row-start: 4;
+	}
+
+	& a {
+		width: 42px;
+		height: 42px;
 	}
 `;
 const SpeakerStyled = styled.div`
 	grid-column-start: 2;
 	grid-column-end: 4;
+	padding-top: 30px;
 
 	${mediaMd} {
 		display: grid;
 		grid-template-columns: auto 1fr;
-		grid-column-gap: 50px;
+		grid-template-rows: 28px auto;
+		grid-column-gap: 52px;
 		grid-row-gap: 20px;
 	}
 `;
@@ -123,6 +146,9 @@ const AboutSpeakerTitleStyled = styled.h4`
 
 	${mediaMd} {
 		display: block;
+		font-size: 25px;
+		font-weight: bold;
+		line-height: 27px;
 	}
 `;
 const AboutStyled = styled.div`
@@ -131,14 +157,21 @@ const AboutStyled = styled.div`
 
 	${mediaMd} {
 		display: block;
+		font-size: 20px;
+		line-height: 26px;
 	}
 `;
 const Description = styled.div`
 	grid-column-start: 2;
 	grid-row-start: 4;
 	grid-column-end: 4;
+	padding-top: 30px;
+	font-size: 20px;
+	line-height: 26px;
+	word-break: break-word;
 
 	${mediaMd} {
+		word-break: unset;
 		grid-row-start: 3;
 	}
 `;
@@ -192,7 +225,9 @@ const emoji = [
 ];
 
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
-	const [isOpened, onIsOpenedChange] = useState(false); // replace with false
+	const emptyArticle = !title;
+	const openArticleByDefault = isMobileS() && !emptyArticle;
+	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
 	if (title === '') {
 		const length = Math.floor(Math.random() * 7) + 3;
 		for (let i = 0; i < length; i++) {
@@ -209,25 +244,27 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 				{speaker
 					.map(speaker => (
 						<Fragment>
-							{/*<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} />*/}
+							{!emptyArticle && (
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
+							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
 							</NameStyled>
-							{/*{isOpened && (*/}
-							{/*	<Fragment>*/}
-							{/*		<SocialStyled>*/}
-							{/*			{speaker.socials.map(({name, link}) => (*/}
-							{/*				<Social type={name} link={link} key={`${name}-${link}`} />*/}
-							{/*			))}*/}
-							{/*		</SocialStyled>*/}
-							{/*		<SpeakerStyled>*/}
-							{/*			<PhotoStyled img={speaker.photo.src} />*/}
-							{/*			<AboutSpeakerTitleStyled />*/}
-							{/*			<AboutStyled>{speaker.about}</AboutStyled>*/}
-							{/*		</SpeakerStyled>*/}
-							{/*		{description.map(description => <Description>{description}</Description>).toNullable()}*/}
-							{/*	</Fragment>*/}
-							{/*)}*/}
+							{isOpened && (
+								<Fragment>
+									<SocialStyled>
+										{speaker.socials.map(({name, link}) => (
+											<Social type={name} link={link} key={`${name}-${link}`} />
+										))}
+									</SocialStyled>
+									<SpeakerStyled>
+										<PhotoStyled img={speaker.photo.src} />
+										<AboutSpeakerTitleStyled> О спикере</AboutSpeakerTitleStyled>
+										<AboutStyled>{speaker.about}</AboutStyled>
+									</SpeakerStyled>
+									{description.map(description => <Description>{description}</Description>).toNullable()}
+								</Fragment>
+							)}
 						</Fragment>
 					))
 					.toNullable()}
