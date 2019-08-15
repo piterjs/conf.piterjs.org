@@ -108,6 +108,11 @@ const SocialStyled = styled.div`
 	${mediaMd} {
 		grid-row-start: 4;
 	}
+	
+	& a {
+		width: 42px;
+		height: 42px;
+	}
 `;
 const SpeakerStyled = styled.div`
 	grid-column-start: 2;
@@ -221,7 +226,6 @@ const emoji = [
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
 	const emptyArticle = !title;
 	const openArticleByDefault = isMobileS() && !emptyArticle;
-
 	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
 	if (title === '') {
 		const length = Math.floor(Math.random() * 7) + 3;
@@ -239,31 +243,31 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 				{speaker
 					.map(speaker => (
 						<Fragment>
-							{/*{!emptyArticle && (*/}
-							{/*	<TogglerStyled*/}
-							{/*		onClick={lazy(onIsOpenedChange, !isOpened)}*/}
-							{/*		isOn={isOpened}*/}
-							{/*		aria-label='Подробнее'*/}
-							{/*	/>*/}
-							{/*)}*/}
+							{!emptyArticle && (
+								<TogglerStyled
+									onClick={lazy(onIsOpenedChange, !isOpened)}
+									isOn={isOpened}
+									aria-label='Подробнее'
+								/>
+							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
 							</NameStyled>
-							{/*{isOpened && (*/}
-							{/*	<Fragment>*/}
-							{/*		<SocialStyled>*/}
-							{/*			{speaker.socials.map(({name, link}) => (*/}
-							{/*				<Social type={name} link={link} key={`${name}-${link}`} />*/}
-							{/*			))}*/}
-							{/*		</SocialStyled>*/}
-							{/*		<SpeakerStyled>*/}
-							{/*			<PhotoStyled img={speaker.photo.src} />*/}
-							{/*			<AboutSpeakerTitleStyled> О спикере</AboutSpeakerTitleStyled>*/}
-							{/*			<AboutStyled>{speaker.about}</AboutStyled>*/}
-							{/*		</SpeakerStyled>*/}
-							{/*		{description.map(description => <Description>{description}</Description>).toNullable()}*/}
-							{/*	</Fragment>*/}
-							{/*)}*/}
+							{isOpened && (
+								<Fragment>
+									<SocialStyled>
+										{speaker.socials.map(({name, link}) => (
+											<Social type={name} link={link} key={`${name}-${link}`} />
+										))}
+									</SocialStyled>
+									<SpeakerStyled>
+										<PhotoStyled img={speaker.photo.src} />
+										<AboutSpeakerTitleStyled> О спикере</AboutSpeakerTitleStyled>
+										<AboutStyled>{speaker.about}</AboutStyled>
+									</SpeakerStyled>
+									{description.map(description => <Description>{description}</Description>).toNullable()}
+								</Fragment>
+							)}
 						</Fragment>
 					))
 					.toNullable()}
