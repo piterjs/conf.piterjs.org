@@ -5,7 +5,6 @@ import {mediaMd} from '../../../utils/css.utils';
 import * as React from 'react';
 import {lazy} from '../../../utils/function.utils';
 import {Social, SocialType} from '../../ui-kit/social/social.component';
-import {isMobileS} from '../../../utils/viewport.utils';
 import {fromNullable} from 'fp-ts/lib/Option';
 
 //#region styled
@@ -228,7 +227,7 @@ const emoji = [
 export const Article: FC<ArticleProps> = memo(({title, time, description, speaker}) => {
 	// console.log(description, speaker);
 	const emptyArticle = !title;
-	const openArticleByDefault = isMobileS() && !emptyArticle;
+	const openArticleByDefault = !emptyArticle;
 	const [isOpened, onIsOpenedChange] = useState(openArticleByDefault);
 	if (title === '') {
 		const length = Math.floor(Math.random() * 7) + 3;
@@ -247,7 +246,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 					.map(speaker => (
 						<Fragment>
 							{!emptyArticle && (
-								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label="Подробнее" />
 							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}

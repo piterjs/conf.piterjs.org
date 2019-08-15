@@ -8,7 +8,6 @@ import {EventTO} from '../../view-models/data.view-model';
 import {Paragraph} from '../ui-kit/paragraph/paragraph.component';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {clamp} from '../../utils/number.utils';
-import {isMobileS} from '../../utils/viewport.utils';
 
 //#region styled
 const AboutStyled = styled.section`
@@ -85,13 +84,11 @@ export const About: FC<AboutProps> = memo(({className}) => {
 						<ParagraphStyled key={i}>{about}</ParagraphStyled>
 					))}
 				</TextStyled>
-				{ isMobileS() && (
-					<PhotosStyled count={data.event.photos.length}>
+				<PhotosStyled count={data.event.photos.length}>
 					{event.photos.map((photo, i) => (
 						<PhotoStyled {...photo} key={i} />
 					))}
-					</PhotosStyled>
-				)}
+				</PhotosStyled>
 			</Container>
 		</AboutStyled>
 	);
