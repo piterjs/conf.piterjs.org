@@ -1,12 +1,13 @@
 import {FC, memo} from 'react';
 import * as React from 'react';
+import {useStaticQuery, graphql} from 'gatsby';
 import styled from '@emotion/styled';
 import {Container} from '../ui-kit/container/container.component';
 import {BigButton} from '../ui-kit/big-button/big-button.component';
 import {Menu} from '../menu/menu/menu.component';
 import {MenuItem} from '../menu/menu-item/menu-item.component';
 import {Social} from '../ui-kit/social/social.component';
-import {DataTO} from '../../view-models/data.view-model';
+import {PiterJSTO} from '../../view-models/data.view-model';
 import {mediaMd} from '../../utils/css.utils';
 
 const breakpoint = '@media (min-width: 940px)';
@@ -158,29 +159,46 @@ const CopyStyled = styled.div`
 
 interface FooterProps {
 	className?: string;
-	data: DataTO;
 }
 
-export const Footer: FC<FooterProps> = memo(({className, data}) => (
-	<FooterStyled className={className}>
-		<Container>
-			<ContentStyled>
-				{/*<TitleStyled>Be the first to know</TitleStyled>*/}
-				{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
-				{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
-				<MenuStyled>
-					<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
-					<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
-					<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
-					<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
-				</MenuStyled>
-				<SocialsStyled>
-					{data.piterjs.socials.map(social => (
-						<SocialStyled type={social.name} link={social.link} key={`${social.name}=${social.link}`} isFooter />
-					))}
-				</SocialsStyled>
-				<CopyStyled>Ⓒ 2019 PiterJS conf</CopyStyled>
-			</ContentStyled>
-		</Container>
-	</FooterStyled>
-));
+const footerQuery = graphql`
+	query FooterQuery {
+		dataJson {
+			piterjs {
+				socials {
+					link
+					name
+				}
+			}
+		}
+	}
+`;
+
+export const Footer: FC<FooterProps> = memo(({className}) => {
+	const {dataJson: data} = useStaticQuery(footerQuery);
+	const piterjs: PiterJSTO = data.piterjs;
+
+	return (
+		<FooterStyled className={className}>
+			<Container>
+				<ContentStyled>
+					{/*<TitleStyled>Be the first to know</TitleStyled>*/}
+					{/*<EmailStyled type={'email'} placeholder={'example@gmail.com'} />*/}
+					{/*<NotifyMeStyled>Notify Me</NotifyMeStyled>*/}
+					<MenuStyled>
+						<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
+						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
+						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
+						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
+					</MenuStyled>
+					<SocialsStyled>
+						{piterjs.socials.map(social => (
+							<SocialStyled type={social.name} link={social.link} key={`${social.name}=${social.link}`} isFooter />
+						))}
+					</SocialsStyled>
+					<CopyStyled>Ⓒ 2019 PiterJS conf</CopyStyled>
+				</ContentStyled>
+			</Container>
+		</FooterStyled>
+	);
+});

@@ -39,7 +39,7 @@ export const Landing = memo<{data: RemoteData<Error, DataTO>}>(({data}) =>
 				<Partners />
 				<Become link={{href: `mailto:${data.links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
 				<Map />
-				<Footer data={data} />
+				<Footer />
 			</Fragment>
 		),
 	),
