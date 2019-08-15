@@ -9,7 +9,7 @@ export const theme = css`
 	--hover-color: #c2ad07;
 
 	--text-main: #010203;
-	--text-gray: #b3b3b3;
+	--text-gray: #888888;
 	--text-dark-gray: #595959;
 
 	--menu-item-border: #6f4c48;

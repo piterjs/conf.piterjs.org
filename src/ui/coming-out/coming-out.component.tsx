@@ -5,7 +5,7 @@ import {constant} from 'fp-ts/lib/function';
 
 //#region styled
 const ComingOutStyled = styled.div`
-	color: #b3b3b3;
+	color: #888888;
 	display: flex;
 	align-items: center;
 	margin-bottom: 100px;
