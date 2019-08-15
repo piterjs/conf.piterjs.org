@@ -46,7 +46,7 @@ const TitleStyled = styled.h3`
 	position: relative;
 	display: flex;
 	grid-column: 2/4;
-    word-break: break-word;
+	word-break: break-word;
 
 	${mediaMd} {
 		grid-column: 2;
@@ -62,10 +62,10 @@ const TogglerStyled = styled.button<{isOn: boolean}>`
 	flex-shrink: 0;
 	position: relative;
 	grid-column: 3;
-    grid-row: 1/3;
-    ${mediaMd} {
-    	display: block;
-    }
+	grid-row: 1/3;
+	${mediaMd} {
+		display: block;
+	}
 
 	&:before {
 		content: '';
@@ -101,14 +101,14 @@ const SocialStyled = styled.div`
 	align-items: flex-end;
 	grid-row-start: 3;
 	padding-top: 30px;
-	 & > *:not(:last-child) {
+	& > *:not(:last-child) {
 		margin-bottom: 11px;
-	 }
+	}
 
 	${mediaMd} {
 		grid-row-start: 4;
 	}
-	
+
 	& a {
 		width: 42px;
 		height: 42px;
@@ -244,11 +244,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 					.map(speaker => (
 						<Fragment>
 							{!emptyArticle && (
-								<TogglerStyled
-									onClick={lazy(onIsOpenedChange, !isOpened)}
-									isOn={isOpened}
-									aria-label='Подробнее'
-								/>
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
 							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
