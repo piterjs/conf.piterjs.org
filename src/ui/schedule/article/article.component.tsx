@@ -153,9 +153,11 @@ const AboutSpeakerTitleStyled = styled.h4`
 `;
 const AboutStyled = styled.div`
 	grid-column-start: 2;
-	display: none;
+	display: block;
+	padding-top: 24px;
 
 	${mediaMd} {
+		padding-top: 0px;	
 		display: block;
 		font-size: 20px;
 		line-height: 26px;
@@ -165,7 +167,7 @@ const Description = styled.div`
 	grid-column-start: 2;
 	grid-row-start: 4;
 	grid-column-end: 4;
-	padding-top: 30px;
+	padding-top: 24px;
 	font-size: 20px;
 	line-height: 26px;
 	word-break: break-word;
@@ -229,7 +231,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 	const emptyArticle = !title;
 	const [isOpened, onIsOpenedChange] = useState(false);
 	if (title === '') {
-		const length = Math.floor(Math.random() * 7) + 3;
+		const length = Math.floor(Math.random() * 4) + 3;
 		for (let i = 0; i < length; i++) {
 			const position = Math.floor(Math.random() * 23);
 			title += emoji[position];
