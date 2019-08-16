@@ -60,6 +60,16 @@ module.exports = {
 			},
 		},
 		{
+			resolve: "gatsby-plugin-preconnect",
+			options: {
+				domains: [
+					"https://www.google-analytics.com"
+				]
+			}
+		},
+		// this (optional) plugin enables Progressive Web App + Offline functionality
+		// To learn more, visit: https://gatsby.dev/offline
+		{
 			resolve: `gatsby-plugin-offline`,
 			options: {
 				navigateFallback: null,
