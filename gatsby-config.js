@@ -72,8 +72,6 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-offline`,
 			options: {
-				navigateFallback: null,
-				navigateFallbackWhitelist: [],
 				cacheId: 'gatsby-plugin-offline-0',
 			},
 		},
