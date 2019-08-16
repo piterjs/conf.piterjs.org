@@ -4923,11 +4923,6 @@ gatsby-plugin-emotion@^4.0.7:
     "@babel/runtime" "^7.0.0"
     "@emotion/babel-preset-css-prop" "^10.0.5"
 
-gatsby-plugin-google-fonts@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.0.tgz#5edb46a7b58845ad1db9fcdeb8f9335170cd81c5"
-  integrity sha512-6EuRN4pLDrD4Ztug4Ia2IXch/cVJ76vywfLmIgxE77RV8VRxD0Bqx/mDN17XE+s67uqffkdlh/sl+GWIa/0MzQ==
-
 gatsby-plugin-manifest@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.1.1.tgz#e987d6e655b1dcfba6e10d65ff20722aaeb75391"
