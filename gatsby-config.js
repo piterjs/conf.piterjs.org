@@ -50,12 +50,6 @@ module.exports = {
 				},
 			},
 		},
-		// {
-		// 	resolve: `gatsby-plugin-google-fonts`,
-		// 	options: {
-		// 		fonts: [`Montserrat\:400,500,600,700&display=swap&subset=cyrillic`],
-		// 	},
-		// },
 		{
 			resolve: `gatsby-plugin-emotion`,
 			options: {
@@ -65,16 +59,6 @@ module.exports = {
 				cssPropOptimization: true,
 			},
 		},
-		// {
-		// 	resolve: "gatsby-plugin-preconnect",
-		// 	options: {
-		// 		domains: [
-		// 			"https://fonts.gstatic.com"
-		// 		]
-		// 	}
-		// },
-		// this (optional) plugin enables Progressive Web App + Offline functionality
-		// To learn more, visit: https://gatsby.dev/offline
 		{
 			resolve: `gatsby-plugin-offline`,
 			options: {
@@ -83,7 +67,6 @@ module.exports = {
 				cacheId: 'gatsby-plugin-offline-0',
 			},
 		},
-		// `gatsby-plugin-remove-serviceworker`,
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
