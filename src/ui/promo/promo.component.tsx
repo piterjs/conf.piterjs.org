@@ -15,6 +15,10 @@ const PromoStyled = styled.section`
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	@media (max-width: 576px) {
+		background: url('/promo_small.jpg');
+		background-size: cover;
+	}
 `;
 const FilterStyled = styled.div`
 	padding: 30px 0 70px;
