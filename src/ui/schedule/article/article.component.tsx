@@ -247,7 +247,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 					.map(speaker => (
 						<Fragment>
 							{!emptyArticle && (
-								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label="Подробнее" />
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
 							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
