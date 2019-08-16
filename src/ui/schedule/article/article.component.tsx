@@ -157,7 +157,7 @@ const AboutStyled = styled.div`
 	padding-top: 24px;
 
 	${mediaMd} {
-		padding-top: 0px;	
+		padding-top: 0px;
 		display: block;
 		font-size: 20px;
 		line-height: 26px;
@@ -247,7 +247,7 @@ export const Article: FC<ArticleProps> = memo(({title, time, description, speake
 					.map(speaker => (
 						<Fragment>
 							{!emptyArticle && (
-								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label='Подробнее' />
+								<TogglerStyled onClick={lazy(onIsOpenedChange, !isOpened)} isOn={isOpened} aria-label="Подробнее" />
 							)}
 							<NameStyled>
 								{speaker.firstName} {speaker.lastName}
