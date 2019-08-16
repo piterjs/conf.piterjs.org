@@ -26,6 +26,8 @@
     "gatsby-plugin-emotion": "^4.0.7",
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.2.6",
+    "gatsby-plugin-preconnect": "^1.0.5",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-react-svg": "^2.1.1",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
