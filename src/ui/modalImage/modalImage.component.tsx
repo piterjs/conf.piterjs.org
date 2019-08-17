@@ -64,7 +64,7 @@ export class ModalImage extends React.Component<ModalImageProps> {
 	};
 
 	render(): React.ReactNode {
-		let modalComponent = null;
+		let modalComponent: JSX.Element | null = null
 		if (this.state.isOpened) {
 			modalComponent = (
 				<ModalStyled onClick={this.closeModal}>
