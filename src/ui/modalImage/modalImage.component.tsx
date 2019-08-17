@@ -21,6 +21,10 @@ const ImageStyled = styled.img`
 	max-height: 75%;
 `;
 
+const ModalImageStyled = styled.div`
+	cursor: pointer
+`;
+
 export interface ModalProps {
 	isOpened: boolean;
 	srcSmall: string;
@@ -74,10 +78,10 @@ export class ModalImage extends React.Component<ModalImageProps> {
 		}
 
 		return (
-			<div>
+			<ModalImageStyled>
 				<img className={this.props.className} src={this.props.src} alt={this.props.alt} onClick={this.showModal} />
 				{modalComponent}
-			</div>
+			</ModalImageStyled>
 		);
 	}
 }
