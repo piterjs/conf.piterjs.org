@@ -182,15 +182,15 @@
       "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     ],
     "photos": [
-      {"src": "/photo/2.min.jpeg","alt": ""},
-      {"src": "/photo/3.min.jpeg","alt": ""},
-      {"src": "/photo/5.min.jpeg","alt": ""},
-      {"src": "/photo/6.min.jpeg","alt": ""},
-      {"src": "/photo/7.min.jpeg","alt": ""},
-      {"src": "/photo/9.min.jpeg","alt": ""},
-      {"src": "/photo/10.min.jpeg","alt": ""},
-      {"src": "/photo/11.min.jpeg","alt": ""},
-      {"src": "/photo/12.min.jpeg", "alt": ""}
+      {"src": "/photo/2.min.jpeg","alt": "","srcLarge": "/photo/2.jpeg"},
+      {"src": "/photo/3.min.jpeg","alt": "","srcLarge": "/photo/3.jpeg"},
+      {"src": "/photo/5.min.jpeg","alt": "","srcLarge": "/photo/5.jpeg"},
+      {"src": "/photo/6.min.jpeg","alt": "","srcLarge": "/photo/6.jpeg"},
+      {"src": "/photo/7.min.jpeg","alt": "","srcLarge": "/photo/6.jpeg"},
+      {"src": "/photo/9.min.jpeg","alt": "","srcLarge": "/photo/9.jpeg"},
+      {"src": "/photo/10.min.jpeg","alt": "","srcLarge": "/photo/10.jpeg"},
+      {"src": "/photo/11.min.jpeg","alt": "","srcLarge": "/photo/11.jpeg"},
+      {"src": "/photo/12.min.jpeg", "alt": "","srcLarge": "/photo/12.jpeg"}
     ],
     "articles": [
       {

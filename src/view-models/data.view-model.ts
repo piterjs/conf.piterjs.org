@@ -11,6 +11,7 @@ import {catchError, map} from 'rxjs/operators';
 export interface PhotoTO {
 	alt: string;
 	src: string;
+	srcLarge: string;
 }
 //#endregion
 //#region Article
