@@ -8,6 +8,7 @@ import {EventTO} from '../../view-models/data.view-model';
 import {Paragraph} from '../ui-kit/paragraph/paragraph.component';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {clamp} from '../../utils/number.utils';
+import {ModalImage} from '../modalImage/modalImage.component';
 
 //#region styled
 const AboutStyled = styled.section`
@@ -48,7 +49,7 @@ const PhotosStyled = styled.div<{count: number}>`
 		grid-template-columns: repeat(${({count}) => clamp(count, 1, 5)}, 1fr);
 	}
 `;
-const PhotoStyled = styled.img`
+const PhotoStyled = styled(ModalImage)`
 	width: 100%;
 `;
 //#endregion
@@ -65,6 +66,7 @@ const aboutQuery = graphql`
 				photos {
 					alt
 					src
+					srcLarge
 				}
 			}
 		}
