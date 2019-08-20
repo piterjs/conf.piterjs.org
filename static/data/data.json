@@ -290,6 +290,11 @@
       "name": "SEMRush",
       "link": "https://semrush.com",
       "image": "/partner/semrush.svg"
+    },
+    {
+      "name": "Tinkoff",
+      "link": "https://www.tinkoff.ru",
+      "image": "/partner/tinkoff.svg"
     }
   ],
   "piterjs": {
