@@ -21,3 +21,5 @@ export {default as TwitterFooterIcon} from './twitter-footer.svg';
 export {default as VkFooterIcon} from './vk-footer.svg';
 // @ts-ignore
 export {default as MapMarker} from './marker.svg';
+// @ts-ignore
+export {default as MediumIcon} from './medium.svg';

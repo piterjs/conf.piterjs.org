@@ -10,6 +10,7 @@ import {
 	TelegramFooterIcon,
 	TwitterFooterIcon,
 	TwitterIcon,
+	MediumIcon,
 	VkFooterIcon,
 } from '../../../assets';
 import styled from '@emotion/styled';
@@ -18,7 +19,7 @@ import styled from '@emotion/styled';
 const SocialStyled = styled.a``;
 //#endregion
 
-export type SocialType = 'FACEBOOK' | 'GOOGLE' | 'GITHUB' | 'LINKED_IN' | 'TELEGRAM' | 'TWITTER' | 'VK' | 'OK';
+export type SocialType = 'FACEBOOK' | 'GOOGLE' | 'GITHUB' | 'LINKED_IN' | 'TELEGRAM' | 'TWITTER' | 'VK' | 'OK' | 'MEDIUM';
 
 interface SocialProps {
 	type: SocialType;
@@ -55,6 +56,8 @@ function getIcon(isFooter: boolean, type: SocialType) {
 				return TelegramFooterIcon;
 			case 'TWITTER':
 				return TwitterFooterIcon;
+			case 'MEDIUM':
+				return MediumIcon;
 			case 'VK':
 				return VkFooterIcon;
 			case 'OK':
@@ -75,6 +78,8 @@ function getIcon(isFooter: boolean, type: SocialType) {
 			return Fragment;
 		case 'TWITTER':
 			return TwitterIcon;
+		case 'MEDIUM':
+			return MediumIcon;
 		case 'VK':
 			return Fragment;
 		case 'OK':
@@ -97,6 +102,8 @@ function getSocialName(type: SocialType) {
 			return 'telegram';
 		case 'TWITTER':
 			return 'twitter';
+		case 'MEDIUM':
+			return MediumIcon;
 		case 'VK':
 			return 'vk';
 		case 'OK':

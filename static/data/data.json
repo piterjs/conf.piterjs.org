@@ -81,6 +81,46 @@
       ]
     },
     {
+      "id": "speaker4",
+      "firstName": "Рустам",
+      "lastName": "Имайкин",
+      "photo": {
+        "src": "/speaker/rustam_imaykin.jpg",
+        "alt": "Рустам Имайкин"
+      },
+      "about": "Был увлечен веб (wap) разработкой с момента появления кнопочных телефонов, на тех же самых кнопочных телефонах (в редакторе 128px на 128px). Пишу на typescript, часть своей жизни посвящаю разработке на Angular. Веду канал t.me/ngFanatic",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/irustm"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/irustm"
+        }
+      ]
+    },
+    {
+      "id": "speaker5",
+      "firstName": "Павел",
+      "lastName": "Юхнович",
+      "photo": {
+        "src": "/speaker/paul_yuhnovich.jpeg",
+        "alt": "Павел Юхнович"
+      },
+      "about": "",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/paul_yuhnovich"
+        },
+        {
+          "name": "MEDIUM",
+          "link": "https://medium.com/@Paul_Yuhnovich"
+        }
+      ]
+    },
+    {
       "id": "speakerX",
       "firstName": "undefined",
       "lastName": "",
@@ -140,11 +180,13 @@
     },
     {
       "id": "article4",
-      "name": ""
+      "name": "Как делать быстро прототипы приложений на современных технологиях",
+      "description": "Разберем существующие решения для прототипирования, напишем бэкенд и фронтенд для них. В докладе будут рассмотрены такие решения как Hasura, Prisma, pRest, Firebase, и конечно подключим динамичные формы и таблицы."
     },
     {
       "id": "article5",
-      "name": ""
+      "name": "Holy War between Designers & Developers",
+      "description": ""
     },
     {
       "id": "article6",
@@ -235,13 +277,13 @@
         "time": "15:30"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "article4",
+        "speakerId": "speaker4",
         "time": "15:45"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "article5",
+        "speakerId": "speaker5",
         "time": "16:00"
       },
       {
