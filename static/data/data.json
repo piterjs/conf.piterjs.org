@@ -108,7 +108,7 @@
         "src": "/speaker/paul_yuhnovich.jpeg",
         "alt": "Павел Юхнович"
       },
-      "about": "",
+      "about": "Uncaught TypeError: Cannot read property 'about' of undefined",
       "socials": [
         {
           "name": "TWITTER",
@@ -186,7 +186,7 @@
     {
       "id": "article5",
       "name": "Holy War between Designers & Developers",
-      "description": ""
+      "description": "VM64238:1 Uncaught TypeError: Cannot read property 'description' of undefined"
     },
     {
       "id": "article6",
