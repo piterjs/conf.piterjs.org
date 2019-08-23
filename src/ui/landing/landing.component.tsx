@@ -45,7 +45,6 @@ export const Landing = () => {
 			<Promo />
 			<About />
 			<Speakers />
-			<Become link={{href: links.signUpLink, target: '_blank', rel: 'noopener noreferrer'}} buttonText={'Подать доклад'} />
 			<Schedule />
 			<Partners />
 			<Become link={{href: `mailto:${links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
