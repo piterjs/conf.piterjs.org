@@ -204,7 +204,7 @@
         "src": "/speaker/yana.jpg",
         "alt": "Яна Менемчиадис"
       },
-      "about": "Uncaught TypeError: Cannot read property 'about' of undefined",
+      "about": "разрабатываю frontend уже 5 лет, нравятся интересные и нестандартные задачи",
       "socials": [
         {
           "name": "TELEGRAM",
