@@ -1,7 +1,7 @@
 {
   "speakers": [
     {
-      "id": "speaker0",
+      "id": "alexander_korotaev",
       "firstName": "Александр",
       "lastName": "Коротаев",
       "photo": {
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "id": "speaker1",
+      "id": "dmitry_patsura",
       "firstName": "Дмитрий",
       "lastName": "Пацура",
       "photo": {
@@ -41,14 +41,14 @@
       ]
     },
     {
-      "id": "speaker2",
+      "id": "alexander_kanunnikov",
       "firstName": "Александр",
       "lastName": "Канунников",
       "photo": {
         "src": "/speaker/alexander_kanunnikov.jpg",
         "alt": "Александр Канунников"
       },
-      "about": "Лид-Синьор-Помидор, опенсорс контрибьютор, cоздатель AsynсDom, организатор Ember.JS митапов, иногда интересный докладчик, пишет SPA приложения 7 лет.",
+      "about": "Лид-Синьор-Помидор, опенсорс контрибьютор, создатель AsynсDom, организатор Ember.JS митапов, иногда интересный докладчик, пишет SPA приложения 7 лет.",
       "socials": [
         {
           "name": "TWITTER",
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "id": "speaker3",
+      "id": "alexey_zolotyh",
       "firstName": "Алексей",
       "lastName": "Золотых",
       "photo": {
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "id": "speaker4",
+      "id": "rustam_imaykin",
       "firstName": "Рустам",
       "lastName": "Имайкин",
       "photo": {
@@ -101,7 +101,7 @@
       ]
     },
     {
-      "id": "speaker5",
+      "id": "paul_yuhnovich",
       "firstName": "Павел",
       "lastName": "Юхнович",
       "photo": {
@@ -121,15 +121,95 @@
       ]
     },
     {
-      "id": "speakerX",
-      "firstName": "undefined",
-      "lastName": "",
+      "id": "nikolay_matvienko",
+      "firstName": "Николай",
+      "lastName": "Матвиенко",
       "photo": {
-        "src": "",
-        "alt": ""
+        "src": "/speaker/nikolay_matvienko.jpg",
+        "alt": "Николай Матвиенко"
       },
-      "about": "",
+      "about": "Инженер и эксперт по Node.js в Grid Dynamics. Большой фанат оптимизаций производительности Node.js приложений и облачных вычислений. Николай работает в США и в России, и часто путешествует по миру с докладами, основанными на профессиональном опыте проектов, в области производительности, масштабируемости и разработки приложений. Сейчас он работает в Санкт-Петербурге, штат Флорида. Вместе с командой AWS он создает платформу облачных вычислений для одной из крупнейших IT компаний в США.",
       "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/matvi3nko"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/matvi3nko"
+        }
+      ]
+    },
+    {
+      "id": "polina_gurtovaya",
+      "firstName": "Полина",
+      "lastName": "Гуртовая",
+      "photo": {
+        "src": "/speaker/polina_gurtovaya.jpg",
+        "alt": "Полина Гуртовая"
+      },
+      "about": "Занимаюсь фронтом больше пяти лет. Последние 2 года в Марсианах. За это время я прокачала чувство прекрасного и умение изобретать велосипеды, но понимаю что я только в начале пути. В свободное время пишу статьи, выступаю, экспериментирую ML/WebGL/GraphQL и воспитываю аквариумную рыбку :)",
+      "socials": [
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/HellSquirrel"
+        }
+      ]
+    },
+    {
+      "id": "vladimir_ulyanov",
+      "firstName": "Владимир",
+      "lastName": "Ульянов",
+      "photo": {
+        "src": "/speaker/vladimir_ulyanov.jpg",
+        "alt": "Владимир Ульянов"
+      },
+      "about": "Люблю красивые, удобные, производительные интерфейсы. Занимаюсь UI разработкой, на досуге программирую на golang и поддерживаю kubernetes-кластер.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/lionskape"
+        },
+        {
+          "name": "TELEGRAM",
+          "link": "https://t.me/lionskape"
+        }
+      ]
+    },
+    {
+      "id": "alexander_madyankin",
+      "firstName": "Александр",
+      "lastName": "Мадьянкин",
+      "photo": {
+        "src": "/speaker/alexander_madyankin.jpg",
+        "alt": "Александр Мадьянкин"
+      },
+      "about": "Фронтенд-тимлид в Злых Марсианах. Последние четыре года разрабатываю SPA и React Native приложения. За это время успел поработать над веб-приложением для заказа такси для Gett, мобильными приложениями Amplifr (аналитика и публикация в социальные сети), Podium (cбор обратной связи для оффлайн-бизнесов), Connect By Common и Kin (приложения для сообщества съемщиков жилья в США).",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/madyankin"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/outpunk"
+        }
+      ]
+    },
+    {
+      "id": "yana",
+      "firstName": "Яна",
+      "lastName": "Менемчиадис",
+      "photo": {
+        "src": "/speaker/yana.jpg",
+        "alt": "Яна Менемчиадис"
+      },
+      "about": "Uncaught TypeError: Cannot read property 'about' of undefined",
+      "socials": [
+        {
+          "name": "TELEGRAM",
+          "link": "https://t.me/Iv_Me"
+        }
       ]
     }
   ],
@@ -159,58 +239,58 @@
       "name": "BeerJS"
     },
     {
-      "id": "article0",
-      "name": "Как запустить Телеграм в VS Code",
+      "id": "alexander_korotaev",
+      "name": "Как запустить Telegram в VS Code",
       "description": "Что такое консоль? Текстовый терминал или уже полноценный интерфейс? Как можно затащить в консоль целый мессенджер и использовать его отовсюду. И как это может помочь вашим коллегам. \n\nВ докладе расскажу, как можно создавать сложные или простые, но доступные консольные интерфейсы. Что такое доступность и кроссплатформенность в среде терминалов. И почему коллеги обычно не горят желанием пользоваться CLI."
     },
     {
-      "id": "article1",
+      "id": "dmitry_patsura",
       "name": "Optimize the size of your SPA, битва за байты",
       "description": "2019 год, современный веб, PWA, SPA, bundle на фронте от одного мегабайта javascript. Стоп! Мы переставили ставить в приоритет экономию трафика и TTI пользователей как делали это раньше. Пришло время разобраться в техниках оптимизации размера JS/CSS/IMAGE. Это битва за байты и мы ее начинаем."
     },
     {
-      "id": "article2",
+      "id": "alexander_kanunnikov",
       "name": "AST с трансляций JSX в декларативные шаблоны",
       "description": "Мы рассмотрим преимущества и недостатки функциональных шаблонов, сравним их с декларативными и попытаемся найти способ преобразовать одни в другие без дополнительного оверхэда для разработчиков."
     },
     {
-      "id": "article3",
+      "id": "alexey_zolotyh",
       "name": "Автоматизируй это. Гиперавтоматизированный пайплайн",
-      "description": "Уже не помню, когда первый раз услышал термин continious integration. С тех пор мир поменялся. Неизменным осталось только одно. Нам нужно больше автоматизации. О том, как добавить в свою сборку нечто большее чем запуск mocha и webpack и будет мой рассказ."
+      "description": "Уже не помню, когда первый раз услышал термин continuous integration. С тех пор мир поменялся. Неизменным осталось только одно. Нам нужно больше автоматизации. О том, как добавить в свою сборку нечто большее чем запуск mocha и webpack и будет мой рассказ."
     },
     {
-      "id": "article4",
+      "id": "rustam_imaykin",
       "name": "Как делать быстро прототипы приложений на современных технологиях",
       "description": "Разберем существующие решения для прототипирования, напишем бэкенд и фронтенд для них. В докладе будут рассмотрены такие решения как Hasura, Prisma, pRest, Firebase, и конечно подключим динамичные формы и таблицы."
     },
     {
-      "id": "article5",
+      "id": "paul_yuhnovich",
       "name": "Holy War between Designers & Developers",
-      "description": "VM64238:1 Uncaught TypeError: Cannot read property 'description' of undefined"
+      "description": "Uncaught TypeError: Cannot read property 'description' of undefined"
     },
     {
-      "id": "article6",
-      "name": ""
+      "id": "nikolay_matvienko",
+      "name": "Хроники Node.js",
+      "description": "Для того, чтобы ответить на вопрос на каком этапе развития сейчас находится технология Node.js, как популярна она, как часто становится выбором использования в production, какие преимущества она дает и с какими трудностями инженеры при при использовании сталкивались, я сделаю хронологический рассказ основанный на моем опыте, где поэтапно расскажу истории, объясняющие причины, следствия и вектор развития технологии."
     },
     {
-      "id": "article7",
-      "name": ""
+      "id": "polina_gurtovaya",
+      "name": "GraphQL - уменьшаем энтропию",
+      "description": "В больших проектах наступают моменты когда сложность растет и предметная область перестает помещаться в голове. В такие моменты лучше не допускать беспорядка в данных и в коде. В одном из наших проектов мы боролись с беспорядком методом \"очистительного графкуэля\". Я хочу рассказать об этот поподробнее, ответив на следующие вопросы: Почему GraphQL многое упрощает? Что это вообще такое? Как готовить GraphQL-фронтенд? Какие GraphQL может улучшить коммуникацию в команде?"
+    },    {
+      "id": "vladimir_ulyanov",
+      "name": "State of Vue (2k19 Q3)",
+      "description": "Расскажу о том, что нового произошло со Vue за последний год, и почему самое время начинать его использовать."
     },
     {
-      "id": "article8",
-      "name": ""
+      "id": "alexander_madyankin",
+      "name": "Как построить Гексагон: прагматичная архитектура для клиентских приложений",
+      "description": "Технический долг неизбежен, и зачастую он накапливается быстрее, чем мы успеваем его погашать. Особенно ярко это проблема проявляется, когда, поддавшись моде, мы стремимся внедрять новые технологии без предыдущего опыта их использования и наработанных практик и надеемся на дальнейший рефакторинг. Вместо ровной и стройной архитектуры у нас получается Tutorial Driven Development — демонстрационный код из документации библиотек становится основой для приложения.  Повышается зависимость от конкретных библиотек, нет четких правил написания кода и его стыковки со сторонним, высокоуровневый код переплетается с низкоуровневым. В докладе я расскажу об архитектуре, к которой пришел за четыре года разработки SPA и React Native приложений через свои пробы и ошибки и анализ и рефакторинг чужого кода."
     },
     {
-      "id": "article9",
-      "name": ""
-    },
-    {
-      "id": "article10",
-      "name": ""
-    },
-    {
-      "id": "articleX",
-      "name": ""
+      "id": "yana",
+      "name": "Дружим CSS-переменные и styled-components с IE11 при помощи AST",
+      "description": "Мы привыкли, что написанные решения все делают за нас - поставляют fallback для browser-list, реализуют поддержку ES6 . А если мы сталкиваемся с тем, что нет такого решения, которое нам нужно, то что делать? Спойлер - писать самим! При использовании css-переменных в styled-components мы столкнулись с таким вопросом. Основной проблемой для нас стала поддержка IE11, нам нужно было каким-то образом проставлять fallback, но руками это делать не хотелось. Нам пришлось погрузиться в устройство синтаксических конструкций языка JavaScript. В этом докладе я хочу рассказать историю о том как мы делали babel плагин, который проставляет fallback для css-переменных в styled-components."
     }
   ],
   "event": {
@@ -221,7 +301,7 @@
       "link": "https://goo.gl/maps/ssfxoWUpFyWhXH8s8"
     },
     "about": [
-      "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
+      "PiterJS - сообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     ],
     "photos": [
       {"src": "/photo/2.min.jpeg","alt": "","srcLarge": "/photo/2.jpeg"},
@@ -244,13 +324,13 @@
         "time": "11:00"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "alexander_korotaev",
+        "speakerId": "alexander_korotaev",
         "time": "11:20"
       },
       {
-        "articleId": "article1",
-        "speakerId": "speaker1",
+        "articleId": "polina_gurtovaya",
+        "speakerId": "polina_gurtovaya",
         "time": "12:00"
       },
       {
@@ -258,13 +338,13 @@
         "time": "12:40"
       },
       {
-        "articleId": "article2",
-        "speakerId": "speaker2",
+        "articleId": "yana",
+        "speakerId": "yana",
         "time": "13:10"
       },
       {
-        "articleId": "article0",
-        "speakerId": "speaker0",
+        "articleId": "alexander_kanunnikov",
+        "speakerId": "alexander_kanunnikov",
         "time": "13:50"
       },
       {
@@ -272,28 +352,28 @@
         "time": "14:30"
       },
       {
-        "articleId": "article3",
-        "speakerId": "speaker3",
+        "articleId": "nikolay_matvienko",
+        "speakerId": "nikolay_matvienko",
         "time": "15:30"
       },
       {
-        "articleId": "article4",
-        "speakerId": "speaker4",
+        "articleId": "rustam_imaykin",
+        "speakerId": "rustam_imaykin",
         "time": "15:45"
       },
       {
-        "articleId": "article5",
-        "speakerId": "speaker5",
+        "articleId": "alexey_zolotyh",
+        "speakerId": "alexey_zolotyh",
         "time": "16:00"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "vladimir_ulyanov",
+        "speakerId": "vladimir_ulyanov",
         "time": "16:15"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "paul_yuhnovich",
+        "speakerId": "paul_yuhnovich",
         "time": "16:30"
       },
       {
@@ -301,13 +381,13 @@
         "time": "16:45"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "dmitry_patsura",
+        "speakerId": "dmitry_patsura",
         "time": "17:15"
       },
       {
-        "articleId": "articleX",
-        "speakerId": "speakerX",
+        "articleId": "alexander_madyankin",
+        "speakerId": "alexander_madyankin",
         "time": "17:55"
       },
       {
@@ -374,7 +454,7 @@
   "helmet": {
     "landing": {
       "title": "PiterJS conf 2019",
-      "description": "PiterJS - cообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
+      "description": "PiterJS - сообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть бесплатными и свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
     }
   },
   "links": {
