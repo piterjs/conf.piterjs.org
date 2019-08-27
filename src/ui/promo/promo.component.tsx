@@ -68,7 +68,7 @@ const LinesBaseStyled = styled(Lines)`
 	width: 105px;
 
 	${mediaMd} {
-		width: 390px;
+		width: 300px;
 	}
 `;
 const Lines1Styled = styled(LinesBaseStyled)`
