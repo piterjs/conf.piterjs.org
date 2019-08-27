@@ -54,7 +54,7 @@ const LocationStyled = styled(Location)`
 const BurgerMenuStyled = styled(Burger)<{isOpened: boolean}>`
 	margin-left: auto;
 
-	${mediaMd} {
+	${mediaMdX} {
 		display: none;
 	}
 `;
@@ -66,7 +66,7 @@ const MenuStyled = styled(Menu)<{isOpened: boolean}>`
 	left: 0;
 	z-index: 2;
 
-	${mediaMd} {
+	${mediaMdX} {
 		display: flex;
 		justify-content: flex-end;
 		align-items: stretch;
@@ -117,7 +117,7 @@ export const Header: FC = () => {
 			<ContainerStyled>
 				<WrapperStyled>
 					<LogoStyled />
-					<LocationStyled location={event.location} />
+					{/*<LocationStyled location={event.location} />*/}
 					<BurgerMenuStyled isOpened={isOpened} onClick={lazy(onOpenedChange, !isOpened)} />
 					<MenuStyled isOpened={isOpened}>
 						<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
@@ -125,6 +125,7 @@ export const Header: FC = () => {
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 						<MenuItemStyled href={'#orgs'}>Организаторы</MenuItemStyled>
 						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
+						{/*<MenuItemStyled href={'#map'}>Карта</MenuItemStyled>*/}
 					</MenuStyled>
 				</WrapperStyled>
 			</ContainerStyled>

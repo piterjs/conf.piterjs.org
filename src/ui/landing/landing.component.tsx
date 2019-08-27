@@ -12,7 +12,7 @@ import {Become} from '../become/become.component';
 import {HelmetTO, LinksTO} from '../../view-models/data.view-model';
 import {Speakers} from '../speakers/speakers.component';
 import {Organizators} from '../organizators/organizators.component';
-// import {Map} from '../map/map.component';
+import {Map} from '../map/map.component';
 
 const landingQuery = graphql`
 	query LandingQuery {
@@ -50,7 +50,7 @@ export const Landing = () => {
 			<Organizators />
 			<Partners />
 			<Become link={{href: `mailto:${links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
-			{/*<Map />*/}
+			<Map />
 			<Footer />
 		</Fragment>
 	);

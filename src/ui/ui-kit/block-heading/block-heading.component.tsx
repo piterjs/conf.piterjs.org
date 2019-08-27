@@ -1,7 +1,7 @@
 import {FC, memo} from 'react';
 import styled from '@emotion/styled';
 import * as React from 'react';
-import {mediaMd} from '../../../utils/css.utils';
+import {mediaMdX} from '../../../utils/css.utils';
 import {Lines} from '../lines/lines.component';
 
 //#region styled
@@ -12,7 +12,7 @@ const BlockHeadingStyled = styled.h2`
 	font-weight: 600;
 	padding-top: 80px;
 
-	${mediaMd} {
+	${mediaMdX} {
 		font-size: 45px;
 		padding: 80px 0 50px 0;
 	}
@@ -23,7 +23,7 @@ const LinesStyled = styled(Lines)`
 	width: 38px;
 	margin-right: 2px;
 
-	${mediaMd} {
+	${mediaMdX} {
 		width: 76px;
 		margin-right: 10px;
 	}

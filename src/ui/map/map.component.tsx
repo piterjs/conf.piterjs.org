@@ -54,7 +54,7 @@ export const Map: FC = memo(() => {
 	};
 
 	return (
-		<MapContainerStyled>
+		<MapContainerStyled id={'map'}>
 			<GoogleMapReact bootstrapURLKeys={bootstrapURLKeys} defaultCenter={map.coords} defaultZoom={map.zoom} options={mapOptions}>
 				<Marker lat={map.coords.lat} lng={map.coords.lng} />
 			</GoogleMapReact>
