@@ -1,4 +1,222 @@
 {
+  "organizators": [
+    {
+      "id": "mike1pol",
+      "firstName": "Михаил",
+      "lastName": "Полубояринов",
+      "photo": {
+        "src": "/org/mike1pol.jpg",
+        "alt": "Михаил Полубояринов"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/mike1pol"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/mike1pol"
+        }
+      ]
+    },
+    {
+      "id": "volkova_a",
+      "firstName": "Анна",
+      "lastName": "Волкова",
+      "photo": {
+        "src": "/org/volkova_a.png",
+        "alt": "Анна Волкова"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/volkova_annie"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/volkova-annie"
+        }
+      ]
+    },
+    {
+      "id": "bmsdave",
+      "firstName": "Вадим",
+      "lastName": "Горбачев",
+      "photo": {
+        "src": "/org/bmsdave.jpg",
+        "alt": "Вадим Горбачев"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/_bmsdave"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/bmsdave"
+        }
+      ]
+    },
+    {
+      "id": "ariarzer",
+      "firstName": "София",
+      "lastName": "Валитова",
+      "photo": {
+        "src": "/org/ariarzer.png",
+        "alt": "София Валитова"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/ariarzer"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/ariarzer"
+        }
+      ]
+    },
+    {
+      "id": "fogrew",
+      "firstName": "Андрей",
+      "lastName": "Гурылев",
+      "photo": {
+        "src": "/org/fogrew.png",
+        "alt": "Андрей Гурылев"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/fogrew"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/fogrew"
+        }
+      ]
+    },
+    {
+      "id": "coppolla",
+      "firstName": "Ксения",
+      "lastName": "Солонина",
+      "photo": {
+        "src": "/org/coppolla.png",
+        "alt": "Солонина Ксения"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/coppolla"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/ksenia-coppolla"
+        }
+      ]
+    },
+    {
+      "id": "scink",
+      "firstName": "Антон",
+      "lastName": "Кошкин",
+      "photo": {
+        "src": "/org/scink.png",
+        "alt": "Антон Кошкин"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/scink"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/scink"
+        }
+      ]
+    },
+    {
+      "id": "yaroslavnaef",
+      "firstName": "Ярославна",
+      "lastName": "Ефимова",
+      "photo": {
+        "src": "/org/yaroslavnaef.png",
+        "alt": "Ярославна Ефимова"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/russikgirl"
+        }
+      ]
+    },
+    {
+      "id": "nin_jin",
+      "firstName": "Дмитрий",
+      "lastName": "Карловский",
+      "photo": {
+        "src": "/org/nin_jin.png",
+        "alt": "Дмитрий Карловский"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/krollll"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/nin_jin"
+        }
+      ]
+    },
+    {
+      "id": "innayarantseva",
+      "firstName": "Инна",
+      "lastName": "Яранцева",
+      "photo": {
+        "src": "/org/innayarantseva.png",
+        "alt": "Инна Яранцева"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/innayarantseva"
+        }
+      ]
+    },
+    {
+      "id": "iliya_ilineya",
+      "firstName": "Илья",
+      "lastName": "Государев",
+      "photo": {
+        "src": "/org/iliya_ilineya.png",
+        "alt": "Илья Государев"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/iliya_ilineya"
+        }
+      ]
+    },
+    {
+      "id": "imberette",
+      "firstName": "Алия",
+      "lastName": "Закирова",
+      "photo": {
+        "src": "/org/imberette.png",
+        "alt": "Алия Закирова"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/imberette"
+        },
+        {
+          "name": "TWITTER",
+          "link": "https://vk.com/imberette"
+        }
+      ]
+    }
+  ],
   "speakers": [
     {
       "id": "alexander_korotaev",

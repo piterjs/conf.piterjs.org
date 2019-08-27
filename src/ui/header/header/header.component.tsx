@@ -123,6 +123,7 @@ export const Header: FC = () => {
 						<MenuItemStyled href={'#about'}>О&nbsp;конференции</MenuItemStyled>
 						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
+						<MenuItemStyled href={'#orgs'}>Организаторы</MenuItemStyled>
 						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
 					</MenuStyled>
 				</WrapperStyled>

@@ -12,6 +12,7 @@ import {
 	TwitterIcon,
 	MediumIcon,
 	VkFooterIcon,
+	VkIcon,
 } from '../../../assets';
 import styled from '@emotion/styled';
 
@@ -81,7 +82,7 @@ function getIcon(isFooter: boolean, type: SocialType) {
 		case 'MEDIUM':
 			return MediumIcon;
 		case 'VK':
-			return Fragment;
+			return VkIcon;
 		case 'OK':
 			return Fragment;
 	}

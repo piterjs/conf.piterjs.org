@@ -116,6 +116,7 @@ export interface DataTO {
 	partners: PartnerTO[];
 	piterjs: PiterJSTO;
 	speakers: SpeakerTO[];
+	organizators: SpeakerTO[];
 	helmet: HelmetTO;
 }
 //#endregion

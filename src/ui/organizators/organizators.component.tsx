@@ -4,13 +4,13 @@ import {useStaticQuery, graphql} from 'gatsby';
 import {BlockHeading} from '../ui-kit/block-heading/block-heading.component';
 import styled from '@emotion/styled';
 import {Container} from '../ui-kit/container/container.component';
-import {SpeakerTO} from '../../view-models/data.view-model';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
-import {Speaker} from './speaker/speaker.component';
+import {Speaker} from '../speakers/speaker/speaker.component';
 import {clamp} from '../../utils/number.utils';
+import {SpeakerTO} from '../../view-models/data.view-model';
 
 //#region styled
-const SpeakersStyled = styled.section`
+const OrgsStyled = styled.section`
 	// padding-bottom: 40px;
 	// padding-top: 80px;
 `;
@@ -21,7 +21,7 @@ const BlockHeadingStyled = styled(BlockHeading)`
 		margin-bottom: 18px;
 	}
 `;
-const SpeakersListStyled = styled.div<{count: number}>`
+const OrgsListStyled = styled.div<{count: number}>`
 	grid-gap: 10px;
 	margin-bottom: 35px;
 
@@ -40,16 +40,15 @@ const SpeakersListStyled = styled.div<{count: number}>`
 `;
 //#endregion
 
-interface SpeakersProps {
+interface OrgsProps {
 	className?: string;
 }
 
-const speakersQuery = graphql`
-    query SpeakersQuery {
+const orgsQuery = graphql`
+    query OrgsQuery {
         dataJson {
-            speakers {
+            organizators {
                 firstName
-                about
                 id
                 lastName
                 photo {
@@ -65,22 +64,22 @@ const speakersQuery = graphql`
     }
 `;
 
-export const Speakers: FC<SpeakersProps> = memo(({className}) => {
-	const {dataJson: data} = useStaticQuery(speakersQuery);
-	const speakers: SpeakerTO[] = data.speakers;
-
+export const Organizators: FC<OrgsProps> = memo(({className}) => {
+	const {dataJson: data} = useStaticQuery(orgsQuery);
+	const list: SpeakerTO[] = data.organizators;
 	return (
-		<SpeakersStyled className={className} id={'speakers'}>
+		<OrgsStyled className={className} id={'orgs'}>
 			<Container>
-				<BlockHeadingStyled>Спикеры</BlockHeadingStyled>
-				<SpeakersListStyled count={speakers.length} id={'speaker_lisk'}>
-					{speakers
+				<BlockHeadingStyled>Организаторы</BlockHeadingStyled>
+				<OrgsListStyled count={list.length} id={'org_list'}>
+					{list
 						.filter(s => s.id !== 'speakerX')
 						.map(speaker => (
 							<Speaker speaker={speaker} key={speaker.id} />
 						))}
-				</SpeakersListStyled>
+				</OrgsListStyled>
 			</Container>
-		</SpeakersStyled>
+		</OrgsStyled>
 	);
 });
+
