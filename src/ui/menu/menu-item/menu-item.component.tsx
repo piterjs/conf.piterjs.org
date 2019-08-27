@@ -20,7 +20,7 @@ const ItemStyled = styled.li`
 
 	${mediaMd} {
 		border-bottom: none;
-		font-size: 20px;
+		font-size: 16px;
 		padding: 0;
 
 		& > a {
@@ -31,7 +31,7 @@ const ItemStyled = styled.li`
 const LinkStyled = styled.a`
 	text-transform: inherit;
 	${mediaMd} {
-		padding: 10px 20px;
+		padding: 6px 12px;
 	}
 `;
 //#endregion
