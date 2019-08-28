@@ -25,18 +25,18 @@ const SpeakersListStyled = styled.div<{count: number}>`
 	grid-gap: 10px;
 	margin-bottom: 35px;
 
-	${mediaMdX} {
-		display: grid;
-		grid-template-columns: repeat(${({count}) => clamp(count, 1, 3)}, 1fr);
-	}
+  ${mediaMd} {
+    display: grid;
+    grid-template-columns: repeat(${({count}) => clamp(count, 1, 2)}, 1fr);
+  }
 
-	@media (min-width: 1000px) {
-		grid-template-columns: repeat(${({count}) => clamp(count, 1, 4)}, 1fr);
-	}
+  ${mediaMdX} {
+    grid-template-columns: repeat(${({count}) => clamp(count, 1, 3)}, 1fr);
+  }
 
-	${mediaLg} {
-		grid-template-columns: repeat(${({count}) => clamp(count, 1, 5)}, 1fr);
-	}
+  ${mediaLg} {
+    grid-template-columns: repeat(${({count}) => clamp(count, 1, 4)}, 1fr);
+  }
 `;
 //#endregion
 
