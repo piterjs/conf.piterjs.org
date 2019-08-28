@@ -90,6 +90,25 @@
           "link": "https://vk.com/coppolla"
         }
       ]
+    },
+    {
+      "id": "scink",
+      "firstName": "Антон",
+      "lastName": "Кошкин",
+      "photo": {
+        "src": "/org/scink.jpg",
+        "alt": "Антон Кошкин"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/scink"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/scink"
+        }
+      ]
     }
   ],
   "speakers": [

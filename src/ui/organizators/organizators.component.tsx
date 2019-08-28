@@ -35,7 +35,7 @@ const OrgsListStyled = styled.div<{count: number}>`
   }
 
 	${mediaLg} {
-		grid-template-columns: repeat(${({count}) => clamp(count, 1, 5)}, 1fr);
+		grid-template-columns: repeat(${({count}) => clamp(count, 1, 4)}, 1fr);
 	}
 `;
 //#endregion
