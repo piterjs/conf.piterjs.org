@@ -75,7 +75,7 @@ module.exports = {
 		// 		cacheId: 'gatsby-plugin-offline-0',
 		// 	},
 		// },
-		// `gatsby-plugin-remove-serviceworker`,
+		`gatsby-plugin-remove-serviceworker`,
 		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
