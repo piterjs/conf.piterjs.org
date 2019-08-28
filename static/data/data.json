@@ -58,25 +58,6 @@
       ]
     },
     {
-      "id": "ariarzer",
-      "firstName": "София",
-      "lastName": "Валитова",
-      "photo": {
-        "src": "/org/ariarzer.jpg",
-        "alt": "София Валитова"
-      },
-      "socials": [
-        {
-          "name": "TWITTER",
-          "link": "https://twitter.com/ariarzer"
-        },
-        {
-          "name": "GITHUB",
-          "link": "https://github.com/ariarzer"
-        }
-      ]
-    },
-    {
       "id": "fogrew",
       "firstName": "Андрей",
       "lastName": "Гурылев",
@@ -98,117 +79,15 @@
     {
       "id": "coppolla",
       "firstName": "Ксения",
-      "lastName": "Коппола",
+      "lastName": "Копполла",
       "photo": {
         "src": "/org/coppolla.jpg",
-        "alt": "Ксения Коппола"
+        "alt": "Ксения Копполла"
       },
       "socials": [
         {
           "name": "VK",
           "link": "https://vk.com/coppolla"
-        }
-      ]
-    },
-    {
-      "id": "scink",
-      "firstName": "Антон",
-      "lastName": "Кошкин",
-      "photo": {
-        "src": "/org/scink.jpg",
-        "alt": "Антон Кошкин"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://vk.com/scink"
-        },
-        {
-          "name": "GITHUB",
-          "link": "https://github.com/scink"
-        }
-      ]
-    },
-    {
-      "id": "yaroslavnaef",
-      "firstName": "Ярославна",
-      "lastName": "Ефимова",
-      "photo": {
-        "src": "/org/yaroslavnaef.jpg",
-        "alt": "Ярославна Ефимова"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://vk.com/russikgirl"
-        }
-      ]
-    },
-    {
-      "id": "nin_jin",
-      "firstName": "Дмитрий",
-      "lastName": "Карловский",
-      "photo": {
-        "src": "/org/nin_jin.jpg",
-        "alt": "Дмитрий Карловский"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://habr.com/ru/users/vintage/posts/"
-        },
-        {
-          "name": "GITHUB",
-          "link": "https://github.com/nin_jin"
-        }
-      ]
-    },
-    {
-      "id": "innayarantseva",
-      "firstName": "Инна",
-      "lastName": "Яранцева",
-      "photo": {
-        "src": "/org/innayarantseva.jpg",
-        "alt": "Инна Яранцева"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://vk.com/innayarantseva"
-        }
-      ]
-    },
-    {
-      "id": "iliya_ilineya",
-      "firstName": "Илья",
-      "lastName": "Государев",
-      "photo": {
-        "src": "/org/iliya_ilineya.jpg",
-        "alt": "Илья Государев"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://vk.com/iliya_ilineya"
-        }
-      ]
-    },
-    {
-      "id": "imberette",
-      "firstName": "Алия",
-      "lastName": "Закирова",
-      "photo": {
-        "src": "/org/imberette.jpg",
-        "alt": "Алия Закирова"
-      },
-      "socials": [
-        {
-          "name": "VK",
-          "link": "https://vk.com/imberette"
-        },
-        {
-          "name": "TWITTER",
-          "link": "https://vk.com/imberette"
         }
       ]
     }
