@@ -109,6 +109,59 @@
           "link": "https://github.com/scink"
         }
       ]
+    },
+    {	
+      "id": "ariarzer",	
+      "firstName": "София",	
+      "lastName": "Валитова",	
+      "photo": {	
+        "src": "/org/ariarzer.jpg",	
+        "alt": "София Валитова"	
+      },	
+      "socials": [	
+        {	
+          "name": "TWITTER",	
+          "link": "https://twitter.com/ariarzer"	
+        },	
+        {	
+          "name": "GITHUB",	
+          "link": "https://github.com/ariarzer"	
+        }	
+      ]	
+    },
+    {
+      "id": "yaroslavnaef",
+      "firstName": "Ярославна",
+      "lastName": "Ефимова",
+      "photo": {
+        "src": "/org/yaroslavnaef.jpg",
+        "alt": "Ярославна Ефимова"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/russikgirl"
+        }
+      ]
+    },
+    {
+      "id": "nin_jin",
+      "firstName": "Дмитрий",
+      "lastName": "Карловский",
+      "photo": {
+        "src": "/org/nin_jin.jpg",
+        "alt": "Дмитрий Карловский"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://habr.com/ru/users/vintage/posts/"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/nin_jin"
+        }
+      ]
     }
   ],
   "speakers": [
