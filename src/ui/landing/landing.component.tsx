@@ -49,7 +49,6 @@ export const Landing = () => {
 			<Schedule />
 			<Organizators />
 			<Partners />
-			<Become link={{href: `mailto:${links.mailTo}`, target: '_self'}} buttonText={'Стать партнером'} />
 			<Map />
 			<Footer />
 		</Fragment>
