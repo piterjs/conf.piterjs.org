@@ -582,6 +582,11 @@
       "name": "Tinkoff",
       "link": "https://www.tinkoff.ru",
       "image": "/partner/tinkoff.svg"
+    },
+    {
+      "name": "Grid Dynamics",
+      "link": "https://www.griddynamics.com",
+      "image": "/partner/griddynamics.svg"
     }
   ],
   "piterjs": {
