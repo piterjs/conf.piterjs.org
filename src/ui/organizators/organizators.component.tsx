@@ -70,7 +70,7 @@ export const Organizators: FC<OrgsProps> = memo(({className}) => {
 	return (
 		<OrgsStyled className={className} id={'orgs'}>
 			<Container>
-				<BlockHeadingStyled>Организаторы</BlockHeadingStyled>
+				<BlockHeadingStyled>Команда PiterJS</BlockHeadingStyled>
 				<OrgsListStyled count={list.length} id={'org_list'}>
 					{list
 						.filter(s => s.id !== 'speakerX')
