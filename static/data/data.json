@@ -273,7 +273,7 @@
         "src": "/speaker/paul_yuhnovich.jpeg",
         "alt": "Павел Юхнович"
       },
-      "about": "Uncaught TypeError: Cannot read property 'about' of undefined",
+      "about": "Лид-сеньор-помидор, организатор всяких айтишных митапов и конференций, причастен к BeerJS  Минск и BeerJS Summit , со-ведущий развлекательного фронтенд ток шоу FrontSpot Show.",
       "socials": [
         {
           "name": "TWITTER",
@@ -431,7 +431,7 @@
     {
       "id": "paul_yuhnovich",
       "name": "Holy War between Designers & Developers",
-      "description": "Uncaught TypeError: Cannot read property 'description' of undefined"
+      "description": "Надоело терпеть дизайнерский беспредел на проекте? Кто в ответе за постоянно меняющиеся требования имплементации вашего приложения? Устали пилить велосипеды, которые никому по итогу не нужны? Давайте попробуем найти ту самую серебряную пулю, которая за раз решит все эти (и не только эти) проблемы."
     },
     {
       "id": "nikolay_matvienko",
