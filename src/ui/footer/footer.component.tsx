@@ -190,6 +190,7 @@ export const Footer: FC<FooterProps> = memo(({className}) => {
 						<MenuItemStyled href={'#speakers'}>Спикеры</MenuItemStyled>
 						<MenuItemStyled href={'#schedule'}>Расписание</MenuItemStyled>
 						<MenuItemStyled href={'#partners'}>Партнеры</MenuItemStyled>
+						<MenuItemStyled href={'https://github.com/piterjs/documents/tree/master/code-of-conduct'}>Нормы поведения</MenuItemStyled>
 					</MenuStyled>
 					<SocialsStyled>
 						{piterjs.socials.map(social => (
