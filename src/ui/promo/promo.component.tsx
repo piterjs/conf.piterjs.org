@@ -15,6 +15,7 @@ const PromoStyled = styled.section`
 	background-size: cover;
 	background-position: center;
 	position: relative;
+
 	@media (max-width: 576px) {
 		background: url('/promo_small.jpg');
 		background-size: cover;
@@ -92,6 +93,9 @@ const promoQuery = graphql`
 		dataJson {
 			event {
 				date
+				location {
+					address
+				}
 			}
 		}
 	}
@@ -108,7 +112,7 @@ export const Promo: FC = memo(() => {
 				<Container>
 					<ContentStyled>
 						<DateStyled>
-							{event.date}, <PlaceStyled>Caнкт-Петербург</PlaceStyled>
+							{event.date}, <PlaceStyled>Caнкт-Петербург<br/>{event.location.address}</PlaceStyled>
 						</DateStyled>
 						<TitleStyled>PiterJS conf &mdash; конференция JavaScript-сообщества с берегов Невы</TitleStyled>
 						<BigButton
