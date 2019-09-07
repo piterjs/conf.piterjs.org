@@ -118,11 +118,11 @@ export const Promo: FC = memo(() => {
 						<BigButton
 							linkView={true}
 							linkParams={{
-								href: 'https://piterjsconf.timepad.ru/event/1007647/',
+								href: 'https://www.youtube.com/piterjs',
 								rel: 'noopener noreferrer',
 								target: '_blank',
 							}}>
-							Зарегистрироваться
+							Трансляция
 						</BigButton>
 					</ContentStyled>
 				</Container>
