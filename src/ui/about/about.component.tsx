@@ -8,7 +8,7 @@ import {EventTO} from '../../view-models/data.view-model';
 import {Paragraph} from '../ui-kit/paragraph/paragraph.component';
 import {mediaLg, mediaMd, mediaMdX} from '../../utils/css.utils';
 import {clamp} from '../../utils/number.utils';
-import {ModalImage} from '../modalImage/modalImage.component';
+import {ImageGallery} from '../image-gallery/image-gallery/image-gallery.component';
 
 //#region styled
 const AboutStyled = styled.section`
@@ -31,7 +31,7 @@ const ParagraphStyled = styled(Paragraph)`
 	margin-bottom: 20px;
 	line-height: 1.5;
 `;
-const PhotosStyled = styled.div<{count: number}>`
+const ImageGalleryStyled = styled(ImageGallery)<{count: number}>`
 	display: none;
 	grid-gap: 10px;
 	margin-bottom: 35px;
@@ -48,9 +48,6 @@ const PhotosStyled = styled.div<{count: number}>`
 	${mediaLg} {
 		grid-template-columns: repeat(${({count}) => clamp(count, 1, 5)}, 1fr);
 	}
-`;
-const PhotoStyled = styled(ModalImage)`
-	width: 100%;
 `;
 //#endregion
 
@@ -86,11 +83,7 @@ export const About: FC<AboutProps> = memo(({className}) => {
 						<ParagraphStyled key={i}>{about}</ParagraphStyled>
 					))}
 				</TextStyled>
-				<PhotosStyled count={data.event.photos.length}>
-					{event.photos.map((photo, i) => (
-						<PhotoStyled {...photo} key={i} />
-					))}
-				</PhotosStyled>
+        <ImageGalleryStyled count={data.event.photos.length} images={event.photos}/>
 			</Container>
 		</AboutStyled>
 	);

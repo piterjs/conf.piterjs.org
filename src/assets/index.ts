@@ -25,3 +25,5 @@ export {default as VkIcon} from './vk.svg';
 export {default as MapMarker} from './marker.svg';
 // @ts-ignore
 export {default as MediumIcon} from './medium.svg';
+// @ts-ignore
+export {default as TriangleIcon} from './triangle.svg';
