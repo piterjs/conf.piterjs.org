@@ -118,11 +118,11 @@ export const Promo: FC = memo(() => {
 						<BigButton
 							linkView={true}
 							linkParams={{
-								href: 'https://www.youtube.com/piterjs',
+								href: 'https://www.youtube.com/watch?v=cT9UJIx9oJI&list=PLcXJ90eZ2bxhXhNINIvebZQkQO35eacOU',
 								rel: 'noopener noreferrer',
 								target: '_blank',
 							}}>
-							Трансляция
+							Видео
 						</BigButton>
 					</ContentStyled>
 				</Container>
