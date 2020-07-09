@@ -20,6 +20,7 @@ jobs:
         yarn install
         yarn test
         yarn build
+        ls
       
     - name: Deploy on GitHub Pages
       uses: alex-page/blazing-fast-gh-pages-deploy@v1.0.1
