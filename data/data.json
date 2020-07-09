@@ -1,0 +1,634 @@
+{
+  "organizators": [
+    {
+      "id": "mike1pol",
+      "firstName": "Михаил",
+      "lastName": "Полубояринов",
+      "photo": {
+        "src": "/org/mike1pol.jpg",
+        "alt": "Михаил Полубояринов"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/mike1pol"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/mike1pol"
+        }
+      ]
+    },
+    {
+      "id": "volkova_a",
+      "firstName": "Анна",
+      "lastName": "Волкова",
+      "photo": {
+        "src": "/org/volkova_a.jpg",
+        "alt": "Анна Волкова"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/volkova_annie"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/volkova-annie"
+        }
+      ]
+    },
+    {
+      "id": "bmsdave",
+      "firstName": "Вадим",
+      "lastName": "Горбачев",
+      "photo": {
+        "src": "/org/bmsdave.jpg",
+        "alt": "Вадим Горбачев"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/_bmsdave"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/bmsdave"
+        }
+      ]
+    },
+    {
+      "id": "fogrew",
+      "firstName": "Андрей",
+      "lastName": "Гурылев",
+      "photo": {
+        "src": "/org/fogrew.jpg",
+        "alt": "Андрей Гурылев"
+      },
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/fogrew"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/fogrew"
+        }
+      ]
+    },
+    {
+      "id": "coppolla",
+      "firstName": "Ксения",
+      "lastName": "Копполла",
+      "photo": {
+        "src": "/org/coppolla.jpg",
+        "alt": "Ксения Копполла"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/coppolla"
+        }
+      ]
+    },
+    {
+      "id": "scink",
+      "firstName": "Антон",
+      "lastName": "Кошкин",
+      "photo": {
+        "src": "/org/scink.jpg",
+        "alt": "Антон Кошкин"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/scink"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/scink"
+        }
+      ]
+    },
+    {	
+      "id": "ariarzer",	
+      "firstName": "София",	
+      "lastName": "Валитова",	
+      "photo": {	
+        "src": "/org/ariarzer.jpg",	
+        "alt": "София Валитова"	
+      },	
+      "socials": [	
+        {	
+          "name": "TWITTER",	
+          "link": "https://twitter.com/ariarzer"	
+        },	
+        {	
+          "name": "GITHUB",	
+          "link": "https://github.com/ariarzer"	
+        }	
+      ]	
+    },
+    {
+      "id": "yaroslavnaef",
+      "firstName": "Ярославна",
+      "lastName": "Ефимова",
+      "photo": {
+        "src": "/org/yaroslavnaef.jpg",
+        "alt": "Ярославна Ефимова"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://vk.com/russikgirl"
+        }
+      ]
+    },
+    {
+      "id": "nin_jin",
+      "firstName": "Дмитрий",
+      "lastName": "Карловский",
+      "photo": {
+        "src": "/org/nin_jin.jpg",
+        "alt": "Дмитрий Карловский"
+      },
+      "socials": [
+        {
+          "name": "VK",
+          "link": "https://habr.com/ru/users/vintage/posts/"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/nin_jin"
+        }
+      ]
+    }
+  ],
+  "speakers": [
+    {
+      "id": "alexander_korotaev",
+      "firstName": "Александр",
+      "lastName": "Коротаев",
+      "photo": {
+        "src": "/speaker/alexander_korotaev.jpg",
+        "alt": "Александр Коротаев"
+      },
+      "about": "Фронтенд-разработчик в Tinkoff.ru, делает игры дома и на работе. Отбирает доклады для HolyJS и активно помогает локальным фронтенд-сообществам Санкт-Петербурга.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/mamu_eval"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/lekzd"
+        }
+      ]
+    },
+    {
+      "id": "dmitry_patsura",
+      "firstName": "Дмитрий",
+      "lastName": "Пацура",
+      "photo": {
+        "src": "/speaker/dmitry_patsura.jpg",
+        "alt": "Дмитрий Пацура"
+      },
+      "about": "Разработчик, 9 лет опыта, работает на должности Complex Engineer в компании Fintier, специализирующейся на разработке маркетплейса, предоставляющего финансовые сервисы и принимающего платежи по всему миру.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/ovrweb"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/ovr"
+        }
+      ]
+    },
+    {
+      "id": "alexander_kanunnikov",
+      "firstName": "Александр",
+      "lastName": "Канунников",
+      "photo": {
+        "src": "/speaker/alexander_kanunnikov.jpg",
+        "alt": "Александр Канунников"
+      },
+      "about": "Лид-Синьор-Помидор, опенсорс контрибьютор, создатель AsynсDom, организатор Ember.JS митапов, иногда интересный докладчик, пишет SPA приложения 7 лет.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/vaier"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/lifeart"
+        }
+      ]
+    },
+    {
+      "id": "alexey_zolotyh",
+      "firstName": "Алексей",
+      "lastName": "Золотых",
+      "photo": {
+        "src": "/speaker/alexey_zolotyh.jpg",
+        "alt": "Алексей Золотых"
+      },
+      "about": "Пишет на JavaScript c 2007 года. До перехода к JS работал верстальщиком, сверстал более 100 сайтов. Писал на jQuery, Backbone.js, Angular 1, Angular 2, React, Ext JS, PolymerJS. Любит пользовательские интерфейсы и кофе.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/zolotyh"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/zolotyh"
+        }
+      ]
+    },
+    {
+      "id": "rustam_imaykin",
+      "firstName": "Рустам",
+      "lastName": "Имайкин",
+      "photo": {
+        "src": "/speaker/rustam_imaykin.jpg",
+        "alt": "Рустам Имайкин"
+      },
+      "about": "Был увлечен веб (wap) разработкой с момента появления кнопочных телефонов, на тех же самых кнопочных телефонах (в редакторе 128px на 128px). Пишу на typescript, часть своей жизни посвящаю разработке на Angular. Веду канал t.me/ngFanatic",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/irustm"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/irustm"
+        }
+      ]
+    },
+    {
+      "id": "paul_yuhnovich",
+      "firstName": "Павел",
+      "lastName": "Юхнович",
+      "photo": {
+        "src": "/speaker/paul_yuhnovich.jpeg",
+        "alt": "Павел Юхнович"
+      },
+      "about": "Лид-сеньор-помидор, организатор всяких айтишных митапов и конференций, причастен к BeerJS  Минск и BeerJS Summit , со-ведущий развлекательного фронтенд ток шоу FrontSpot Show.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/paul_yuhnovich"
+        },
+        {
+          "name": "MEDIUM",
+          "link": "https://medium.com/@Paul_Yuhnovich"
+        }
+      ]
+    },
+    {
+      "id": "nikolay_matvienko",
+      "firstName": "Николай",
+      "lastName": "Матвиенко",
+      "photo": {
+        "src": "/speaker/nikolay_matvienko.jpg",
+        "alt": "Николай Матвиенко"
+      },
+      "about": "Инженер и эксперт по Node.js в Grid Dynamics. Большой фанат оптимизаций производительности Node.js приложений и облачных вычислений. Николай работает в США и в России, и часто путешествует по миру с докладами, основанными на профессиональном опыте проектов в области производительности, масштабируемости и разработки приложений. Сейчас он работает в Санкт-Петербурге, штат Флорида. Вместе с командой AWS он создает платформу облачных вычислений для одной из крупнейших IT компаний в США.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/matvi3nko"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/matvi3nko"
+        }
+      ]
+    },
+    {
+      "id": "polina_gurtovaya",
+      "firstName": "Полина",
+      "lastName": "Гуртовая",
+      "photo": {
+        "src": "/speaker/polina_gurtovaya.jpg",
+        "alt": "Полина Гуртовая"
+      },
+      "about": "Занимается фронтом больше пяти лет. Последние 2 года в Марсианах. За это время Полина прокачала чувство прекрасного и умение изобретать велосипеды, но понимает, что находится только в начале пути. В свободное время пишет статьи, выступает, экспериментирует с ML/WebGL/GraphQL и воспитывает аквариумную рыбку :)",
+      "socials": [
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/HellSquirrel"
+        }
+      ]
+    },
+    {
+      "id": "vladimir_ulyanov",
+      "firstName": "Владимир",
+      "lastName": "Ульянов",
+      "photo": {
+        "src": "/speaker/vladimir_ulyanov.jpg",
+        "alt": "Владимир Ульянов"
+      },
+      "about": "Любит красивые, удобные, производительные интерфейсы. Занимается UI разработкой, на досуге программирует на golang и поддерживает kubernetes-кластер.",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/lionskape"
+        },
+        {
+          "name": "TELEGRAM",
+          "link": "https://t.me/lionskape"
+        }
+      ]
+    },
+    {
+      "id": "alexander_madyankin",
+      "firstName": "Александр",
+      "lastName": "Мадьянкин",
+      "photo": {
+        "src": "/speaker/alexander_madyankin.jpg",
+        "alt": "Александр Мадьянкин"
+      },
+      "about": "Фронтенд-тимлид в Злых Марсианах. Последние четыре года разрабатывает SPA и React Native приложения. За это время Александр успел поработать над веб-приложением для заказа такси для Gett, мобильными приложениями Amplifr (аналитика и публикация в социальные сети), Podium (cбор обратной связи для оффлайн-бизнесов), Connect By Common и Kin (приложения для сообщества съемщиков жилья в США).",
+      "socials": [
+        {
+          "name": "TWITTER",
+          "link": "https://twitter.com/madyankin"
+        },
+        {
+          "name": "GITHUB",
+          "link": "https://github.com/outpunk"
+        }
+      ]
+    },
+    {
+      "id": "yana",
+      "firstName": "Яна",
+      "lastName": "Менемчиадис",
+      "photo": {
+        "src": "/speaker/yana.jpg",
+        "alt": "Яна Менемчиадис"
+      },
+      "about": "Разрабатывает frontend уже 5 лет, нравятся интересные и нестандартные задачи.",
+      "socials": [
+        {
+          "name": "TELEGRAM",
+          "link": "https://t.me/Iv_Me"
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "schedule0",
+      "name": "Открытие дверей"
+    },
+    {
+      "id": "schedule1",
+      "name": "Церемония открытия"
+    },
+    {
+      "id": "schedule2",
+      "name": "Перерыв"
+    },
+    {
+      "id": "schedule3",
+      "name": "Обед"
+    },
+    {
+      "id": "schedule4",
+      "name": "Перерыв"
+    },
+    {
+      "id": "schedule5",
+      "name": "BeerJS"
+    },
+    {
+      "id": "alexander_korotaev",
+      "name": "Как запустить Telegram в VS Code",
+      "description": "Что такое консоль? Текстовый терминал или уже полноценный интерфейс? Как можно затащить в консоль целый мессенджер и использовать его отовсюду. И как это может помочь вашим коллегам. В докладе расскажу, как можно создавать сложные или простые, но доступные консольные интерфейсы. Что такое доступность и кроссплатформенность в среде терминалов. И почему коллеги обычно не горят желанием пользоваться CLI."
+    },
+    {
+      "id": "dmitry_patsura",
+      "name": "Optimize the size of your SPA, битва за байты",
+      "description": "2019 год, современный веб, PWA, SPA, bundle на фронте от одного мегабайта javascript. Стоп! Мы перестали ставить в приоритет экономию трафика и TTI пользователей, как делали это раньше. Пришло время разобраться в техниках оптимизации размера JS/CSS/IMAGE. Это битва за байты и мы ее начинаем."
+    },
+    {
+      "id": "alexander_kanunnikov",
+      "name": "JSX в декларативные шаблоны с помощью AST",
+      "description": "Мы рассмотрим преимущества и недостатки функциональных шаблонов, сравним их с декларативными и попытаемся найти способ преобразовать одни в другие без дополнительного оверхэда для разработчиков."
+    },
+    {
+      "id": "alexey_zolotyh",
+      "name": "Автоматизируй это. Гиперавтоматизированный пайплайн",
+      "description": "Уже не помню, когда первый раз услышал термин continuous integration. С тех пор мир поменялся. Неизменным осталось только одно. Нам нужно больше автоматизации. Мой рассказ о том, как добавить в свою сборку нечто большее, чем запуск mocha и webpack."
+    },
+    {
+      "id": "rustam_imaykin",
+      "name": "Как делать быстро прототипы приложений на современных технологиях",
+      "description": "Разберем существующие решения для прототипирования, напишем бэкенд и фронтенд для них. В докладе будут рассмотрены такие решения как Hasura, Prisma, pRest, Firebase, и конечно подключим динамичные формы и таблицы."
+    },
+    {
+      "id": "paul_yuhnovich",
+      "name": "Holy War between Designers & Developers",
+      "description": "Надоело терпеть дизайнерский беспредел на проекте? Кто в ответе за постоянно меняющиеся требования имплементации вашего приложения? Устали пилить велосипеды, которые никому по итогу не нужны? Давайте попробуем найти ту самую серебряную пулю, которая за раз решит все эти (и не только эти) проблемы."
+    },
+    {
+      "id": "nikolay_matvienko",
+      "name": "Хроники Node.js: сообщество и корпорации",
+      "description": "Для того, чтобы ответить на вопрос, на каком этапе развития сейчас находится технология Node.js, насколько она популярна, как часто становится выбором использования в production, какие преимущества она дает и с какими трудностями инженеры при использовании сталкивались, я сделаю хронологический рассказ, основанный на моем опыте, где поэтапно расскажу истории, объясняющие причины, следствия и вектор развития технологии."
+    },
+    {
+      "id": "polina_gurtovaya",
+      "name": "GraphQL - уменьшаем энтропию",
+      "description": "В больших проектах наступают моменты, когда сложность растет и предметная область перестает помещаться в голове. В такие моменты лучше не допускать беспорядка в данных и в коде. В одном из наших проектов мы боролись с беспорядком методом \"очистительного графкуэля\". Я хочу рассказать об этом поподробнее, ответив на следующие вопросы: Почему GraphQL многое упрощает? Что это вообще такое? Как готовить GraphQL-фронтенд? Как GraphQL может улучшить коммуникацию в команде?"
+    },    {
+      "id": "vladimir_ulyanov",
+      "name": "State of Vue (2k19 Q3)",
+      "description": "Расскажу о том, что нового произошло со Vue за последний год и почему самое время начинать его использовать."
+    },
+    {
+      "id": "alexander_madyankin",
+      "name": "Как построить Гексагон: прагматичная архитектура для клиентских приложений",
+      "description": "Технический долг неизбежен, и зачастую он накапливается быстрее, чем мы успеваем его погашать. Особенно ярко это проблема проявляется, когда, поддавшись моде, мы стремимся внедрять новые технологии без предыдущего опыта их использования и наработанных практик и надеемся на дальнейший рефакторинг. Вместо ровной и стройной архитектуры у нас получается Tutorial Driven Development — демонстрационный код из документации библиотек становится основой для приложения.  Повышается зависимость от конкретных библиотек, нет четких правил написания кода и его стыковки со сторонним, высокоуровневый код переплетается с низкоуровневым. В докладе я расскажу об архитектуре, к которой пришел за четыре года разработки SPA и React Native приложений через свои пробы и ошибки и анализ и рефакторинг чужого кода."
+    },
+    {
+      "id": "yana",
+      "name": "Поддержка старых браузеров в CSS-in-JS на AST-преобразованиях",
+      "description": "Мы привыкли, что написанные решения все делают за нас. В частности, преобразуют JS и CSS для поддержки старых браузеров. А если мы сталкиваемся с тем, что нет такого решения, которое нам нужно, то что делать? Спойлер - писать самим! При использовании css-переменных в styled-components мы столкнулись с таким вопросом. Основной проблемой для нас стала поддержка IE11, нам нужно было каким-то образом проставлять резервные свойства, но руками это делать не хотелось. Нам пришлось погрузиться в устройство синтаксических конструкций языка JavaScript. В этом докладе я хочу рассказать историю о том, как мы делали babel-плагин, реализующий обратную совместимость для css-переменных в styled-components."
+    }
+  ],
+  "event": {
+    "date": "7 сентября 2019",
+    "location": {
+      "address": "набережная Обводного канала, 60",
+      "city": "Санкт-Петербург",
+      "link": "https://goo.gl/maps/ssfxoWUpFyWhXH8s8"
+    },
+    "about": [
+      "PiterJS - сообщество c берегов Невы, проводим ежемесячные митапы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть свободными. Организуем встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования."
+    ],
+    "photos": [
+      {"src": "/photo/2.min.jpeg","alt": "","srcLarge": "/photo/2.jpeg"},
+      {"src": "/photo/3.min.jpeg","alt": "","srcLarge": "/photo/3.jpeg"},
+      {"src": "/photo/5.min.jpeg","alt": "","srcLarge": "/photo/5.jpeg"},
+      {"src": "/photo/6.min.jpeg","alt": "","srcLarge": "/photo/6.jpeg"},
+      {"src": "/photo/7.min.jpeg","alt": "","srcLarge": "/photo/7.jpeg"},
+      {"src": "/photo/9.min.jpeg","alt": "","srcLarge": "/photo/9.jpeg"},
+      {"src": "/photo/10.min.jpeg","alt": "","srcLarge": "/photo/10.jpeg"},
+      {"src": "/photo/11.min.jpeg","alt": "","srcLarge": "/photo/11.jpeg"},
+      {"src": "/photo/12.min.jpeg", "alt": "","srcLarge": "/photo/12.jpeg"}
+    ],
+    "articles": [
+      {
+        "articleId": "schedule0",
+        "time": "10:00"
+      },
+      {
+        "articleId": "schedule1",
+        "time": "11:00"
+      },
+      {
+        "articleId": "alexander_korotaev",
+        "speakerId": "alexander_korotaev",
+        "time": "11:20"
+      },
+      {
+        "articleId": "polina_gurtovaya",
+        "speakerId": "polina_gurtovaya",
+        "time": "12:00"
+      },
+      {
+        "articleId": "schedule2",
+        "time": "12:40"
+      },
+      {
+        "articleId": "yana",
+        "speakerId": "yana",
+        "time": "13:10"
+      },
+      {
+        "articleId": "alexander_kanunnikov",
+        "speakerId": "alexander_kanunnikov",
+        "time": "13:50"
+      },
+      {
+        "articleId": "schedule3",
+        "time": "14:30"
+      },
+      {
+        "articleId": "nikolay_matvienko",
+        "speakerId": "nikolay_matvienko",
+        "time": "15:30"
+      },
+      {
+        "articleId": "rustam_imaykin",
+        "speakerId": "rustam_imaykin",
+        "time": "15:45"
+      },
+      {
+        "articleId": "alexey_zolotyh",
+        "speakerId": "alexey_zolotyh",
+        "time": "16:00"
+      },
+      {
+        "articleId": "vladimir_ulyanov",
+        "speakerId": "vladimir_ulyanov",
+        "time": "16:15"
+      },
+      {
+        "articleId": "paul_yuhnovich",
+        "speakerId": "paul_yuhnovich",
+        "time": "16:30"
+      },
+      {
+        "articleId": "schedule4",
+        "time": "16:45"
+      },
+      {
+        "articleId": "dmitry_patsura",
+        "speakerId": "dmitry_patsura",
+        "time": "17:15"
+      },
+      {
+        "articleId": "alexander_madyankin",
+        "speakerId": "alexander_madyankin",
+        "time": "17:55"
+      },
+      {
+
+        "articleId": "schedule5",
+        "time": "18:45"
+      }
+    ]
+  },
+  "partners": [
+    {
+      "name": "HolyJS",
+      "link": "https://holyjs.ru/",
+      "image": "/partner/holyjs.svg"
+    },
+    {
+      "name": "Sprintbox",
+      "link": "https://sprintbox.ru",
+      "image": "/partner/sprintbox.svg"
+    },
+    {
+      "name": "SEMRush",
+      "link": "https://semrush.com",
+      "image": "/partner/semrush.svg"
+    },
+    {
+      "name": "Tinkoff",
+      "link": "https://www.tinkoff.ru",
+      "image": "/partner/tinkoff.svg"
+    },
+    {
+      "name": "Grid Dynamics",
+      "link": "https://www.griddynamics.com",
+      "image": "/partner/griddynamics2.svg"
+    }
+  ],
+  "piterjs": {
+    "socials": [
+      {
+        "name": "TWITTER",
+        "link": "https://twitter.com/gopiterjs"
+      },
+      {
+        "name": "FACEBOOK",
+        "link": "https://fb.com/gopiterjs"
+      },
+      {
+        "name": "TELEGRAM",
+        "link": "https://t.me/piterjs"
+      },
+      {
+        "name": "VK",
+        "link": "https://vk.com/piterjs"
+      },
+      {
+        "name": "GITHUB",
+        "link": "https://github.com/piterjs"
+      }
+    ]
+  },
+  "map": {
+    "key": "AIzaSyDRtMjO9ThZFFqoysO9XyUqTpqwQ-wPYBQ",
+    "coords": {
+      "lat": 59.915217,
+      "lng": 30.341341
+    },
+    "zoom": 17
+  },
+  "helmet": {
+    "landing": {
+      "title": "PiterJS conf 2019",
+      "description": "PiterJS - сообщество c берегов Невы вокруг языка JavaScript и всего, что с ним связано. Мы помогаем знаниям быть свободными. Организуем ежемесячные встречи разработчиков для распространения знаний и обмена опытом, рассказываем о боли и кайфе JavaScript-программирования. В этом сентябре решили выйти на новый уровень - создаём конференцию."
+    }
+  },
+  "links": {
+    "mailTo": "partner@piterjs.dev",
+    "signUpLink": "https://forms.gle/Y7TM5VbC7RkNsGkz8"
+  }
+}

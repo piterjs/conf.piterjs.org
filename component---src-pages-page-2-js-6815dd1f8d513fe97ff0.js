@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{148:function(n,e,t){"use strict";t.r(e);var u=t(9),a=t(0);e.default=function(){return Object(u.d)(a.Fragment,null,"page-2")}}}]);
+//# sourceMappingURL=component---src-pages-page-2-js-6815dd1f8d513fe97ff0.js.map
